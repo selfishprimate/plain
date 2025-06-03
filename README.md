@@ -1,4 +1,4 @@
-# PLAIN – Product Language for AI Notation
+# PLAIN: Product Language for AI Notation
 
 **PLAIN** is a structured documentation framework designed to help you define digital products in a format that's both human-friendly and machine-readable. It bridges the gap between product managers, designers, and AI-powered tools such as [v0](https://v0.dev), [Figma AI](https://www.figma.com/blog/design-ai), [Make](https://www.make.com), and [Lovable](https://www.lovable.so/).
 
