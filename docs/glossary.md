@@ -1,5 +1,4 @@
 #Glossary
-_Change is the essence._
 A glossary of terms related to AI, product design, and AI-assisted workflows. All entries are listed alphabetically and written in English.
 
 * **Ablation**: A method of systematically removing components from an AI model to analyze their impact on performance.
