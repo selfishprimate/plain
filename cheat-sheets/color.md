@@ -1,0 +1,1 @@
+_Cheat sheet for a better color prompts._
