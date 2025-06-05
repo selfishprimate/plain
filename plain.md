@@ -47,19 +47,19 @@ Each entry should reflect how the page functions, how users reach it, and what d
 
 ## Technical Requirements
 This section outlines the technical foundation of the product, detailing key architectural decisions, system design, APIs, authentication methods, state management, routing, and database structure.
-- ### Architecture Pattern
-- ### State Management
-- ### Data Flow
-- ### Technical Stack
-- ### Authentication Process
-- ### Route Design
-- ### API Design
-- ### Database Design
-- ### SEO Strategy
-- ### Content Management Approach
-- ### Structured Content
-- ### Deployment (CI/CD)
-- ### Serve Method
-- ### Rendering and Navigation
+- **Architecture Pattern:**
+- **State Management:**
+- **Data Flow:**
+- **Technical Stack:**
+- **Authentication Process:**
+- **Route Design:**
+- **API Design:**
+- **Database Design:**
+- **SEO Strategy:**
+- **Content Management Approach:**
+- **Structured Content:**
+- **Deployment (CI/CD):**
+- **Serve Method:**
+- **Rendering and Navigation:**
 
 ## Inspirations
