@@ -9,20 +9,20 @@ Use this as the single source of truth to describe your product idea — and let
 
 ## Design Language
 
-### Design Principles
-### Color
-### Design System
-### Icon Library
-### Typography
-### Typescale
-### Layout
-### Core Components
-### Elevation System
-### Interaction Feedback
-### Motion and Transition
-### Visual Tone
-### Animation
-### Stylistic References
+- ### Design Principles
+- ### Color
+- ### Design System
+- ### Icon Library
+- ### Typography
+- ### Typescale
+- ### Layout
+- ### Core Components
+- ### Elevation System
+- ### Interaction Feedback
+- ### Motion and Transition
+- ### Visual Tone
+- ### Animation
+- ### Stylistic References
 
 ## Target Audience and Personas
 
@@ -38,19 +38,19 @@ Use this as the single source of truth to describe your product idea — and let
 
 ## Technical Requirements
 
-### Architecture Pattern
-### State Management
-### Data Flow
-### Technical Stack
-### Authentication Process
-### Route Design
-### API Design
-### Database Design
-### SEO Strategy
-### Content Management Approach
-### Structured Content
-### Deployment (CI/CD)
-### Serve Method
-### Rendering and Navigation
+- ### Architecture Pattern
+- ### State Management
+- ### Data Flow
+- ### Technical Stack
+- ### Authentication Process
+- ### Route Design
+- ### API Design
+- ### Database Design
+- ### SEO Strategy
+- ### Content Management Approach
+- ### Structured Content
+- ### Deployment (CI/CD)
+- ### Serve Method
+- ### Rendering and Navigation
 
 ## Inspirations
