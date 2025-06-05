@@ -27,19 +27,26 @@ Describes the overall visual tone, interaction aesthetics, and design attitude o
 - **Stylistic References:** Lists brands, tools, or design systems that inspire the visual direction. Useful for aligning AI-generated outputs with familiar visual benchmarks.
 
 ## Target Audience and Personas
+Defines the primary user groups, their needs, motivations, and behaviors. Helps guide UX decisions, feature prioritization, and tone of voice.
 
 ## Functional Requirements
+Outlines the essential features the product must perform, along with their acceptance criteria. These form the basis for interface design and testing. 
 
 ## Non-Functional Requirements
+Describes system-level qualities such as performance, security, and accessibility. These guide technical decisions and constraints for both developers and AI tools.
 
 ## User Flows
 
 ## User Stories
+Realistic, narrative examples that show how different users will interact with the product. Helps translate abstract requirements into concrete experiences.
 
 ## Page Map
+This section provides a comprehensive list of all unique pages within the application, along with their **URL patterns**, **page names**, and **primary purposes**. It helps both product teams and AI tools understand the routing logic, navigation structure, and SEO architecture of the product.
+
+Each entry should reflect how the page functions, how users reach it, and what dynamic segments (like slugs or IDs) are used. This information is crucial for sitemap generation, front-end routing, and server-side rendering strategies.
 
 ## Technical Requirements
-
+This section outlines the technical foundation of the product, detailing key architectural decisions, system design, APIs, authentication methods, state management, routing, and database structure.
 - ### Architecture Pattern
 - ### State Management
 - ### Data Flow
