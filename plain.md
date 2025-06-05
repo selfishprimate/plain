@@ -47,19 +47,23 @@ Each entry should reflect how the page functions, how users reach it, and what d
 
 ## Technical Requirements
 This section outlines the technical foundation of the product, detailing key architectural decisions, system design, APIs, authentication methods, state management, routing, and database structure.
-- **Architecture Pattern:**
-- **State Management:**
-- **Data Flow:**
-- **Technical Stack:**
-- **Authentication Process:**
-- **Route Design:**
-- **API Design:**
-- **Database Design:**
-- **SEO Strategy:**
-- **Content Management Approach:**
-- **Structured Content:**
-- **Deployment (CI/CD):**
-- **Serve Method:**
-- **Rendering and Navigation:**
+- **Architecture Pattern:** Defines the frontend-backend structure, deployment model, and how services are modularized.
+- **State Management:** Explains how local and global application state is handled, including tools and patterns used.
+- **Data Flow:** Outlines the journey of data from user input to final output, including what services interact and when.
+- **Technical Stack:** Lists the technologies used in the frontend, backend, database, and integrations.
+- **Authentication Process:** Details how user accounts, sessions, and third-party auth (e.g., OAuth) are managed.
+- **Route Design:** Outlines the structure of all front-end routes and how they correspond to functionality or page types.
+- **API Design:** Specifies available endpoints, what they do, how they interact, and expected formats.
+- **Database Design:** Explains the relational structure of data—main entities, relationships, and purpose of each table.
+- **SEO Strategy:** Describes how the application is optimized for search engine visibility. Includes decisions about rendering (SSR/SSG/CSR), URL structure, metadata, backlink readiness, and redirect handling. Sitemap generation is also part of this strategy.
+- **Content Management Approach:** Defines how content is created, stored, and managed across the platform. This includes whether a CMS, headless CMS, custom admin panel, static files, or AI-assisted systems are used to handle content workflows.
+- **Structured Content:** Defines how the platform supports both traditional structured data standards (like Schema.org) and modern AI comprehension through LLM-friendly content structuring. This includes semantic markup, component-level metadata, contextual tagging, and prompt-aware design to enable both SEO and AI systems to better interpret and utilize content.
+- **Deployment (CI/CD):** Covers how the project is built, tested, and deployed automatically using Continuous Integration and Continuous Deployment pipelines.
+- **Serve Method:** Defines how the application serves content to users: Server-Side Rendering (SSR), Static Site Generation (SSG), or Client-Side Rendering (CSR). This impacts performance, SEO, and complexity.
+- **Rendering and Navigation:** This section defines how content is rendered and how users navigate through the app. It clarifies whether the platform uses SPA (Single Page Application), MPA (Multi Page Application), or a hybrid approach such as SSR (Server-Side Rendering), SSG (Static Site Generation), or CSR (Client-Side Rendering). It may also include modern strategies like ISR (Incremental Static Regeneration) or Islands Architecture. These choices affect SEO, performance, and overall user experience.
 
 ## Inspirations
+A collection of visual and conceptual inspirations (e.g., moodboards, competitor UIs). Guides layout, style, and interaction patterns.
+
+## Additional Notes
+Captures any special constraints, risks, future considerations, or project-specific remarks that don’t fit into other sections.
