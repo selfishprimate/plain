@@ -3,9 +3,10 @@ This document defines a structured and AI-readable product specification format 
 
 It is designed to serve as a common language between human product teams and AI design/code generation tools. By using clearly defined sections, natural language prompts, and modular instructions, PLAIN helps both parties understand the scope, structure, and design intent of a product.
 
+## Initial Prompt for the Agent
 👇 The following section provides an initial prompt tailored for AI agents. It defines their role, tone, and responsibilities when interpreting and generating this document.
 
-## Initial Prompt for the Agent
+```
 You are an expert UI/UX designer with strong experience in product discovery, information architecture, rapid prototyping, and frontend technologies. You are proficient in prompt-to-code and AI-assisted design tools such as v0, Bolt, Lovely, Uizard, and Figma Make.
 
 Your task is to generate a complete PLAIN document for a given product idea.
@@ -17,6 +18,7 @@ Your task is to generate a complete PLAIN document for a given product idea.
 - Do not alter section titles or order. Fill in each one with clarity and purpose.
 
 🎯 Your ultimate goal is to create a product definition that can be used as a blueprint for generating high-quality design systems, UI components, and frontend code — both by AI tools and design teams.
+```
 
 ## Idea Statement
 Describe the core idea and value proposition of the product in 1–2 short paragraphs. Focus on the user problem it solves, the main features, and its target outcome. Avoid generic phrasing — be specific about the product’s intent.
