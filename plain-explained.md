@@ -5,65 +5,132 @@ It is designed to be both human-friendly and machine-parseable. Each section of 
 
 Use this as the single source of truth to describe your product idea — and let both teams and AI agents build from it.
 
-## Idea
-A summary of the product’s core purpose, the problem it solves, and its main value proposition. It anchors all further design and development decisions. Use the following format.
+## 1. Idea Statement
+Summarize the product’s core purpose in 1–2 precise paragraphs. Focus on user problem, key users, and value proposition—avoid generic marketing language.
 
-## Design Language
-Describes the overall visual tone, interaction aesthetics, and design attitude of the interface. It covers motion feedback (e.g. smooth shadows, hover transitions), layout style (e.g. card-based design), and overarching design philosophy (e.g. brutalist, minimal, skeuomorphic). This helps align designers, developers, and AI tools on the emotional and perceptual direction of the product.
-- **Design Principles:** Defines the overall visual attitude of the interface — whether it’s minimalist, brutalist, playful, or corporate. This sets the aesthetic tone and informs component styling decisions.
-- **Color:** Defines the core visual identity of the product using functional color roles.
-- **Design System:** Defines the foundational visual and behavioral rules for building consistent and scalable UI components. May include the use of established systems (like Material, Shadcn), a custom-built atomic design structure, or token-based setups. This helps AI understand how components should look, feel, and behave across the product.
-- **Icons:** Specifies the icon set used for visual labels and interaction cues.
-- **Typography:** Specifies the primary typeface and base text size used throughout the UI. Use clean, modern fonts optimized for screen readability.
-- **Typescale:** Determines the size relationships between different text levels (headings, body, captions).
-- **Layout:** The grid structure and responsiveness strategy applied across screens.
-- **Core Components:** Reusable building blocks of the UI system. Each component should follow accessibility and responsive rules.
-- **Elevation System:** Outlines visual layering techniques like shadows, elevation, borders, and background contrast to create hierarchy and depth in the UI.
-- **Interaction Feedback:** Specifies how the interface responds to user interactions like hover, click, or focus — including animations, visual states, or transitions that convey interactivity.
-- **Motion and Transition:** Defines the tone and behavior of animations used for page loads, content changes, and micro-interactions. Helps maintain a consistent rhythm across the experience.
-- **Visual Tone:** Describes the emotional feel of the interface — such as formal, fun, calm, or dynamic — conveyed through colors, typography, and spacing.
-- **Animation:** Defines the animation library and feedback patterns.
-- **Accessibility:** Accessibility ensures that the product can be used by people of all abilities, including those with visual, motor, cognitive, or auditory impairments. Designing for accessibility improves usability for everyone and helps meet legal standards like WCAG (Web Content Accessibility Guidelines).
-- **Stylistic References:** Lists brands, tools, or design systems that inspire the visual direction. Useful for aligning AI-generated outputs with familiar visual benchmarks.
 
-## Target Audience and Personas
-Defines the primary user groups, their needs, motivations, and behaviors. Helps guide UX decisions, feature prioritization, and tone of voice.
 
-## Functional Requirements
-Outlines the essential features the product must perform, along with their acceptance criteria. These form the basis for interface design and testing. 
+Idea Statement: Taskly is a lightweight task manager for freelancers, enabling fast capture of daily tasks, deadline reminders, and seamless device syncing to simplify project organization.
 
-## Non-Functional Requirements
-Describes system-level qualities such as performance, security, and accessibility. These guide technical decisions and constraints for both developers and AI tools.
 
-## User Flows
+## 2. Design Language
+Define how the product should look, feel, and behave. Think of it as a visual and interaction manifesto. Fill in as many sub-sections as needed to reflect your vision.
 
-## User Stories
-Realistic, narrative examples that show how different users will interact with the product. Helps translate abstract requirements into concrete experiences.
+  ### Design Principles
+  Define guiding values for the interface — e.g. clarity, speed, minimalism, playfulness.
+  
+  ### Color
+  Specify primary color scheme, semantic colors, background colors. Mention light/dark mode if applicable.
+  
+  ### Design System
+  Specify which system to follow (e.g. “Use Shadcn/UI”, “Follow Tailwind-inspired atomic tokens”), or create a custom one.
 
-## Page Map
-This section provides a comprehensive list of all unique pages within the application, along with their **URL patterns**, **page names**, and **primary purposes**. It helps both product teams and AI tools understand the routing logic, navigation structure, and SEO architecture of the product.
+  ### Icons
+  Define icon style (e.g. stroke, filled, 24px grid) and reference a library if needed (e.g. Lucide, Tabler).
+  
+  ### Typography
+  Define font families, usage rules (e.g. headings vs body), line heights, font weights.
+  
+  ### Typescale
+  Describe the vertical rhythm — e.g. modular scale system, responsive variants, naming convention (xs, sm, base…).
+  
+  ### Layout
+  Define container widths, grid structure, spacing scale, breakpoints.
+  
+  ### Core Components
+  List essential components (buttons, inputs, cards, etc.) and their visual tone.
+  
+  ### Elevation System
+  Define how layering and shadows are used for depth and interaction cues.
+  
+  ### Interaction Feedback
+  Describe visual or motion feedback (e.g. hover, tap, loading states).
+  
+  ### Motion and Transition
+  Outline key transitions, durations, easing curves. Define where motion should be used and where it shouldn’t.
+  
+  ### Visual Tone
+  Define the emotional tone of visuals — friendly, serious, playful, etc. (especially relevant for illustrations and imagery).
+  
+  ### Animation
+  Specify rules or restrictions on animated elements. Are microinteractions allowed? Should transitions be subtle?
+  
+  ### Accessibility
+  State key accessibility goals — e.g. color contrast levels, keyboard navigation, screen reader support.
+  
+  ### Stylistic References
+  Mention any visual benchmarks — apps, websites, or dribbble shots that inspired the look.
 
-Each entry should reflect how the page functions, how users reach it, and what dynamic segments (like slugs or IDs) are used. This information is crucial for sitemap generation, front-end routing, and server-side rendering strategies.
+## 3. Target Audience and Personas
+Identify the key user types. Describe their goals, pain points, contexts, and motivations. Keep it persona-level, not demographic fluff.
 
-## Technical Requirements
-This section outlines the technical foundation of the product, detailing key architectural decisions, system design, APIs, authentication methods, state management, routing, and database structure.
-- **Architecture Pattern:** Defines the frontend-backend structure, deployment model, and how services are modularized.
-- **State Management:** Explains how local and global application state is handled, including tools and patterns used.
-- **Data Flow:** Outlines the journey of data from user input to final output, including what services interact and when.
-- **Technical Stack:** Lists the technologies used in the frontend, backend, database, and integrations.
-- **Authentication Process:** Details how user accounts, sessions, and third-party auth (e.g., OAuth) are managed.
-- **Route Design:** Outlines the structure of all front-end routes and how they correspond to functionality or page types.
-- **API Design:** Specifies available endpoints, what they do, how they interact, and expected formats.
-- **Database Design:** Explains the relational structure of data—main entities, relationships, and purpose of each table.
-- **SEO Strategy:** Describes how the application is optimized for search engine visibility. Includes decisions about rendering (SSR/SSG/CSR), URL structure, metadata, backlink readiness, and redirect handling. Sitemap generation is also part of this strategy.
-- **Content Management Approach:** Defines how content is created, stored, and managed across the platform. This includes whether a CMS, headless CMS, custom admin panel, static files, or AI-assisted systems are used to handle content workflows.
-- **Structured Content:** Defines how the platform supports both traditional structured data standards (like Schema.org) and modern AI comprehension through LLM-friendly content structuring. This includes semantic markup, component-level metadata, contextual tagging, and prompt-aware design to enable both SEO and AI systems to better interpret and utilize content.
-- **Deployment (CI/CD):** Covers how the project is built, tested, and deployed automatically using Continuous Integration and Continuous Deployment pipelines.
-- **Serve Method:** Defines how the application serves content to users: Server-Side Rendering (SSR), Static Site Generation (SSG), or Client-Side Rendering (CSR). This impacts performance, SEO, and complexity.
-- **Rendering and Navigation:** This section defines how content is rendered and how users navigate through the app. It clarifies whether the platform uses SPA (Single Page Application), MPA (Multi Page Application), or a hybrid approach such as SSR (Server-Side Rendering), SSG (Static Site Generation), or CSR (Client-Side Rendering). It may also include modern strategies like ISR (Incremental Static Regeneration) or Islands Architecture. These choices affect SEO, performance, and overall user experience.
+## 4. Functional Requirements
+List what the product must do. These are the features — not technical, but functional. Be specific and testable.
 
-## Inspirations
-A collection of visual and conceptual inspirations (e.g., moodboards, competitor UIs). Guides layout, style, and interaction patterns.
+## 5. Non-Functional Requirements
+Define performance, accessibility, localization, scalability, and other systemic expectations that affect experience but aren’t features.
 
-## Additional Notes
-Captures any special constraints, risks, future considerations, or project-specific remarks that don’t fit into other sections.
+## 6. User Flows
+Describe step-by-step user journeys for key tasks (e.g. “Sign Up”, “Book a Trip”, “Upload a Photo”). Use numbered steps or diagrams.
+
+## 7. User Stories
+Define product needs from the user’s perspective in the format:
+“As a [persona], I want to [action], so that [outcome].”
+Focus on the why, not just the action.
+
+## 8. Page Map
+List all pages/screens in the product. Include: page name, URL (if known), type (modal, full-page, popup), and purpose.
+
+## 9. Technical Requirements
+Each subsection defines key implementation choices for developers and AI tools. Fill in only what’s relevant — you can skip or simplify as needed.
+
+  ### Architecture Pattern
+  Define if the project uses MVC, MVVM, monolith, microservices, etc.
+  
+  ### State Management
+  Define approach for managing application state — e.g. Redux, Zustand, Context API.
+  
+  ### Data Flow
+  Describe how data moves between components/layers — one-way, bidirectional, event-driven.
+  
+  ### Technical Stack
+  List technologies: frontend, backend, DB, CI/CD, etc.
+  
+  ### Authentication Process
+  Define login flows, SSO, token refresh, etc.
+  
+  ### Route Design
+  List route structure and naming logic, especially for nested routes.
+  
+  ### API Design
+  Define REST vs GraphQL, endpoint structure, versioning rules.
+  
+  ### Database Design
+  Basic schema ideas if relevant, especially entity relationships.
+  
+  ### SEO Strategy
+  Define meta data handling, sitemap, canonical rules, if SEO matters.
+  
+  ### Content Management Approach
+  Describe whether it’s headless CMS, static, markdown, etc.
+  
+  ### Structured Content
+  List core content types and their fields — especially if modular.
+  
+  ### Deployment (CI/CD)
+  List core content types and their fields — especially if modular.
+  
+  ### Serve Method
+  SSR, SSG, ISR, SPA — define how content is delivered.
+  
+  ### Rendering and Navigation
+  Describe navigation model: client-side, server-side, hybrid.
+
+## 10. Inspirations
+List products, tools, or design systems that inspired your approach. Add screenshots or links if possible.
+
+## 11. Acceptance Criteria
+Define measurable outcomes or conditions for each key requirement. These criteria will help validate that the AI-generated or team-produced output meets the intended goal.
+
+## 12. Additional Notes
+Include anything that doesn’t fit elsewhere — edge cases, caveats, stakeholder notes, technical unknowns.

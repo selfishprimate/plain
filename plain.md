@@ -26,49 +26,49 @@ Describe the core idea and value proposition of the product in 1–2 short parag
 ## 2. Design Language
 Define how the product should look, feel, and behave. Think of it as a visual and interaction manifesto. Fill in as many sub-sections as needed to reflect your vision.
 
-  #### Design Principles
+  ### Design Principles
   Define guiding values for the interface — e.g. clarity, speed, minimalism, playfulness.
   
-  #### Color
+  ### Color
   Specify primary color scheme, semantic colors, background colors. Mention light/dark mode if applicable.
   
-  #### Design System
+  ### Design System
   Specify which system to follow (e.g. “Use Shadcn/UI”, “Follow Tailwind-inspired atomic tokens”), or create a custom one.
 
-  #### Icons
+  ### Icons
   Define icon style (e.g. stroke, filled, 24px grid) and reference a library if needed (e.g. Lucide, Tabler).
   
-  #### Typography
+  ### Typography
   Define font families, usage rules (e.g. headings vs body), line heights, font weights.
   
-  #### Typescale
+  ### Typescale
   Describe the vertical rhythm — e.g. modular scale system, responsive variants, naming convention (xs, sm, base…).
   
-  #### Layout
+  ### Layout
   Define container widths, grid structure, spacing scale, breakpoints.
   
-  #### Core Components
+  ### Core Components
   List essential components (buttons, inputs, cards, etc.) and their visual tone.
   
-  #### Elevation System
+  ### Elevation System
   Define how layering and shadows are used for depth and interaction cues.
   
-  #### Interaction Feedback
+  ### Interaction Feedback
   Describe visual or motion feedback (e.g. hover, tap, loading states).
   
-  #### Motion and Transition
+  ### Motion and Transition
   Outline key transitions, durations, easing curves. Define where motion should be used and where it shouldn’t.
   
-  #### Visual Tone
+  ### Visual Tone
   Define the emotional tone of visuals — friendly, serious, playful, etc. (especially relevant for illustrations and imagery).
   
-  #### Animation
+  ### Animation
   Specify rules or restrictions on animated elements. Are microinteractions allowed? Should transitions be subtle?
   
-  #### Accessibility
+  ### Accessibility
   State key accessibility goals — e.g. color contrast levels, keyboard navigation, screen reader support.
   
-  #### Stylistic References
+  ### Stylistic References
   Mention any visual benchmarks — apps, websites, or dribbble shots that inspired the look.
 
 ## 3. Target Audience and Personas
@@ -94,46 +94,46 @@ List all pages/screens in the product. Include: page name, URL (if known), type 
 ## 9. Technical Requirements
 Each subsection defines key implementation choices for developers and AI tools. Fill in only what’s relevant — you can skip or simplify as needed.
 
-  #### Architecture Pattern
+  ### Architecture Pattern
   Define if the project uses MVC, MVVM, monolith, microservices, etc.
   
-  #### State Management
+  ### State Management
   Define approach for managing application state — e.g. Redux, Zustand, Context API.
   
-  #### Data Flow
+  ### Data Flow
   Describe how data moves between components/layers — one-way, bidirectional, event-driven.
   
-  #### Technical Stack
+  ### Technical Stack
   List technologies: frontend, backend, DB, CI/CD, etc.
   
-  #### Authentication Process
+  ### Authentication Process
   Define login flows, SSO, token refresh, etc.
   
-  #### Route Design
+  ### Route Design
   List route structure and naming logic, especially for nested routes.
   
-  #### API Design
+  ### API Design
   Define REST vs GraphQL, endpoint structure, versioning rules.
   
-  #### Database Design
+  ### Database Design
   Basic schema ideas if relevant, especially entity relationships.
   
-  #### SEO Strategy
+  ### SEO Strategy
   Define meta data handling, sitemap, canonical rules, if SEO matters.
   
-  #### Content Management Approach
+  ### Content Management Approach
   Describe whether it’s headless CMS, static, markdown, etc.
   
-  #### Structured Content
+  ### Structured Content
   List core content types and their fields — especially if modular.
   
-  #### Deployment (CI/CD)
+  ### Deployment (CI/CD)
   List core content types and their fields — especially if modular.
   
-  #### Serve Method
+  ### Serve Method
   SSR, SSG, ISR, SPA — define how content is delivered.
   
-  #### Rendering and Navigation
+  ### Rendering and Navigation
   Describe navigation model: client-side, server-side, hybrid.
 
 ## 10. Inspirations
