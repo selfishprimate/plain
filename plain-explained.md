@@ -1,4 +1,4 @@
-# PLAIN
+# PlAIN Explained
 
 This document represents a structured, AI-readable product definition format known as PLAIN (Product Language for AI Notation).
 It is designed to be both human-friendly and machine-parseable. Each section of this document provides key information that enables AI tools to generate user interfaces, code, or product artifacts with minimal ambiguity.
@@ -6,12 +6,34 @@ It is designed to be both human-friendly and machine-parseable. Each section of 
 Use this as the single source of truth to describe your product idea — and let both teams and AI agents build from it.
 
 ## 1. Idea Statement
-Summarize the product’s core purpose in 1–2 precise paragraphs. Focus on user problem, key users, and value proposition—avoid generic marketing language.
+The Idea Statement introduces the product concept in a way that clearly communicates its purpose, target audience, problems it solves, and core benefits. It should be written in 2–3 short paragraphs and focus on clarity, relevance, and specificity. The goal is not to impress with buzzwords, but to inform and orient the reader (or the AI) by answering key questions:
 
+- Who is the product for?
+- What does it enable them to do?
+- What problems does it solve?
+- How does it solve them?
+- Why is it better/different from alternatives?
 
+It is important to include both the functional and experiential aspects of the product. Do not generalize—describe key features, workflows, or value drivers that make the idea meaningful.
 
-Idea Statement: Taskly is a lightweight task manager for freelancers, enabling fast capture of daily tasks, deadline reminders, and seamless device syncing to simplify project organization.
+#### Few-shot Examples
 
+_The following examples illustrate the expected format and level of detail for an Idea Statement. Each should be written in 2–3 concise paragraphs, clearly describing the product’s purpose, target users, key problems it solves, and how it delivers value._
+
+> Curato is a curated web platform designed to help creative professionals discover, explore, and share AI tools tailored to their needs. By browsing through categorized collections, users can access detailed tool profiles, visit official websites, or share tools directly on social media. The platform streamlines tool discovery by combining smart filters, tag-based navigation, and clean UI previews—making it easier than ever to find the right AI tool for any creative workflow. Whether you're a designer looking for image generators or a writer exploring language models, Curato offers a structured and visual way to navigate the AI landscape.
+
+[More Examples]()
+
+#### Prompts
+```
+Write an Idea Statement for a cross-platform productivity app that helps freelance designers and writers organize tasks, set deadlines, and sync their work across devices. The app should include recurring task templates, a distraction-free interface, and support for offline use. Emphasize how the product reduces cognitive overload and improves daily structure.
+```
+```
+Create a 2–3 paragraph Idea Statement for a web platform designed to help UX researchers discover AI-powered tools and templates. The platform should offer categorized tool listings, smart search and filters, detailed descriptions, and a sharing mechanism. Focus on how it simplifies tool discovery and supports collaborative curation.
+```
+```
+Generate an Idea Statement for a mobile journaling app targeted at Gen Z users who want to track their mood, reflect on daily thoughts, and build emotional resilience. The product should use guided prompts, data visualization, and minimalistic UI to keep users engaged. Mention long-term benefits and core emotional value.
+```
 
 ## 2. Design Language
 Define how the product should look, feel, and behave. Think of it as a visual and interaction manifesto. Fill in as many sub-sections as needed to reflect your vision.
