@@ -16,7 +16,7 @@ The Idea Statement introduces the product concept in a way that clearly communic
 
 It is important to include both the functional and experiential aspects of the product. Do not generalize—describe key features, workflows, or value drivers that make the idea meaningful.
 
-#### 🚀 Example
+#### 🚀 Few-shot Examples
 
 _The following examples illustrate the expected format and level of detail for an Idea Statement. Each should be written in 2–3 concise paragraphs, clearly describing the product’s purpose, target users, key problems it solves, and how it delivers value._
 
