@@ -1,4 +1,4 @@
-# PlAIN Explained
+# Product Language for AI Notation Explained
 
 This document represents a structured, AI-readable product definition format known as PLAIN (Product Language for AI Notation).
 It is designed to be both human-friendly and machine-parseable. Each section of this document provides key information that enables AI tools to generate user interfaces, code, or product artifacts with minimal ambiguity.
