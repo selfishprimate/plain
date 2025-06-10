@@ -24,7 +24,6 @@ _The following examples illustrate the expected format and level of detail for a
 
 [More Examples](examples/idea-statements.md)
 
-
 ## 2. Design Language
 Define how the product should look, feel, and behave. Think of it as a visual and interaction manifesto. Fill in as many sub-sections as needed to reflect your vision.
 
