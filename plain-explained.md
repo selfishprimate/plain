@@ -22,7 +22,7 @@ _The following examples illustrate the expected format and level of detail for a
 
 > Curato is a curated web platform designed to help creative professionals discover, explore, and share AI tools tailored to their needs. By browsing through categorized collections, users can access detailed tool profiles, visit official websites, or share tools directly on social media. The platform streamlines tool discovery by combining smart filters, tag-based navigation, and clean UI previews—making it easier than ever to find the right AI tool for any creative workflow. Whether you're a designer looking for image generators or a writer exploring language models, Curato offers a structured and visual way to navigate the AI landscape.
 
-[More Examples](cheat-sheets/idea-statements.md)
+[More Examples](examples/idea-statements.md)
 
 #### Prompts
 ```
