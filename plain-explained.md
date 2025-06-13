@@ -34,10 +34,10 @@ Define the foundational design values that shape the UI: e.g., simplicity, speed
 
 #### Commands
 ```
-List 3 design principles for the **given project**, focusing on clarity and efficiency.
+List 3 design principles for the {project_name}, focusing on clarity and efficiency.
 ```
 ```
-Define key interface values—like minimalism, speed, approachability—for the **given project**.
+Define key interface values—like minimalism, speed, approachability—for the {project_name}.
 ```
 #### Examples
 > Clarity: UI should always be easy to scan.
