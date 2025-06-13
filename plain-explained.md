@@ -16,7 +16,7 @@ The Idea Statement introduces the product concept in a way that clearly communic
 
 It is important to include both the functional and experiential aspects of the product. Do not generalize—describe key features, workflows, or value drivers that make the idea meaningful.
 
-#### 🚀 Few-shot Examples
+#### Examples
 
 _The following examples illustrate the expected format and level of detail for an Idea Statement. Each should be written in 2–3 concise paragraphs, clearly describing the product’s purpose, target users, key problems it solves, and how it delivers value._
 
@@ -24,39 +24,59 @@ _The following examples illustrate the expected format and level of detail for a
 
 > Taskly is a cross-platform task management tool designed for freelancers and remote teams who need a fast and reliable way to organize their workday. The app focuses on simplicity and speed—allowing users to quickly capture tasks, assign deadlines, and mark progress with minimal friction. What sets Taskly apart is its intelligent scheduling assistant, offline syncing, and support for recurring task templates. Whether you're juggling multiple clients or trying to stick to personal deadlines, Taskly reduces the cognitive load of planning by offering clean interfaces, smart reminders, and adaptive daily overviews.
 
-🔗 [More Examples](examples/idea-statements.md)
+👉 [Idea Statement Examples](examples/idea-statements.md)
 
 ## 2. Design Language
+Outline the product’s visual and interaction style. Cover visual identity, interaction principles, and structural guidelines to ensure consistency across design and code.
 
-  ### Design Principles
-  
-  ### Color
-  
-  ### Design System
-  
-  ### Icons
-  
-  ### Typography
-  
-  ### Typescale
-  
-  ### Layout
-  
-  ### Core Components
-  
-  ### Elevation System
-  
-  ### Interaction Feedback
-  
-  ### Motion and Transition
-  
-  ### Visual Tone
-  
-  ### Animation
-  
-  ### Accessibility
-  
-  ### Stylistic References
+### Design Principles
+Define the foundational design values that shape the UI: e.g., simplicity, speed, or playfulness, guiding all stylistic decisions.
+
+#### Commands
+```
+List 3 design principles for the **given project**, focusing on clarity and efficiency.
+```
+```
+Define key interface values—like minimalism, speed, approachability—for the **given project**.
+```
+#### Examples
+> Clarity: UI should always be easy to scan.
+
+> Efficiency: Every interaction should take no more than 2 clicks.
+
+> Minimalism: Only essential elements visible by default.
+
+> Delightful: Small animations on task completion.
+
+👉 [Design Principle Examples](examples/design-priciples.md)
+
+### Color
+
+### Design System
+
+### Icons
+
+### Typography
+
+### Typescale
+
+### Layout
+
+### Core Components
+
+### Elevation System
+
+### Interaction Feedback
+
+### Motion and Transition
+
+### Visual Tone
+
+### Animation
+
+### Accessibility
+
+### Stylistic References
 
 ## 3. Target Audience and Personas
 
