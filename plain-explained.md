@@ -64,11 +64,11 @@ The Color section defines the product’s **visual identity** through a structur
 For AI tools, clear naming conventions (e.g. primary, surface-100, error-light) and logical token groupings are critical to automate and scale consistent UI generation. For humans, this section provides the visual backbone of the product’s mood and branding.
 
 If possible, describe:
-	•	The primary/secondary brand palette
-	•	Semantic roles (info, success, warning, danger)
-	•	Grayscale steps and naming conventions
-	•	Mode support (light, dark, auto)
-	•	Any unique thematic color behavior (e.g. gradients, transparency, motion-linked color shifts)
+* The primary/secondary brand palette
+* Semantic roles (info, success, warning, danger)
+* Grayscale steps and naming conventions
+* Mode support (light, dark, auto)
+* Any unique thematic color behavior (e.g. gradients, transparency, motion-linked color shifts)
 
 ### Example 1
 SaaS Dashboard (Light/Dark Theme)
@@ -106,11 +106,83 @@ Text: #111111
 No dark mode: Designed intentionally with a single-mode interface to reduce cognitive switching. All visual contrast meets WCAG 2.1 AA. Semantic colors are always paired with iconography to improve clarity for colorblind users.
 ```
 
-
-
-
 ## 4. Design System
+The Design System section defines the structural and visual rules that shape the entire UI. It includes design tokens, reusable components, spacing logic, naming conventions, and theming strategy. This section is crucial for both human teams and AI agents, as it governs the consistency, scalability, and efficiency of the product’s design execution.
+
+This section should state whether you’re:
+* Using an existing system (e.g. Tailwind, Shadcn/UI, Material 3)
+* Creating a custom system
+* Extending a hybrid of both
+
+Include:
+* Token conventions (e.g. --space-md, text-primary)
+* Component strategies (atomic, molecular, etc.)
+* UI frameworks or CSS methodologies in use
+* Dark/light mode behavior (if governed by system)
+
+### Example 1: Tailwind-Inspired Utility System
+```
+We use a Tailwind-based utility-first system adapted with our own naming tokens. Design tokens are created in Figma and exported as JSON using Style Dictionary.
+All components follow atomic design principles and are grouped by interaction pattern.
+
+- Spacing: 4px scale, named `space-0` to `space-80`  
+- Typography: modular scale, named `text-xs` to `text-3xl`  
+- Colors: `primary-500`, `surface-100`, `error-300`, etc.  
+- Component variants defined via modifier tokens (e.g. `button--danger--sm`)  
+- Dark mode supported via token flipping  
+- Tokens are mirrored between design and code using GitHub sync and Tokens Studio
+```
+### Example 2: Shadcn-Based Component System
+```
+The project uses [Shadcn/UI](https://ui.shadcn.com/) as the baseline design system, enriched with custom tokens and interaction rules.
+We override default colors and sizes to match our brand language, while keeping the core composability intact.
+
+- Base framework: Next.js + Tailwind + Radix  
+- Components follow headless architecture  
+- Tokens are defined in Tailwind config and design tokens JSON  
+- Color tokens match brand guidelines and semantic use  
+- All core components (Button, Input, Card, Modal) are themed in both light and dark  
+- Documentation generated using Storybook and Figma components
+```
+
 ## 5. Icons
+The Icons section defines the visual style, system, and usage rules for all iconography in the product. Icons are not just decorative—they convey meaning, indicate actions, and support accessibility. This section should specify:
+* The icon library in use (e.g. Lucide, Tabler, Feather, custom)
+* The visual style (e.g. stroke, filled, two-tone)
+* Size and grid system (typically 24px or 20px grid)
+* Whether you allow custom icons, and if so, how they should be integrated
+* Rules for usage: filled vs. outline, brand-safe icons, interactive vs. decorative, etc.
+* Accessibility considerations (labeling, fallback behavior)
+
+This section helps AI tools map icon names to visuals and use them consistently across components like buttons, navigation, and alerts.
+
+### Example 1: Lucide-Based Icon System
+```
+We use the [Lucide](https://lucide.dev/) icon library with a 24px grid and stroke-style visuals.
+All icons are 1.5px stroke width, with rounded caps and corners to match our typography.
+
+- Primary set: Lucide  
+- Size: 24x24px, with built-in padding for optical balance  
+- Interactive icons (e.g. edit, delete) use hover states and semantic colors  
+- Decorative icons (e.g. empty states) are used with reduced opacity  
+- All icons must have a descriptive `aria-label` or be wrapped in a labeled element  
+- Custom icons are added in SVG format and follow Lucide's visual conventions
+```
+### Example 2: Mixed Set with Custom Additions
+```
+The product uses a hybrid icon system: core interface icons come from Tabler Icons (stroke-based), and marketing or brand-specific icons are created in-house as filled SVGs.
+
+- System icons (actions, UI controls): Tabler, 20px grid, 1.5px stroke  
+- Brand icons (for hero sections, illustrations): Custom-made, filled, 48px+  
+- All icons support `currentColor` to inherit parent text color  
+- Stroke icons are used for controls, filled icons for context or emphasis  
+- Icons used as buttons have tooltips and accessible labels  
+- Custom icon naming follows kebab-case (e.g. `icon-save-draft`)
+```
+
+
+
+
 ## 6. Typography
 ## 7. Layout
 ## 8. Core Components
