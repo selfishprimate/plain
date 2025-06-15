@@ -16,66 +16,34 @@ The Idea Statement introduces the product concept in a way that clearly communic
 
 It is important to include both the functional and experiential aspects of the product. Do not generalize—describe key features, workflows, or value drivers that make the idea meaningful.
 
-#### Examples
+#### Few-shot Examples
 
-_The following examples illustrate the expected format and level of detail for an Idea Statement. Each should be written in 2–3 concise paragraphs, clearly describing the product’s purpose, target users, key problems it solves, and how it delivers value._
+The following examples illustrate the expected format and level of detail for an Idea Statement. Each should be written in 2–3 concise paragraphs, clearly describing the product’s purpose, target users, key problems it solves, and how it delivers value.
 
-> Curato is a curated web platform designed to help creative professionals discover, explore, and share AI tools tailored to their needs. By browsing through categorized collections, users can access detailed tool profiles, visit official websites, or share tools directly on social media. The platform streamlines tool discovery by combining smart filters, tag-based navigation, and clean UI previews—making it easier than ever to find the right AI tool for any creative workflow. Whether you're a designer looking for image generators or a writer exploring language models, Curato offers a structured and visual way to navigate the AI landscape.
+> **Curato** is a curated web platform designed to help creative professionals discover, explore, and share AI tools tailored to their needs. By browsing through categorized collections, users can access detailed tool profiles, visit official websites, or share tools directly on social media. The platform streamlines tool discovery by combining smart filters, tag-based navigation, and clean UI previews—making it easier than ever to find the right AI tool for any creative workflow. Whether you're a designer looking for image generators or a writer exploring language models, Curato offers a structured and visual way to navigate the AI landscape.
 
-> Taskly is a cross-platform task management tool designed for freelancers and remote teams who need a fast and reliable way to organize their workday. The app focuses on simplicity and speed—allowing users to quickly capture tasks, assign deadlines, and mark progress with minimal friction. What sets Taskly apart is its intelligent scheduling assistant, offline syncing, and support for recurring task templates. Whether you're juggling multiple clients or trying to stick to personal deadlines, Taskly reduces the cognitive load of planning by offering clean interfaces, smart reminders, and adaptive daily overviews.
+> **Taskly** is a cross-platform task management tool designed for freelancers and remote teams who need a fast and reliable way to organize their workday. The app focuses on simplicity and speed—allowing users to quickly capture tasks, assign deadlines, and mark progress with minimal friction. What sets Taskly apart is its intelligent scheduling assistant, offline syncing, and support for recurring task templates. Whether you're juggling multiple clients or trying to stick to personal deadlines, Taskly reduces the cognitive load of planning by offering clean interfaces, smart reminders, and adaptive daily overviews.
 
-👉 [Idea Statement Examples](examples/idea-statements.md)
+> **Wellnest** is a mobile-first journaling app aimed at young adults navigating stress, decision-making, and personal growth. It offers guided prompts, mood tracking, and daily reflections to help users better understand their mental and emotional state over time. Designed with a calming aesthetic and interaction-focused UI, Wellnest makes self-reflection accessible and rewarding. Features like streak tracking, visual mood summaries, and optional anonymous sharing enable users to stay consistent while building emotional resilience.
 
 ## 2. Design Language
 Outline the product’s visual and interaction style. Cover visual identity, interaction principles, and structural guidelines to ensure consistency across design and code.
 
 ### Design Principles
-Define the foundational design values that shape the UI: e.g., simplicity, speed, or playfulness, guiding all stylistic decisions.
-
-#### Commands
-```
-List 3 design principles for the {project_name}, focusing on clarity and efficiency.
-```
-```
-Define key interface values—like minimalism, speed, approachability—for the {project_name}.
-```
-#### Examples
-> Clarity: UI should always be easy to scan.
-
-> Efficiency: Every interaction should take no more than 2 clicks.
-
-> Minimalism: Only essential elements visible by default.
-
-> Delightful: Small animations on task completion.
-
-👉 [Design Principle Examples](examples/design-priciples.md)
 
 ### Color
-
 ### Design System
-
 ### Icons
-
 ### Typography
-
 ### Typescale
-
 ### Layout
-
 ### Core Components
-
 ### Elevation System
-
 ### Interaction Feedback
-
 ### Motion and Transition
-
 ### Visual Tone
-
 ### Animation
-
 ### Accessibility
-
 ### Stylistic References
 
 ## 3. Target Audience and Personas
