@@ -16,7 +16,7 @@ The Idea Statement introduces the product concept in a way that clearly communic
 
 It is important to include both the functional and experiential aspects of the product. Do not generalize—describe key features, workflows, or value drivers that make the idea meaningful.
 
-#### Few-shot Examples
+### Few-shot Examples
 
 The following examples illustrate the expected format and level of detail for an Idea Statement. Each should be written in 2–3 concise paragraphs, clearly describing the product’s purpose, target users, key problems it solves, and how it delivers value.
 
@@ -26,39 +26,49 @@ The following examples illustrate the expected format and level of detail for an
 
 > **Wellnest** is a mobile-first journaling app aimed at young adults navigating stress, decision-making, and personal growth. It offers guided prompts, mood tracking, and daily reflections to help users better understand their mental and emotional state over time. Designed with a calming aesthetic and interaction-focused UI, Wellnest makes self-reflection accessible and rewarding. Features like streak tracking, visual mood summaries, and optional anonymous sharing enable users to stay consistent while building emotional resilience.
 
+
 ## 2. Design Language
-Outline the product’s visual and interaction style. Cover visual identity, interaction principles, and structural guidelines to ensure consistency across design and code.
+The Design Language defines the foundational **values**, **tone**, and **guiding attitudes** of the product’s user experience. It combines abstract principles (such as clarity or simplicity) with emotional cues (such as playful, calming, or serious) to inform every visual and interaction-related decision.
 
-### Design Principles
+This section is not about specific colors, components, or layout rules—that comes later. Instead, it sets the **philosophical direction** behind the design: how the product should make people feel, how it behaves under pressure, and what it chooses to emphasize or ignore. Both human designers and AI agents use this section to align decisions with the intended personality of the product.
 
-### Color
-### Design System
-### Icons
-### Typography
-### Typescale
-### Layout
-### Core Components
-### Elevation System
-### Interaction Feedback
-### Motion and Transition
-### Visual Tone
-### Animation
-### Accessibility
-### Stylistic References
+It should include 3–5 principles and a short narrative that conveys the **emotional tone** and **interaction style** of the product.
 
-## 3. Target Audience and Personas
+```
+Our design approach is grounded in clarity, calm, and cognitive efficiency.
+The interface avoids unnecessary distractions, emphasizes whitespace, and guides the user toward key tasks with minimal friction.
 
-## 4. Functional Requirements
+Core principles:
+- Show only what matters: every screen should reduce information overload.
+- Invisible speed: interactions should feel fast without being flashy.
+- Subtle delight: animations and sounds exist only to affirm, never to impress.
 
-## 5. Non-Functional Requirements
+Visual tone: calm, mature, confident. The product should feel like a quiet assistant that respects your focus, not an energetic coach demanding attention.
+```
 
-## 6. User Flows
 
-## 7. User Stories
+## 3. Color
+## 4. Design System
+## 5. Icons
+## 6. Typography
+## 7. Layout
+## 8. Core Components
+## 9. Accessibility
+## 10. Stylistic References
 
-## 8. Page Map
+## 11. Target Audience and Personas
 
-## 9. Technical Requirements
+## 12. Functional Requirements
+
+## 13. Non-Functional Requirements
+
+## 14. User Flows
+
+## 15. User Stories
+
+## 16. Page Map
+
+## 17. Technical Requirements
 
   ### Architecture Pattern
   
@@ -88,8 +98,8 @@ Outline the product’s visual and interaction style. Cover visual identity, int
   
   ### Rendering and Navigation
 
-## 10. Inspirations
+## 18. Inspirations
 
-## 11. Acceptance Criteria
+## 19. Acceptance Criteria
 
-## 12. Additional Notes
+## 20. Additional Notes
