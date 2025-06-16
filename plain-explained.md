@@ -393,14 +393,48 @@ Accessibility is treated as a first-class feature. Beyond WCAG AA compliance, we
 - Reduced motion mode disables parallax, page transitions, and auto-playing animations
 ```
 
-
-
-
-
-
-
-
 ## 10. Stylistic References 🪮
+The Stylistic References section points to visual sources that inspire or inform the look and feel of the product. These may include existing apps, design systems, websites, dribbble shots, or specific UI patterns. This section gives both AI tools and human designers a sense of visual benchmarks, tone alignment, and aesthetic direction.
+
+You can include:
+- Links to websites or design portfolios
+- Descriptions of what you’re borrowing (e.g. card layout, microinteractions, typography style)
+- Moodboard-style keywords or tags (e.g. “editorial”, “brutalist”, “pastel”)
+- Screenshots (if possible) or Figma frames linked via URL
+- Comments about what not to emulate (optional but helpful)
+
+This section is especially useful when multiple designers or tools need to align on the same visual direction.
+
+### Output Example 1: Task App Inspired by Notion & Linear
+```
+Linear: For clarity, keyboard-first navigation, and focus states
+Link: https://linear.app
+
+Notion: For minimalist UI, smooth typography, and subtle transitions
+https://www.notion.so
+
+Superlist: For playful but clean interface layering
+https://superlist.com
+
+Mood keywords: “calm productivity”, “elegant contrast”, “grayscale dominance”
+
+We want to avoid overly playful or colorful UIs like Trello or Miro.
+```
+### Output Example 2: E-commerce Inspired by Aesop & Apple
+```
+Aesop: For premium editorial styling and muted palette
+https://www.aesop.com
+
+Apple Store: For product card hierarchy and focus on white space
+https://www.apple.com/store
+
+Everlane: For photography styling and tonal consistency
+https://www.everlane.com
+
+Mood keywords: “elegant minimalism”, “soft edges”, “organic feel”
+
+We intentionally avoid skeuomorphic styles or heavily animated UIs.
+```
 
 ## 11. Target Audience and Personas 🥷
 
