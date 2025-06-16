@@ -5,7 +5,7 @@ It is designed to be both human-friendly and machine-parseable. Each section of 
 
 Use this as the single source of truth to describe your product idea — and let both teams and AI agents build from it.
 
-## 1. Idea Statement
+## 1. Idea Statement 🤔
 The Idea Statement introduces the product concept in a way that clearly communicates its purpose, target audience, problems it solves, and core benefits. It should be written in 2–3 short paragraphs and focus on clarity, relevance, and specificity. The goal is not to impress with buzzwords, but to inform and orient the reader (or the AI) by answering key questions:
 
 - Who is the product for?
@@ -26,7 +26,7 @@ The following examples illustrate the expected format and level of detail for an
 
 > **Wellnest** is a mobile-first journaling app aimed at young adults navigating stress, decision-making, and personal growth. It offers guided prompts, mood tracking, and daily reflections to help users better understand their mental and emotional state over time. Designed with a calming aesthetic and interaction-focused UI, Wellnest makes self-reflection accessible and rewarding. Features like streak tracking, visual mood summaries, and optional anonymous sharing enable users to stay consistent while building emotional resilience.
 
-## 2. Design Language
+## 2. Design Language 📐
 The Design Language defines the foundational **values**, **tone**, and **guiding attitudes** of the product’s user experience. It combines abstract principles (such as clarity or simplicity) with emotional cues (such as playful, calming, or serious) to inform every visual and interaction-related decision.
 
 This section is not about specific colors, components, or layout rules—that comes later. Instead, it sets the **philosophical direction** behind the design: how the product should make people feel, how it behaves under pressure, and what it chooses to emphasize or ignore. Both human designers and AI agents use this section to align decisions with the intended personality of the product.
@@ -58,7 +58,7 @@ Core principles:
 Visual tone: warm, empathetic, and intimate—like a well-designed journal that understands you but never judges.
 ```
 
-## 3. Color
+## 3. Color 🎨
 The Color section defines the product’s **visual identity** through a structured palette of colors. This includes **brand colors**, **semantic colors** (like success, warning, danger), backgrounds, and surface tones. It may also include references to light and dark modes, grayscale ranges, and theming strategies.
 
 For AI tools, clear naming conventions (e.g. primary, surface-100, error-light) and logical token groupings are critical to automate and scale consistent UI generation. For humans, this section provides the visual backbone of the product’s mood and branding.
@@ -145,7 +145,7 @@ We override default colors and sizes to match our brand language, while keeping 
 - Documentation generated using Storybook and Figma components
 ```
 
-## 5. Icons
+## 5. Icons 🚸
 The Icons section defines the visual style, system, and usage rules for all iconography in the product. Icons are not just decorative—they convey meaning, indicate actions, and support accessibility. This section should specify:
 * The icon library in use (e.g. Lucide, Tabler, Feather, custom)
 * The visual style (e.g. stroke, filled, two-tone)
@@ -180,7 +180,7 @@ The product uses a hybrid icon system: core interface icons come from Tabler Ico
 - Custom icon naming follows kebab-case (e.g. `icon-save-draft`)
 ```
 
-## 6. Typography
+## 6. Typography 📑
 The Typography section defines the font system, text hierarchy, and typescale used throughout the product. This includes font families, weights, sizes, line heights, and responsive behavior. Typography plays a critical role in readability, brand tone, and overall UI clarity.
 
 This section should include:
@@ -233,7 +233,7 @@ Fixed typescale:
 All text has at least 4.5:1 contrast against background. No fluid scaling; mobile adjusts only heading sizes by 1 level down.
 ```
 
-## 7. Layout
+## 7. Layout 🗞️
 The Layout section defines how content is structured, aligned, and spaced across the interface. It sets rules for grid systems, spacing scales, breakpoints, container widths, and general spatial rhythm. This section ensures consistency in responsiveness, balance, and visual clarity across screen sizes.
 
 Include the following if relevant:
@@ -284,7 +284,7 @@ No fluid resizing — components snap to breakpoints. Padding and margins follow
 Used primarily in a marketing website with strong visual symmetry.
 ```
 
-## 8. Core Components
+## 8. Core Components 🎼
 The Core Components section lists and describes the essential reusable UI components that form the foundation of the product interface. These are the building blocks used across screens and flows, often standardized in both design and code.
 
 This section should:
@@ -355,27 +355,66 @@ Breadcrumb
 - Responsive collapse on mobile
 ```
 
+## 9. Accessibility 🙌
+The Accessibility section defines the standards, practices, and priorities that ensure the product can be used by people with a wide range of abilities and assistive technologies. This includes color contrast, keyboard navigation, screen reader support, and more. It guides both design and development decisions to ensure inclusivity and compliance (e.g. WCAG 2.1 AA).
+
+This section should address:
+- Minimum contrast ratios (e.g. 4.5:1 for text)
+- Keyboard support (tab order, focus rings, skip links)
+- Screen reader compatibility (ARIA roles, alt text, semantic markup)
+- Motion sensitivity (reduced motion settings)
+- Accessible components (e.g. modals, toasts, menus)
+- Any additional commitment to inclusive design (e.g. dyslexia support, font scaling)
+
+AI agents can use this section to automatically apply accessibility constraints when generating UI.
+
+### Output Example 1: Standard Compliance (WCAG 2.1 AA)
+```
+The interface is designed to meet WCAG 2.1 AA guidelines. All components are tested for contrast, keyboard operability, and screen reader support.
+
+- Text contrast: minimum 4.5:1 ratio  
+- All interactive elements have a visible focus state  
+- Form fields include labels, `aria-describedby`, and proper validation feedback  
+- Modals use `role="dialog"` and `aria-modal="true"`  
+- Navigation is keyboard-friendly and skip links are provided  
+- Animations respect `prefers-reduced-motion` and are not essential for task completion  
+- Tooltips, icons, and buttons use descriptive `aria-labels` where text is not visible
+```
+### Output Example 2: Inclusive-first Design with Extended Support
+```
+Accessibility is treated as a first-class feature. Beyond WCAG AA compliance, we also consider neurodiverse and motion-sensitive users.
+
+- Typography supports scaling up to 200% without breaking layout  
+- Dyslexia-friendly mode (in progress): toggles font family and adjusts letter spacing  
+- All components tested with VoiceOver, NVDA, and TalkBack  
+- Icon buttons always include visible or assistive text  
+- Content sections are landmarked with ARIA roles (`main`, `complementary`, `navigation`)  
+- Keyboard testing is part of QA process; visual focus outlines are custom-designed  
+- Reduced motion mode disables parallax, page transitions, and auto-playing animations
+```
 
 
 
 
 
-## 9. Accessibility
-## 10. Stylistic References
 
-## 11. Target Audience and Personas
 
-## 12. Functional Requirements
 
-## 13. Non-Functional Requirements
+## 10. Stylistic References 🪮
 
-## 14. User Flows
+## 11. Target Audience and Personas 🥷
 
-## 15. User Stories
+## 12. Functional Requirements ⚙️
 
-## 16. Page Map
+## 13. Non-Functional Requirements 
 
-## 17. Technical Requirements
+## 14. User Flows ↳
+
+## 15. User Stories 📓
+
+## 16. Page Map 📑
+
+## 17. Technical Requirements 
 
   ### Architecture Pattern
   
