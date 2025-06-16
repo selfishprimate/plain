@@ -393,7 +393,7 @@ Accessibility is treated as a first-class feature. Beyond WCAG AA compliance, we
 - Reduced motion mode disables parallax, page transitions, and auto-playing animations
 ```
 
-## 10. Stylistic References 🪮
+## 10. Stylistic References 🎭
 The Stylistic References section points to visual sources that inspire or inform the look and feel of the product. These may include existing apps, design systems, websites, dribbble shots, or specific UI patterns. This section gives both AI tools and human designers a sense of visual benchmarks, tone alignment, and aesthetic direction.
 
 You can include:
@@ -411,10 +411,10 @@ Linear: For clarity, keyboard-first navigation, and focus states
 Link: https://linear.app
 
 Notion: For minimalist UI, smooth typography, and subtle transitions
-https://www.notion.so
+Link: https://www.notion.so
 
 Superlist: For playful but clean interface layering
-https://superlist.com
+Link: https://superlist.com
 
 Mood keywords: “calm productivity”, “elegant contrast”, “grayscale dominance”
 
@@ -423,13 +423,13 @@ We want to avoid overly playful or colorful UIs like Trello or Miro.
 ### Output Example 2: E-commerce Inspired by Aesop & Apple
 ```
 Aesop: For premium editorial styling and muted palette
-https://www.aesop.com
+Link: https://www.aesop.com
 
 Apple Store: For product card hierarchy and focus on white space
-https://www.apple.com/store
+Link: https://www.apple.com/store
 
 Everlane: For photography styling and tonal consistency
-https://www.everlane.com
+Link: https://www.everlane.com
 
 Mood keywords: “elegant minimalism”, “soft edges”, “organic feel”
 
@@ -437,10 +437,86 @@ We intentionally avoid skeuomorphic styles or heavily animated UIs.
 ```
 
 ## 11. Target Audience and Personas 🥷
+This section defines who the product is for and why they need it. It should include clear descriptions of the primary user types — their goals, pain points, behaviors, and contexts of use. Rather than vague demographics (like “millennials” or “tech-savvy users”), focus on functional archetypes with motivations and constraints.
+
+You can include:
+- Persona names or roles (e.g. “Freelance Designer”, “Warehouse Manager”)
+- Key goals (what they’re trying to achieve)
+- Frustrations (what blocks or annoys them)
+- Usage context (device, location, frequency)
+- Quotes or attitudinal traits (optional, but humanizing)
+
+This section helps AI and human designers prioritize use cases, interaction styles, tone of voice, and device considerations.
+
+### Output Example 1: Productivity App
+```
+Maya (Freelance UX Designer)
+- Goal: Stay organized across multiple projects and clients  
+- Frustrations: Overwhelmed by notifications, loses track of priorities  
+- Devices: Uses MacBook and iPhone interchangeably  
+- Traits: Visually organized, values minimal UI  
+- Frequency: Daily use throughout the workday
+
+Darius (Remote Project Manager)
+- Goal: Track team progress and delegate tasks with clarity  
+- Frustrations: Hard to see blockers across multiple tools  
+- Context: Mostly desktop use, some mobile on commute  
+- Traits: Pragmatic, prefers dashboards over lists
+```
+### Output Example 2: AI Tool Directory Platform
+```
+Jess (Creative Coder)
+- Goal: Discover new AI tools to accelerate creative projects  
+- Pain Points: Too many tools, unclear pricing or capabilities  
+- Behavior: Frequently shares tools with Twitter audience  
+- Context: Uses desktop, often bookmarks tools in batches
+
+Amir (Startup Founder)
+- Goal: Compare AI productivity tools before onboarding team  
+- Pain Points: Distrust of paid ads, wants side-by-side comparisons  
+- Device: Mostly mobile during travel  
+- Traits: Fast decision-maker, values clarity and transparency
+```
 
 ## 12. Functional Requirements ⚙️
+Functional requirements define what the product should do — the essential features and behaviors that support user goals. Each requirement should be specific, testable, and directly tied to either a core user flow or product promise.
 
-## 13. Non-Functional Requirements 
+Focus on:
+- Primary and secondary features
+- Platform-specific behaviors (e.g. web, mobile, responsive)
+- Actions the user can perform
+- System responses to those actions
+- Any feature dependencies (e.g. search requires login)
+
+Avoid implementation details — this is about what the system does, not how it does it. This section acts as the foundational checklist for design, development, and validation.
+
+### Output Example 1: Personal Task Manager
+```
+- Users can create, edit, and delete tasks  
+- Tasks can include optional due dates, tags, and priority levels  
+- Tasks can be marked as completed or archived  
+- Users can view tasks by today, upcoming, or tag  
+- Tasks sync automatically across devices  
+- Users can search tasks by keyword  
+- Users can set daily reminders via push notification
+```
+### Output Example 2: AI Tool Curation Platform
+```
+- Visitors can browse AI tools by category or tag  
+- Users can search for tools using free text input  
+- Each tool has a dedicated profile page with metadata (features, pricing, link)  
+- Users can upvote, bookmark, or share a tool  
+- Users can suggest a new tool via a submission form  
+- Tool lists can be sorted by popularity, date added, or relevance  
+- Admins can approve, reject, or edit tool submissions
+```
+
+
+
+
+
+
+## 13. Non-Functional Requirements ⚙️
 
 ## 14. User Flows ↳
 
