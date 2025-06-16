@@ -33,7 +33,7 @@ This section is not about specific colors, components, or layout rules—that co
 
 It should include 3–5 principles and a short narrative that conveys the **emotional tone** and **interaction style** of the product.
 
-### Example 1
+### Output Example 1
 ```
 Our design approach is grounded in clarity, calm, and cognitive efficiency.
 The interface avoids unnecessary distractions, emphasizes whitespace, and guides the user toward key tasks with minimal friction.
@@ -45,7 +45,7 @@ Core principles:
 
 Visual tone: calm, mature, confident. The product should feel like a quiet assistant that respects your focus, not an energetic coach demanding attention.
 ```
-### Example 2
+### Output Example 2
 ```
 The product embraces a human-first design mindset, encouraging users to feel safe, accepted, and in control of their emotional journey.
 Every interface element is designed to reduce stress and invite self-reflection.
@@ -70,7 +70,7 @@ If possible, describe:
 * Mode support (light, dark, auto)
 * Any unique thematic color behavior (e.g. gradients, transparency, motion-linked color shifts)
 
-### Example 1
+### Output Example 1
 SaaS Dashboard (Light/Dark Theme)
 ```
 Primary: #2563EB
@@ -91,7 +91,7 @@ Mode support: full light/dark support
 - Accent components adapt to theme automatically  
 - Surface tokens are used instead of raw hex values across the design system
 ```
-### Example 2
+### Output Example 2
 Mobile Health App (Soft Neutrals, No Dark Mode)
 ```
 Primary: #C084FC 
@@ -120,7 +120,7 @@ Include:
 * UI frameworks or CSS methodologies in use
 * Dark/light mode behavior (if governed by system)
 
-### Example 1: Tailwind-Inspired Utility System
+### Output Example 1: Tailwind-Inspired Utility System
 ```
 We use a Tailwind-based utility-first system adapted with our own naming tokens. Design tokens are created in Figma and exported as JSON using Style Dictionary.
 All components follow atomic design principles and are grouped by interaction pattern.
@@ -132,7 +132,7 @@ All components follow atomic design principles and are grouped by interaction pa
 - Dark mode supported via token flipping  
 - Tokens are mirrored between design and code using GitHub sync and Tokens Studio
 ```
-### Example 2: Shadcn-Based Component System
+### Output Example 2: Shadcn-Based Component System
 ```
 The project uses [Shadcn/UI](https://ui.shadcn.com/) as the baseline design system, enriched with custom tokens and interaction rules.
 We override default colors and sizes to match our brand language, while keeping the core composability intact.
@@ -156,7 +156,7 @@ The Icons section defines the visual style, system, and usage rules for all icon
 
 This section helps AI tools map icon names to visuals and use them consistently across components like buttons, navigation, and alerts.
 
-### Example 1: Lucide-Based Icon System
+### Output Example 1: Lucide-Based Icon System
 ```
 We use the [Lucide](https://lucide.dev/) icon library with a 24px grid and stroke-style visuals.
 All icons are 1.5px stroke width, with rounded caps and corners to match our typography.
@@ -168,7 +168,7 @@ All icons are 1.5px stroke width, with rounded caps and corners to match our typ
 - All icons must have a descriptive `aria-label` or be wrapped in a labeled element  
 - Custom icons are added in SVG format and follow Lucide's visual conventions
 ```
-### Example 2: Mixed Set with Custom Additions
+### Output Example 2: Mixed Set with Custom Additions
 ```
 The product uses a hybrid icon system: core interface icons come from Tabler Icons (stroke-based), and marketing or brand-specific icons are created in-house as filled SVGs.
 
@@ -184,13 +184,13 @@ The product uses a hybrid icon system: core interface icons come from Tabler Ico
 The Typography section defines the font system, text hierarchy, and typescale used throughout the product. This includes font families, weights, sizes, line heights, and responsive behavior. Typography plays a critical role in readability, brand tone, and overall UI clarity.
 
 This section should include:
-	•	Font family choices (including fallbacks)
-	•	Usage rules for headings, body, captions, and buttons
-	•	Font weights and styles
-	•	Typescale: how font sizes scale across breakpoints or levels
-	•	Naming conventions (e.g. text-sm, heading-xl)
-	•	Responsive rules (fluid scaling, mobile/desktop size shifts)
-	•	Accessibility notes like minimum size or contrast ratio
+- Font family choices (including fallbacks)
+- Usage rules for headings, body, captions, and buttons
+- Font weights and styles
+- Typescale: how font sizes scale across breakpoints or levels
+- Naming conventions (e.g. text-sm, heading-xl)
+- Responsive rules (fluid scaling, mobile/desktop size shifts)
+- Accessibility notes like minimum size or contrast ratio
 
 If relevant, include whether the typography is mapped to tokens or utility classes.
 
@@ -237,16 +237,17 @@ All text has at least 4.5:1 contrast against background. No fluid scaling; mobil
 The Layout section defines how content is structured, aligned, and spaced across the interface. It sets rules for grid systems, spacing scales, breakpoints, container widths, and general spatial rhythm. This section ensures consistency in responsiveness, balance, and visual clarity across screen sizes.
 
 Include the following if relevant:
-	•	Grid system (e.g. 12-column, 4-point grid)
-	•	Spacing scale (e.g. space-0 to space-80, based on 4px increments)
-	•	Container widths (for mobile, tablet, desktop)
-	•	Breakpoints and responsive behavior
-	•	Margin/gap rules for vertical and horizontal stacking
-	•	Utility classes or layout tokens (if systemized)
+- Grid system (e.g. 12-column, 4-point grid)
+- Spacing scale (e.g. space-0 to space-80, based on 4px increments)
+- Container widths (for mobile, tablet, desktop)
+- Breakpoints and responsive behavior
+- Margin/gap rules for vertical and horizontal stacking
+- Utility classes or layout tokens (if systemized)
 
 This section helps AI tools generate predictable and scalable layout scaffolding and guides designers in structuring content with consistent rhythm.
 
 ### Output Example 1: 12-Column Grid with Fluid Spacing
+```
 The design uses a responsive 12-column grid with a 4-point spacing scale. All spacing is tokenized and follows a consistent rhythm across devices.
 
 - Grid: 12 columns, 16px gutter, 8px column gap  
@@ -264,8 +265,101 @@ Breakpoints:
 - 2xl: 1536px
 
 Vertical rhythm is maintained using margin/padding tokens. Auto Layout is used in Figma with Hug/Fill behaviors based on content role.
+```
+
+### Output Example 2: Fixed Layout with Limited Breakpoints
+```
+Our layout strategy favors predictability over full responsiveness. We use fixed containers and a simplified breakpoint system.
+
+- Grid: 8-column layout, 24px gutter, 12px padding  
+- Container max width: 1140px  
+- Breakpoints:
+  - Mobile: 360px  
+  - Tablet: 768px  
+  - Desktop: 1140px
+
+Spacing scale: 8px, 16px, 24px, 32px, 48px, 64px  
+No fluid resizing — components snap to breakpoints. Padding and margins follow fixed spacing tokens like `layout-md` (24px) or `gap-sm` (12px).
+
+Used primarily in a marketing website with strong visual symmetry.
+```
 
 ## 8. Core Components
+The Core Components section lists and describes the essential reusable UI components that form the foundation of the product interface. These are the building blocks used across screens and flows, often standardized in both design and code.
+
+This section should:
+- List commonly used UI components (e.g. Button, Input, Modal, Card)
+- Mention variations or states (e.g. Button: primary, secondary, disabled)
+- Optionally describe interaction patterns (e.g. expandable, collapsible, draggable)
+- Indicate design system source (e.g. Shadcn, custom, Figma components)
+- Help AI tools reuse visual patterns correctly and infer structural roles (e.g. buttons vs. links)
+
+You don’t need to include every component, but highlight the ones that are critical to your product’s experience or architecture.
+
+### Output Example 1: Productivity Tool
+```
+Button
+- Variants: Primary, Secondary, Ghost, Danger
+- States: Hover, Focus, Loading, Disabled
+- Sizes: sm, md, lg
+
+Input Field
+- Types: Text, Email, Password
+- States: Error, Success, Disabled
+- Includes icons and helper text support
+
+Card
+- Used for grouping task items, dashboard widgets
+- Optional: with shadow, with border, with toggle header
+
+Modal
+- Centered overlay with scroll lock
+- Variants: AlertModal, FormModal
+- Closes on background click or escape key
+
+Toast Notification
+- Position: top-right
+- Types: Success, Error, Info
+- Auto-dismiss after 3 seconds
+
+Navigation Tabs
+- Horizontal alignment
+- Active state emphasized by underline and color shift
+- Keyboard accessible
+```
+### Output Example 2: E-commerce Product Page
+```
+Product Card
+- Contains: Image, Title, Price, Tag
+- Interaction: hover scale, add to wishlist icon
+
+Button
+- Types: Buy Now, Add to Cart, Wishlist
+- Sizes: sm, md, icon-only
+- States: Disabled, Loading, In-cart
+
+Rating Stars
+- Interactive, 0.5 increments, accessible labels per star
+- Supports keyboard navigation
+
+Accordion
+- Used in product FAQ
+- Expand/collapse animation with 200ms ease-in-out
+
+Dropdown Filter
+- Multi-select or single-select
+- Used in category sidebar
+
+Breadcrumb
+- Optional for category-level navigation
+- Responsive collapse on mobile
+```
+
+
+
+
+
+
 ## 9. Accessibility
 ## 10. Stylistic References
 
