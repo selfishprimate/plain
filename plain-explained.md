@@ -180,11 +180,91 @@ The product uses a hybrid icon system: core interface icons come from Tabler Ico
 - Custom icon naming follows kebab-case (e.g. `icon-save-draft`)
 ```
 
-
-
-
 ## 6. Typography
+The Typography section defines the font system, text hierarchy, and typescale used throughout the product. This includes font families, weights, sizes, line heights, and responsive behavior. Typography plays a critical role in readability, brand tone, and overall UI clarity.
+
+This section should include:
+	•	Font family choices (including fallbacks)
+	•	Usage rules for headings, body, captions, and buttons
+	•	Font weights and styles
+	•	Typescale: how font sizes scale across breakpoints or levels
+	•	Naming conventions (e.g. text-sm, heading-xl)
+	•	Responsive rules (fluid scaling, mobile/desktop size shifts)
+	•	Accessibility notes like minimum size or contrast ratio
+
+If relevant, include whether the typography is mapped to tokens or utility classes.
+
+### Output Example 1: Inter-Based Modular Scale
+```
+We use the Inter font family for both UI and brand usage, chosen for its modern feel and high legibility. Font rendering is optimized for web display (font-smoothing enabled).
+
+Font Stack: `Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif`
+
+Heading weights: 600–700  
+Body weights: 400–500  
+Button weights: 500 (all caps)
+
+Typescale (based on 1.25 modular scale):
+- display-xl: 48px / 56px  
+- heading-lg: 32px / 40px  
+- heading-md: 24px / 32px  
+- body-lg: 18px / 28px  
+- body-md: 16px / 24px  
+- body-sm: 14px / 20px
+
+All text tokens are prefixed as `text-[size]`, mapped to Tailwind config and Figma text styles. Line heights follow a 1.4–1.6 rhythm. Typography adapts responsively starting from 768px breakpoint.
+```
+### Output Example 2: Serif-Brand Hybrid with Static Scale
+```
+We use a dual-font strategy: `DM Serif Display` for branding and headlines, and `Roboto` for body content. This contrast gives the interface a premium yet approachable tone.
+
+- Headlines: `DM Serif Display`, 600–700 weight  
+- Body: `Roboto`, 400–500 weight  
+- Captions: `Roboto`, 300 weight  
+- Button text: uppercase, 500 weight
+
+Fixed typescale:
+- h1: 40px  
+- h2: 28px  
+- h3: 22px  
+- body: 16px  
+- caption: 12px
+
+All text has at least 4.5:1 contrast against background. No fluid scaling; mobile adjusts only heading sizes by 1 level down.
+```
+
 ## 7. Layout
+The Layout section defines how content is structured, aligned, and spaced across the interface. It sets rules for grid systems, spacing scales, breakpoints, container widths, and general spatial rhythm. This section ensures consistency in responsiveness, balance, and visual clarity across screen sizes.
+
+Include the following if relevant:
+	•	Grid system (e.g. 12-column, 4-point grid)
+	•	Spacing scale (e.g. space-0 to space-80, based on 4px increments)
+	•	Container widths (for mobile, tablet, desktop)
+	•	Breakpoints and responsive behavior
+	•	Margin/gap rules for vertical and horizontal stacking
+	•	Utility classes or layout tokens (if systemized)
+
+This section helps AI tools generate predictable and scalable layout scaffolding and guides designers in structuring content with consistent rhythm.
+
+### Output Example 1: 12-Column Grid with Fluid Spacing
+The design uses a responsive 12-column grid with a 4-point spacing scale. All spacing is tokenized and follows a consistent rhythm across devices.
+
+- Grid: 12 columns, 16px gutter, 8px column gap  
+- Spacing: space-0 (0px) to space-80 (320px) in 4px increments  
+- Container widths:
+  - Mobile (≤ 640px): full width  
+  - Tablet (641–1024px): 768px container  
+  - Desktop (≥ 1025px): 1280px container, max 1440px
+
+Breakpoints:
+- sm: 640px  
+- md: 768px  
+- lg: 1024px  
+- xl: 1280px  
+- 2xl: 1536px
+
+Vertical rhythm is maintained using margin/padding tokens. Auto Layout is used in Figma with Hug/Fill behaviors based on content role.
+
 ## 8. Core Components
 ## 9. Accessibility
 ## 10. Stylistic References
