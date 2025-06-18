@@ -511,16 +511,106 @@ Avoid implementation details — this is about what the system does, not how it 
 - Admins can approve, reject, or edit tool submissions
 ```
 
-
-
-
-
-
 ## 13. Non-Functional Requirements ⚙️
+Non-functional requirements define how the product performs and behaves under the hood — qualities that affect the user experience, technical performance, and long-term maintainability, but aren’t user-facing features per se.
 
-## 14. User Flows ↳
+These often include:
+- Performance (e.g. page load time, latency)
+- Scalability (e.g. can handle X users simultaneously)
+- Accessibility standards (e.g. WCAG 2.1 AA compliance)
+- Security expectations (e.g. GDPR compliance, encryption)
+- Localization & internationalization
+- Reliability & availability
+- Mobile responsiveness or offline support
+- Maintainability (ease of codebase updates or design system evolution)
+
+This section helps both product and engineering teams align on non-visible expectations that influence architectural and design decisions.
+
+### Output Example 1: SaaS Task Manager
+```
+- Must load initial view within 2 seconds on 3G networks  
+- Designed for mobile-first usage with full responsiveness  
+- Must support offline mode with task sync upon reconnect  
+- All user data is encrypted in transit and at rest (AES-256)  
+- Adheres to WCAG 2.1 AA accessibility guidelines  
+- Supports light and dark mode  
+- Localized versions required for EN, TR, and DE  
+- Error rate under 0.1% across all major flows
+```
+### Output Example 2: AI Tool Platform MVP
+```
+- Pages should render in <1.5 seconds on average  
+- Site must be responsive on desktop, tablet, and mobile  
+- No third-party cookies allowed; GDPR-compliant analytics only  
+- SEO-optimized URLs, meta tags, and Open Graph support  
+- Core web vitals: LCP < 2.5s, CLS < 0.1, FID < 100ms  
+- High-availability hosting: 99.9% uptime  
+- Minimal motion effects for accessibility compliance  
+- Design system should be maintainable and token-based
+```
+
+## 14. User Flows 🏂
+User flows describe the step-by-step paths users take to accomplish specific goals within the product. These flows help both designers and AI tools understand how screens are sequenced, what decisions users make, and what UI elements they interact with.
+
+A strong user flow should:
+- Focus on one clear user goal
+- List steps sequentially, including actions and system responses
+- Optionally include branching paths, conditions, or failure states
+- Be presented in either numbered lists, bullet points, or diagrams
+- Reference specific pages or components if known (e.g. “Login Page”, “CTA Button”)
+
+You don’t need to document every possible flow — just the core experiences like sign-up, onboarding, purchasing, or key interactions.
+
+### Output Example 1: Sign-Up Flow for Productivity App
+```
+1. User clicks “Sign Up” CTA on the homepage  
+2. System presents modal with Email, Password, Confirm Password fields  
+3. User fills out the form and clicks “Create Account”  
+4. System validates inputs  
+   → If invalid: shows error messages next to fields  
+   → If valid: account is created  
+5. User is redirected to onboarding screen (choose plan or skip)  
+6. A welcome toast appears confirming success
+```
+### Output Example 2: Search and Bookmark AI Tools
+```
+1. User enters a keyword into the search bar on the homepage  
+2. System displays filtered tool cards in real time  
+3. User clicks on a tool card  
+4. Tool profile page opens with detailed info  
+5. User clicks the “Bookmark” icon  
+6. System adds tool to the user’s saved list and shows confirmation toast  
+7. User navigates to “Bookmarks” via top nav to verify it's saved
+```
 
 ## 15. User Stories 📓
+User stories describe product requirements from the user’s perspective, framed in a simple, structured sentence. They are commonly used in agile teams to express what users want to do and why. The format is intentionally informal and flexible — user stories are not specs, but rather conversation starters and design triggers.
+
+The classic format is:
+
+“As a [type of user], I want to [do something] so that [benefit or outcome].”
+
+Best practices:
+- Focus on goals, not just actions
+- Avoid technical jargon
+- Make stories testable and traceable to product functionality
+- Group related stories by feature or persona, if needed
+- Can be followed by acceptance criteria (optional, but helpful)
+
+### Output Example 1: Task Manager
+```
+- As a freelancer, I want to quickly add tasks with deadlines so that I don’t forget client work.
+- As a user, I want to mark tasks as completed so that I can track progress.
+- As a mobile user, I want my tasks to sync across devices so that I can switch between phone and laptop.
+- As a project manager, I want to organize tasks by tag so that I can filter my focus.
+```
+### Output Example 2: AI Tool Directory
+```
+- As a creative professional, I want to browse AI tools by category so that I can find ones relevant to my workflow.  
+- As a new visitor, I want to search tools using natural language so that I can explore without knowing exact names.  
+- As a registered user, I want to bookmark tools so that I can revisit them later.  
+- As an admin, I want to approve user-submitted tools so that only quality entries appear publicly.
+```
 
 ## 16. Page Map 📑
 
