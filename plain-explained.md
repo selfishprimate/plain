@@ -613,39 +613,205 @@ Best practices:
 ```
 
 ## 16. Page Map 📑
+The Page Map provides a structural overview of all screens or pages in the product. It acts as a sitemap for the UI, helping teams and AI tools understand which pages exist, what each one does, and how users might navigate between them.
 
-## 17. Technical Requirements 
+Each entry should include:
+- Page name (e.g. “Login”, “Dashboard”)
+- URL or route (e.g. /dashboard, /settings/:id)
+- Type (e.g. full page, modal, drawer, popup)
+- Purpose or description of its role in the product
 
-  ### Architecture Pattern
-  
-  ### State Management
-  
-  ### Data Flow
-  
-  ### Technical Stack
-  
-  ### Authentication Process
-  
-  ### Route Design
-  
-  ### API Design
-  
-  ### Database Design
-  
-  ### SEO Strategy
-  
-  ### Content Management Approach
-  
-  ### Structured Content
-  
-  ### Deployment (CI/CD)
-  
-  ### Serve Method
-  
-  ### Rendering and Navigation
+Optionally, you can group pages by flows (onboarding, dashboard, admin) or features (search, profile). This section is especially useful for auto-generating UI skeletons or navigation systems.
 
-## 18. Inspirations
+### Output Example 1: Productivity App
+```
+- **Homepage** (`/`) – Landing page with feature overview and CTA  
+- **Sign Up** (`/signup`) – Account creation form  
+- **Login** (`/login`) – Login with email and password  
+- **Dashboard** (`/dashboard`) – Overview of tasks and upcoming events  
+- **Task Detail Modal** (`/task/:id`) – Modal overlay with task fields and comments  
+- **Settings** (`/settings`) – Profile info, notification prefs  
+- **404** (`/not-found`) – Error screen for invalid routes
+```
+### Output Example 2: AI Tools Directory
+```
+- **Home** (`/`) – Featured tools and search bar  
+- **Search Results** (`/search?query=`) – Filtered tool list  
+- **Tool Profile** (`/tools/:slug`) – Detailed page for a single AI tool  
+- **Submit Tool** (`/submit`) – Form for users to suggest a tool  
+- **Bookmarks** (`/saved`) – User’s saved tools  
+- **Login** (`/auth/login`) – Email/password or OAuth login  
+- **Admin Review** (`/admin/tools`) – Admin view for pending tool approvals  
+- **Not Found** (`*`) – Catch-all error page
+```
 
-## 19. Acceptance Criteria
+## 17. Architecture Pattern
+This part defines the overall structural paradigm of the product’s codebase and application logic. Architecture choices affect how maintainable, scalable, and testable the system is. Typical patterns include:
+- MVC (Model-View-Controller)
+- MVVM (Model-View-ViewModel)
+- Monolithic vs Microservices
+- Serverless
+- Client-heavy SPA or SSR apps
 
-## 20. Additional Notes
+Specify:
+- Whether the architecture is modular or tightly coupled
+- Frontend/backend separation (e.g. monorepo, separate services)
+- Key patterns or conventions used in the codebase
+
+AI systems can use this section to determine file structure, data boundaries, and rendering strategies.
+
+### Output Example 1: Modular Monolith with MVC
+```
+The system uses a modular monolithic architecture with clear domain boundaries. MVC pattern is used in both frontend (React + MVC-style routing) and backend (Node.js + Express).
+All modules share a common codebase in a monorepo, but are logically separated (e.g. Auth, Tasks, Users, Notifications).
+
+Frontend and backend are deployed together but versioned independently via CI/CD pipelines.  
+```
+### Output Example 2: Microservices + Serverless API
+```
+The application uses a microservices architecture where each feature (tools, bookmarks, search, admin) is its own service.
+Services are deployed as serverless functions (Vercel Functions + Firebase) with API Gateway routing.
+Frontend is a React SPA hosted separately, communicating via GraphQL over HTTPS.
+Services scale independently and use event-driven architecture for data sync.
+```
+
+## 18. State Management
+The State Management section defines how the product handles and synchronizes internal data across components, views, and sessions. Whether you’re building a single-page application (SPA) or a hybrid SSR system, defining where the state lives, how it flows, and how it’s updated is essential for maintainability and scalability.
+
+This section helps AI tools decide:
+- Which libraries or frameworks (e.g. Redux, Zustand, MobX, Vuex) to use
+- Whether state is global, local, or server-driven
+- How to model persistent vs ephemeral state
+- Whether to use context APIs, hooks, observables, or external services (e.g. Firebase)
+
+You can also mention loading strategies (e.g. optimistic updates), error handling policies, and how authentication or user preferences are stored.
+
+### Output Example 1: React App Using Zustand
+```
+We use Zustand as the primary global state manager for shared data (auth state, user profile, tasks). Local UI state (modal open/close, hover) is handled with React useState.
+
+- Global state: Zustand stores are colocated with feature folders  
+- Persisted state: Auth state is saved to localStorage with auto-rehydration  
+- Data fetching is handled via React Query, with caching and stale-while-revalidate policies  
+- Optimistic updates are used for task reordering and inline editing
+```
+### Output Example 2: Vue App Using Pinia
+```
+Pinia is used as the centralized state management solution across the Vue 3 app.
+
+- Modular store architecture: one store per domain (user, bookmarks, tools)  
+- SSR-safe hydration handled through Pinia plugin  
+- Global state includes session info, saved tools, and user preferences  
+- Local state like tooltip visibility handled within component scope  
+- Uses Vue Devtools for debugging and inspection
+```
+
+## 19. Data Flow
+The Data Flow section describes how data moves between different parts of the application — from backend to frontend, between components, and across user interactions. This section is crucial for ensuring clarity of logic, traceability of changes, and data consistency in both code and interface design.
+
+You should clarify:
+- Whether the flow is unidirectional (common in React apps) or bidirectional (common in forms, collaborative tools)
+- How data mutations happen — through actions, hooks, or API calls
+- If the architecture uses event-driven, pub-sub, or observable models
+- How state updates propagate (e.g. prop drilling, context, store bindings)
+- Whether the app uses real-time data streams, WebSockets, or polling
+
+AI tools use this to determine update patterns, reactivity logic, and component hierarchy decisions.
+
+### Output Example 1: Unidirectional Flow with React
+```
+The application follows a unidirectional data flow. Data originates from the backend (via REST API) and is fetched using React Query. Fetched data is stored in Zustand and passed down as props to UI components.
+
+- Data mutations (e.g. task updates) trigger optimistic updates in the store  
+- Component updates are triggered via shallow state subscriptions  
+- All form state is local and submitted on demand via API  
+- No bidirectional sync — always fetch fresh on focus
+```
+### Output Example 2: Bidirectional Flow with Firebase
+```
+The app uses Firebase’s real-time database and authentication. State is synchronized bidirectionally:
+
+- User actions (e.g. bookmarking tools) immediately update local store  
+- Changes are pushed to Firebase and reflected in other client sessions via real-time listeners  
+- Local state acts as an intermediate cache layer  
+- Shared context is provided through React Context for cross-feature sync
+```
+
+## 20. Technical Stack
+The Technical Stack outlines the core technologies used to build and run the product. This includes frameworks, libraries, tools, and platforms across both frontend and backend — as well as databases, hosting environments, and testing utilities.
+
+A good stack description helps AI tools and developers:
+- Choose compatible components
+- Generate boilerplate code with the right dependencies
+- Understand constraints and integration patterns
+- Align design outputs (e.g. Tailwind tokens, component libraries) with implementation tech
+
+Organize the stack by layer (frontend, backend, data, CI/CD, etc.) and be clear about versions or notable choices.
+
+### Output Example 1: Full Stack React + Node
+```
+- **Frontend**: React 18, Vite, Tailwind CSS, Zustand for state, React Query for data  
+- **Backend**: Node.js (Express), RESTful APIs  
+- **Database**: PostgreSQL via Prisma ORM  
+- **Auth**: Firebase Authentication  
+- **CI/CD**: GitHub Actions, Vercel Deploy Hooks  
+- **Hosting**: Vercel (frontend), Render (backend API)
+```
+### Output Example 2: Jamstack with Headless CMS
+```
+- **Frontend**: Next.js 14 (App Router), TypeScript, Tailwind CSS  
+- **Backend**: None — static content with client-side hydration  
+- **CMS**: Sanity.io (structured content, real-time preview)  
+- **Database**: Firestore (only for bookmarks)  
+- **Auth**: Auth0 (social login)  
+- **CI/CD**: Vercel (auto deploy from GitHub)  
+- **Analytics**: Plausible (privacy-focused, cookie-free)
+```
+
+## 21. Authentication Process
+The Authentication Process defines how users securely log in, register, and manage sessions. It’s a critical part of user access and personalization, and often dictates the structure of protected routes, state persistence, and UI feedback patterns.
+
+In this section, describe:
+- The authentication method (email/password, OAuth, magic links, SSO, etc.)
+- Whether the app supports signup, login, logout, forgot password, and session persistence
+- How tokens (JWT, refresh tokens) are handled
+- Whether auth is managed via third-party services (e.g. Firebase Auth, Auth0)
+- UI states such as “loading,” “error,” or role-based access
+
+This helps AI tools scaffold protected routes, login forms, and conditional UI logic.
+
+### Output Example 1: Firebase Email/Password + Social Login
+```
+- Users can register using email/password or sign in via Google or GitHub  
+- Firebase Auth is used for user session management  
+- JWT tokens are automatically managed by Firebase SDK  
+- Auth state is stored globally in Zustand and persists via localStorage  
+- On login, user data is fetched and cached; on logout, state is cleared  
+- “Forgot password” redirects to Firebase’s recovery flow  
+- Certain routes (e.g. `/dashboard`) are protected by an auth guard
+```
+### Output Example 2: Auth0 with Role-Based Access
+```
+- Users authenticate via Auth0 using Google, LinkedIn, or email/password  
+- Auth0 handles sessions with refresh tokens stored in HttpOnly cookies  
+- After login, user metadata and roles are retrieved via Auth0 Management API  
+- Admin-only routes are conditionally shown based on `user.role`  
+- Auth flow includes login, logout, token refresh, and MFA for admin users  
+- Protected routes redirect unauthenticated users to `/auth/login`
+```
+
+## 22. Route Design
+
+
+
+## 23. API Design
+## 24. Database Design
+## 25. Deployment (CI/CD)
+## 26. Serve Method
+## 27. Rendering and Navigation
+## 28. Content Management Approach
+## 29. Structured Content
+## 30. SEO Strategy
+## 31. Inspirations
+## 32. Acceptance Criteria
+## 33. Additional Notes
