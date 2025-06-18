@@ -801,11 +801,142 @@ This helps AI tools scaffold protected routes, login forms, and conditional UI l
 ```
 
 ## 22. Route Design
+The Route Design section defines the structure of URLs and how different parts of the application are accessed through navigation. Good routing strategy ensures logical grouping, clean paths, and supports SEO, localization, or deep linking if applicable.
 
+Describe:
+- Overall route strategy (e.g. nested routes, flat routes, dynamic routes)
+- Naming conventions (/tools/:slug, /users/:id/settings)
+- Whether routes are public, protected, or restricted
+- Modal routes, popups, or multi-step flows
+- Integration with frameworks like React Router, Next.js App Router, Vue Router, etc.
 
+This section enables AI tools to generate sensible navigation patterns, breadcrumbs, and page-level components.
+
+### Output Example 1: Nested Routes in React Router
+```
+- `/` → Homepage  
+- `/login` → Login form  
+- `/dashboard` → Main dashboard (requires auth)  
+   └ `/dashboard/settings` → Account settings  
+   └ `/dashboard/tasks/:id` → Task detail page  
+- `/admin/users` → Admin-only route  
+- `/404` → Catch-all error page
+
+All routes are handled via React Router v6 with nested layouts and lazy loading. Modals are mounted via `location.state.background` technique.
+```
+### Output Example 2: Next.js App Router with Static & Dynamic Segments
+```
+- `/` → Home  
+- `/tools` → Tool listing (with filters)  
+- `/tools/[slug]` → Dynamic tool detail  
+- `/submit` → Tool submission form  
+- `/saved` → Bookmarked tools (requires login)  
+- `/auth/login` → Auth page  
+- `/admin` → Admin dashboard (role-protected)
+
+Built using Next.js App Router. Each route maps to a folder in `app/`. Dynamic routes like `[slug]` enable SSR and metadata injection for SEO.
+```
 
 ## 23. API Design
+The API Design section defines how the frontend and backend communicate. Whether you’re using REST, GraphQL, or something custom, this section helps standardize endpoint structures, data formats, and request/response conventions — critical for frontend-backend alignment and for AI tools that generate integration logic.
+
+Describe:
+- API type: REST, GraphQL, RPC, etc.
+- Naming and versioning conventions (/api/v1/tasks, /graphql)
+- How data is modeled: resources, collections, nested relations
+- Auth headers, tokens, or cookie handling
+- Rate limits or pagination strategies
+- Error structure (e.g. error codes, message format)
+
+You don’t need to list every endpoint — just describe the pattern and logic behind how your APIs work.
+
+### Output Example 1: RESTful API with Versioning
+```
+We use a RESTful API architecture with versioned endpoints under `/api/v1/`. Each resource has its own route:
+
+- `/api/v1/tasks` – GET (list), POST (create)  
+- `/api/v1/tasks/:id` – GET, PATCH, DELETE  
+- `/api/v1/users/:id/preferences` – GET, PUT  
+
+All requests use bearer tokens in the `Authorization` header. Pagination is cursor-based (`?after=`), and responses include metadata for total count and next page.
+
+Errors follow a standardized JSON format:
+
+json
+{
+  "error": {
+    "code": "NOT_FOUND",
+    "message": "Task not found"
+  }
+}
+```
+### Output Example 2: GraphQL API with Typed Schema
+```
+The app uses a GraphQL API with a typed schema defined in SDL. There is a single endpoint: `/graphql`.
+
+- Frontend queries and mutations are generated using GraphQL Code Generator  
+- All requests include JWT in headers (`Authorization: Bearer`)  
+- Nested queries enable batching (e.g. user → bookmarks → tool details)  
+- Errors are returned in GraphQL spec-compliant format with `errors[]`
+
+Schema example:
+
+graphql
+type Tool {
+  id: ID!
+  name: String!
+  category: String
+  description: String
+}
+
+type Query {
+  tools(category: String): [Tool]
+  tool(id: ID!): Tool
+}
+```
+
 ## 24. Database Design
+The Database Design section outlines the data model structure of your product — which entities exist, how they relate to one another, and how the database is organized. While you don’t need a full ER diagram, this section should give AI tools and developers a solid understanding of how data is stored and queried.
+
+Describe:
+- Core entities (e.g. User, Task, Tool) and their key fields
+- Relationships: one-to-many, many-to-many, etc.
+- Normalization or denormalization approach
+- Special structures: document stores, time series, JSON blobs
+- Whether you use SQL (PostgreSQL, MySQL), NoSQL (MongoDB, Firestore), or a hybrid
+- Any indexing, partitioning, or performance considerations (optional)
+
+This section is critical for generating database schemas, migrations, or data mocks.
+
+### Output Example 1: SQL Schema with Prisma
+```
+We use PostgreSQL with Prisma as the ORM. The database is fully normalized and follows relational design principles.
+
+**Entities:**
+- `User` – id, name, email, createdAt  
+- `Task` – id, title, status, dueDate, userId (FK)  
+- `Comment` – id, taskId (FK), text, createdAt  
+
+**Relationships:**
+- One `User` has many `Tasks`  
+- One `Task` has many `Comments`
+
+All tables use UUID primary keys and created/updated timestamps. Foreign keys are indexed for fast joins.
+```
+### Output Example 2: Firestore NoSQL Structure
+```
+We use Firestore as a NoSQL document database with the following collections:
+
+- `users/{userId}` → user profile data  
+- `tools/{toolId}` → metadata about each tool  
+- `users/{userId}/bookmarks/{toolId}` → nested subcollection for saved tools  
+
+Data is denormalized to reduce read costs. Documents are flat and use camelCase keys.  
+Indexed fields include `category`, `tags`, and `createdAt` for efficient filtering.
+```
+
+
+
 ## 25. Deployment (CI/CD)
 ## 26. Serve Method
 ## 27. Rendering and Navigation
