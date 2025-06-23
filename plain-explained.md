@@ -895,7 +895,7 @@ type Query {
 }
 ```
 
-## 24. Database Design
+## 24. Database Design 💾
 The Database Design section outlines the data model structure of your product — which entities exist, how they relate to one another, and how the database is organized. While you don’t need a full ER diagram, this section should give AI tools and developers a solid understanding of how data is stored and queried.
 
 Describe:
@@ -935,12 +935,143 @@ Data is denormalized to reduce read costs. Documents are flat and use camelCase 
 Indexed fields include `category`, `tags`, and `createdAt` for efficient filtering.
 ```
 
+## 25. Deployment (CI/CD) 🚜
+The Deployment (CI/CD) section describes how your application is automatically built, tested, and delivered to production (or staging) environments. It outlines the tooling and pipeline logic used to ship changes quickly and safely.
 
+Include details about:
+- CI/CD platforms (e.g. GitHub Actions, GitLab CI, Vercel, Netlify)
+- Build and test stages (e.g. lint, unit test, e2e test)
+- Deployment triggers (e.g. push to main, PR merge, tag release)
+- Environments (staging, production)
+- Rollback strategies or preview deployments
+- Secrets management, caching, and optimization techniques
 
-## 25. Deployment (CI/CD)
-## 26. Serve Method
-## 27. Rendering and Navigation
+AI tools can use this to infer how to format deployment scripts, optimize asset delivery, or create infrastructure scaffolds.
+
+### Output Example: GitHub Actions + Vercel
+```
+- CI/CD is handled via GitHub Actions  
+- Workflow runs on push to `main` or pull requests  
+- Steps include linting (ESLint), unit tests (Vitest), and build  
+- Vercel automatically deploys the frontend (Next.js) from `main`  
+- Preview deployments are created for each PR  
+- Secrets are managed in GitHub repo settings  
+- Backend API (Node.js) is deployed separately to Render
+```
+
+### Output Example 2: Netlify + Turborepo
+```
+- CI pipeline is run via Netlify Build with monorepo support (Turborepo)  
+- Auto-deployment is triggered on commits to `main` and `dev` branches  
+- Linting, unit tests, and Cypress E2E tests run before build  
+- Netlify deploys to CDN with atomic deployments and instant rollback  
+- Each PR creates a preview deployment with contextual comments  
+- Environment variables are managed via Netlify UI and encrypted storage
+```
+
+## 26. Serve Method 🥙
+The Serve Method defines how your application’s content is rendered and delivered to users. This includes strategies like SSR (Server-Side Rendering), SSG (Static Site Generation), SPA (Single-Page App), and ISR (Incremental Static Regeneration).
+
+Clarify:
+- Which rendering approach(es) you use
+- Why it was chosen (e.g. SEO, performance, dynamic content)
+- What framework supports it (e.g. Next.js, Nuxt, Astro)
+- Which routes are dynamic vs. static
+- Whether content is cached, prebuilt, or revalidated on-demand
+
+This helps AI tools understand hydration strategies, fallback behavior, and layout generation across devices and routes.
+
+### Output Example 1: Static + Server-Side Hybrid (Next.js)
+```
+We use Next.js with a hybrid rendering approach:
+
+- `/` and `/tools` are statically generated at build time (SSG)  
+- `/tools/[slug]` uses ISR with a 5-minute revalidation window  
+- Authenticated routes like `/saved` use client-side rendering (SPA)  
+- Pages are optimized with edge caching via Vercel  
+- Fallback pages are shown while ISR content is loading
+```
+### Output Example 2: Fully Client-Side SPA
+```
+The app is a pure SPA built with React and served from a CDN via Vite:
+
+- All routes are client-side rendered (CSR)  
+- On initial load, a shell layout is hydrated  
+- Data is fetched on-demand via REST APIs  
+- Pages like `/login` and `/dashboard` are lazy-loaded for performance  
+- Content is cached using SWR on the frontend
+```
+
+## 27. Rendering and Navigation 🧭
+The Rendering and Navigation section defines how views are composed and how users move between them. It addresses both technical rendering strategy and user-facing navigation patterns — ensuring a smooth, intuitive, and performant experience across the app.
+
+Cover both the mechanics and UX perspective of navigation:
+- Navigation model: client-side, server-side, or hybrid
+- Link behavior: prefetching, transitions, breadcrumbs
+- Layout persistence: shared shells, route-aware components
+- Scroll restoration, anchor link support
+- How modal or nested navigation is handled
+- Framework-specific behaviors (Next.js, React Router, Nuxt, etc.)
+
+This helps AI generate skeleton layouts, route-based transitions, and understand how components are mounted/unmounted across views.
+
+### Output Example 1: Next.js App Router
+```
+We use Next.js App Router for routing and layout rendering.
+
+- `/app` directory maps to routes and layout structure  
+- Shared layout shells persist across route transitions (e.g. sidebar, navbar)  
+- Navigation is handled via `<Link />` with prefetching enabled  
+- Scroll position is restored automatically except for modals  
+- Modal routes are nested (`/tool/[id]?modal=share`) and use `useSearchParams`  
+- 404 and error boundaries are handled at layout level
+```
+### Output Example 2: React SPA with React Router
+```
+The app uses React Router v6 with client-side rendering and route-based layout.
+
+- Nested routes provide layout scoping  
+- Route transitions are animated using Framer Motion  
+- Navigation state is preserved via URL query params  
+- Scroll restoration is implemented manually for some pages  
+- Modals and drawers are mounted via `location.state` and do not affect main route  
+- Top-level routes include `/home`, `/tool/:id`, `/login`, `/dashboard/settings`
+```
+
 ## 28. Content Management Approach
+The Content Management Approach defines how dynamic, structured, or editorial content is created, stored, and rendered in the product. It includes any CMS (Content Management System) integration, markdown pipelines, static file handling, and localization strategies.
+
+Outline:
+- Whether you’re using a headless CMS (e.g. Sanity, Contentful), in-app editor, or hardcoded JSON
+- Who manages content (e.g. admins via dashboard, developers via code)
+- Whether content is static, dynamic, or regenerated (SSG/ISR)
+- If there’s multi-language or multi-brand support
+- How rich media, metadata, or page structure is managed
+- Content versioning, scheduling, or moderation if relevant
+
+This section guides AI tools to scaffold content models, admin interfaces, or data bindings between UI and content.
+
+### Output Example 1: Headless CMS (Sanity)
+```
+We use Sanity.io as the headless CMS to manage structured content across the platform.
+
+- Editors can update tool descriptions, tags, banners, and homepage sections  
+- Content is fetched via GROQ queries and rendered statically via ISR  
+- Rich text, image galleries, and CTA blocks are supported as modular content  
+- CMS schema includes preview thumbnails and slug validation  
+- Multi-language support is planned for v2 using i18n fields in Sanity
+```
+### Output Example 2: Static JSON Content
+```
+Content is currently managed via static JSON files stored in the `data/` directory.
+
+- Product data (tools, categories) is written and maintained by developers  
+- Each JSON file maps to a component view (e.g. tools.json, tags.json)  
+- Files are pre-processed at build time using Vite  
+- No CMS integration — faster build, but not editor-friendly  
+- Future versions may migrate to Notion API or a lightweight headless CMS
+```
+
 ## 29. Structured Content
 ## 30. SEO Strategy
 ## 31. Inspirations
