@@ -33,7 +33,7 @@ This section is not about specific colors, components, or layout rules—that co
 
 It should include 3–5 principles and a short narrative that conveys the **emotional tone** and **interaction style** of the product.
 
-### Output Example 1
+### Output Example 1: Productivity App (Calm & Focused)
 ```
 Our design approach is grounded in clarity, calm, and cognitive efficiency.
 The interface avoids unnecessary distractions, emphasizes whitespace, and guides the user toward key tasks with minimal friction.
@@ -45,7 +45,8 @@ Core principles:
 
 Visual tone: calm, mature, confident. The product should feel like a quiet assistant that respects your focus, not an energetic coach demanding attention.
 ```
-### Output Example 2
+
+### Output Example 2: Wellness App (Warm & Empathetic)
 ```
 The product embraces a human-first design mindset, encouraging users to feel safe, accepted, and in control of their emotional journey.
 Every interface element is designed to reduce stress and invite self-reflection.
@@ -64,14 +65,13 @@ The Color section defines the product’s **visual identity** through a structur
 For AI tools, clear naming conventions (e.g. primary, surface-100, error-light) and logical token groupings are critical to automate and scale consistent UI generation. For humans, this section provides the visual backbone of the product’s mood and branding.
 
 If possible, describe:
-* The primary/secondary brand palette
-* Semantic roles (info, success, warning, danger)
-* Grayscale steps and naming conventions
-* Mode support (light, dark, auto)
-* Any unique thematic color behavior (e.g. gradients, transparency, motion-linked color shifts)
+- The primary/secondary brand palette
+- Semantic roles (info, success, warning, danger)
+- Grayscale steps and naming conventions
+- Mode support (light, dark, auto)
+- Any unique thematic color behavior (e.g. gradients, transparency, motion-linked color shifts)
 
-### Output Example 1
-SaaS Dashboard (Light/Dark Theme)
+### Output Example 1: SaaS Dashboard (Light/Dark Theme)
 ```
 Primary: #2563EB
 Secondary: #10B981
@@ -91,8 +91,7 @@ Mode support: full light/dark support
 - Accent components adapt to theme automatically  
 - Surface tokens are used instead of raw hex values across the design system
 ```
-### Output Example 2
-Mobile Health App (Soft Neutrals, No Dark Mode)
+### Output Example 2: Mobile Health App (Soft Neutrals, No Dark Mode)
 ```
 Primary: #C084FC 
 Accent: #A5F3FC 
@@ -106,19 +105,19 @@ Text: #111111
 No dark mode: Designed intentionally with a single-mode interface to reduce cognitive switching. All visual contrast meets WCAG 2.1 AA. Semantic colors are always paired with iconography to improve clarity for colorblind users.
 ```
 
-## 4. Design System
+## 4. Design System 🚧
 The Design System section defines the structural and visual rules that shape the entire UI. It includes design tokens, reusable components, spacing logic, naming conventions, and theming strategy. This section is crucial for both human teams and AI agents, as it governs the consistency, scalability, and efficiency of the product’s design execution.
 
 This section should state whether you’re:
-* Using an existing system (e.g. Tailwind, Shadcn/UI, Material 3)
-* Creating a custom system
-* Extending a hybrid of both
+- Using an existing system (e.g. Tailwind, Shadcn/UI, Material 3)
+- Creating a custom system
+- Extending a hybrid of both
 
 Include:
-* Token conventions (e.g. --space-md, text-primary)
-* Component strategies (atomic, molecular, etc.)
-* UI frameworks or CSS methodologies in use
-* Dark/light mode behavior (if governed by system)
+- Token conventions (e.g. --space-md, text-primary)
+- Component strategies (atomic, molecular, etc.)
+- UI frameworks or CSS methodologies in use
+- Dark/light mode behavior (if governed by system)
 
 ### Output Example 1: Tailwind-Inspired Utility System
 ```
@@ -147,12 +146,12 @@ We override default colors and sizes to match our brand language, while keeping 
 
 ## 5. Icons 🚸
 The Icons section defines the visual style, system, and usage rules for all iconography in the product. Icons are not just decorative—they convey meaning, indicate actions, and support accessibility. This section should specify:
-* The icon library in use (e.g. Lucide, Tabler, Feather, custom)
-* The visual style (e.g. stroke, filled, two-tone)
-* Size and grid system (typically 24px or 20px grid)
-* Whether you allow custom icons, and if so, how they should be integrated
-* Rules for usage: filled vs. outline, brand-safe icons, interactive vs. decorative, etc.
-* Accessibility considerations (labeling, fallback behavior)
+- The icon library in use (e.g. Lucide, Tabler, Feather, custom)
+- The visual style (e.g. stroke, filled, two-tone)
+- Size and grid system (typically 24px or 20px grid)
+- Whether you allow custom icons, and if so, how they should be integrated
+- Rules for usage: filled vs. outline, brand-safe icons, interactive vs. decorative, etc.
+- Accessibility considerations (labeling, fallback behavior)
 
 This section helps AI tools map icon names to visuals and use them consistently across components like buttons, navigation, and alerts.
 
@@ -214,6 +213,7 @@ Typescale (based on 1.25 modular scale):
 
 All text tokens are prefixed as `text-[size]`, mapped to Tailwind config and Figma text styles. Line heights follow a 1.4–1.6 rhythm. Typography adapts responsively starting from 768px breakpoint.
 ```
+
 ### Output Example 2: Serif-Brand Hybrid with Static Scale
 ```
 We use a dual-font strategy: `DM Serif Display` for branding and headlines, and `Roboto` for body content. This contrast gives the interface a premium yet approachable tone.
@@ -408,13 +408,13 @@ This section is especially useful when multiple designers or tools need to align
 ### Output Example 1: Task App Inspired by Notion & Linear
 ```
 Linear: For clarity, keyboard-first navigation, and focus states
-Link: https://linear.app
+- Link: https://linear.app
 
 Notion: For minimalist UI, smooth typography, and subtle transitions
-Link: https://www.notion.so
+- Link: https://www.notion.so
 
 Superlist: For playful but clean interface layering
-Link: https://superlist.com
+- Link: https://superlist.com
 
 Mood keywords: “calm productivity”, “elegant contrast”, “grayscale dominance”
 
@@ -423,13 +423,13 @@ We want to avoid overly playful or colorful UIs like Trello or Miro.
 ### Output Example 2: E-commerce Inspired by Aesop & Apple
 ```
 Aesop: For premium editorial styling and muted palette
-Link: https://www.aesop.com
+- Link: https://www.aesop.com
 
 Apple Store: For product card hierarchy and focus on white space
-Link: https://www.apple.com/store
+- Link: https://www.apple.com/store
 
 Everlane: For photography styling and tonal consistency
-Link: https://www.everlane.com
+- Link: https://www.everlane.com
 
 Mood keywords: “elegant minimalism”, “soft edges”, “organic feel”
 
@@ -645,7 +645,7 @@ Optionally, you can group pages by flows (onboarding, dashboard, admin) or featu
 - **Not Found** (`*`) – Catch-all error page
 ```
 
-## 17. Architecture Pattern
+## 17. Architecture Pattern 🏛️
 This part defines the overall structural paradigm of the product’s codebase and application logic. Architecture choices affect how maintainable, scalable, and testable the system is. Typical patterns include:
 - MVC (Model-View-Controller)
 - MVVM (Model-View-ViewModel)
@@ -675,7 +675,7 @@ Frontend is a React SPA hosted separately, communicating via GraphQL over HTTPS.
 Services scale independently and use event-driven architecture for data sync.
 ```
 
-## 18. State Management
+## 18. State Management 🚥
 The State Management section defines how the product handles and synchronizes internal data across components, views, and sessions. Whether you’re building a single-page application (SPA) or a hybrid SSR system, defining where the state lives, how it flows, and how it’s updated is essential for maintainability and scalability.
 
 This section helps AI tools decide:
@@ -706,7 +706,7 @@ Pinia is used as the centralized state management solution across the Vue 3 app.
 - Uses Vue Devtools for debugging and inspection
 ```
 
-## 19. Data Flow
+## 19. Data Flow 🏄‍♂️
 The Data Flow section describes how data moves between different parts of the application — from backend to frontend, between components, and across user interactions. This section is crucial for ensuring clarity of logic, traceability of changes, and data consistency in both code and interface design.
 
 You should clarify:
@@ -727,6 +727,7 @@ The application follows a unidirectional data flow. Data originates from the bac
 - All form state is local and submitted on demand via API  
 - No bidirectional sync — always fetch fresh on focus
 ```
+
 ### Output Example 2: Bidirectional Flow with Firebase
 ```
 The app uses Firebase’s real-time database and authentication. State is synchronized bidirectionally:
@@ -737,7 +738,7 @@ The app uses Firebase’s real-time database and authentication. State is synchr
 - Shared context is provided through React Context for cross-feature sync
 ```
 
-## 20. Technical Stack
+## 20. Technical Stack 📚
 The Technical Stack outlines the core technologies used to build and run the product. This includes frameworks, libraries, tools, and platforms across both frontend and backend — as well as databases, hosting environments, and testing utilities.
 
 A good stack description helps AI tools and developers:
@@ -757,6 +758,7 @@ Organize the stack by layer (frontend, backend, data, CI/CD, etc.) and be clear 
 - **CI/CD**: GitHub Actions, Vercel Deploy Hooks  
 - **Hosting**: Vercel (frontend), Render (backend API)
 ```
+
 ### Output Example 2: Jamstack with Headless CMS
 ```
 - **Frontend**: Next.js 14 (App Router), TypeScript, Tailwind CSS  
@@ -768,7 +770,7 @@ Organize the stack by layer (frontend, backend, data, CI/CD, etc.) and be clear 
 - **Analytics**: Plausible (privacy-focused, cookie-free)
 ```
 
-## 21. Authentication Process
+## 21. Authentication Process 🔒
 The Authentication Process defines how users securely log in, register, and manage sessions. It’s a critical part of user access and personalization, and often dictates the structure of protected routes, state persistence, and UI feedback patterns.
 
 In this section, describe:
@@ -790,6 +792,7 @@ This helps AI tools scaffold protected routes, login forms, and conditional UI l
 - “Forgot password” redirects to Firebase’s recovery flow  
 - Certain routes (e.g. `/dashboard`) are protected by an auth guard
 ```
+
 ### Output Example 2: Auth0 with Role-Based Access
 ```
 - Users authenticate via Auth0 using Google, LinkedIn, or email/password  
@@ -800,7 +803,7 @@ This helps AI tools scaffold protected routes, login forms, and conditional UI l
 - Protected routes redirect unauthenticated users to `/auth/login`
 ```
 
-## 22. Route Design
+## 22. Route Design 🧭
 The Route Design section defines the structure of URLs and how different parts of the application are accessed through navigation. Good routing strategy ensures logical grouping, clean paths, and supports SEO, localization, or deep linking if applicable.
 
 Describe:
@@ -824,6 +827,7 @@ This section enables AI tools to generate sensible navigation patterns, breadcru
 
 All routes are handled via React Router v6 with nested layouts and lazy loading. Modals are mounted via `location.state.background` technique.
 ```
+
 ### Output Example 2: Next.js App Router with Static & Dynamic Segments
 ```
 - `/` → Home  
@@ -837,7 +841,7 @@ All routes are handled via React Router v6 with nested layouts and lazy loading.
 Built using Next.js App Router. Each route maps to a folder in `app/`. Dynamic routes like `[slug]` enable SSR and metadata injection for SEO.
 ```
 
-## 23. API Design
+## 23. API Design 🗞️
 The API Design section defines how the frontend and backend communicate. Whether you’re using REST, GraphQL, or something custom, this section helps standardize endpoint structures, data formats, and request/response conventions — critical for frontend-backend alignment and for AI tools that generate integration logic.
 
 Describe:
@@ -870,6 +874,7 @@ json
   }
 }
 ```
+
 ### Output Example 2: GraphQL API with Typed Schema
 ```
 The app uses a GraphQL API with a typed schema defined in SDL. There is a single endpoint: `/graphql`.
@@ -1109,6 +1114,7 @@ We use Sanity.io and define the following content types:
 
 All content is modular and can be previewed in real-time. Field-level validations ensure clean data entry.
 ```
+
 ### Output Example 2: Flat JSON Content for Tools
 ```
 Content is manually maintained in flat JSON format. The main types are:
@@ -1153,6 +1159,7 @@ This guides AI to scaffold metadata fields, layout slots for head tags, and logi
 - Dynamic pages (`/tools/[slug]`) are statically generated (ISR) for SEO compliance  
 - Robots.txt allows full indexing except for `/admin` routes
 ```
+
 ### Output Example 2: Minimal SEO for SPA
 ```
 - Basic SEO is handled via `react-helmet`  
@@ -1163,7 +1170,7 @@ This guides AI to scaffold metadata fields, layout slots for head tags, and logi
 - Social sharing previews are set manually for homepage and landing pages
 ```
 
-## 31. Inspirations
+## 31. Inspirations 🧚‍♀️
 The Inspirations section highlights external references — apps, design systems, patterns, or even specific features — that influenced the product’s design, functionality, or tone. These references help guide creative direction and provide alignment between designers, developers, and AI systems.
 
 Include:
@@ -1200,7 +1207,7 @@ These serve as creative benchmarks for tone, spacing, motion, and UI density.
 This helps guide our brand tone toward playful but functional — aiming for clarity and engagement without visual clutter.
 ```
 
-## 32. Acceptance Criteria
+## 32. Acceptance Criteria 🤝
 Explanation
 
 The Acceptance Criteria section defines specific conditions that must be met for a product feature, flow, or interface to be considered “done.” These criteria serve as validation gates for AI-generated output or human implementation — ensuring that functionality aligns with the intent described in earlier sections.
@@ -1223,6 +1230,7 @@ Good acceptance criteria help both humans and AI tools know when to stop iterati
 - Form fields are accessible via keyboard and screen reader  
 - Error state shown when API fails with retry option  
 ```
+
 ### Output Example 2: Tool Detail Page
 ```
 - Tool page loads within 2 seconds on mobile (3G simulated)  
@@ -1233,7 +1241,7 @@ Good acceptance criteria help both humans and AI tools know when to stop iterati
 - Content is readable at 200% zoom and color contrast passes WCAG AA  
 ```
 
-## 33. Additional Notes
+## 33. Additional Notes 📝
 The Additional Notes section is a flexible space for capturing any information that doesn’t neatly fit into the other sections — but is still important for design, development, or AI interpretation.
 
 Use this section for:
@@ -1253,6 +1261,7 @@ This section is especially valuable for aligning context between different team 
 - Sanity slug generation currently has a bug with Turkish characters — flagged to devs  
 - We may consider light/dark toggle in a future sprint (v1 is light-only)
 ```
+
 ### Output Example 2: Unresolved Questions
 ```
 - Should we support third-party login via GitHub or just email for v1?  
