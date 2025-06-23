@@ -1073,7 +1073,192 @@ Content is currently managed via static JSON files stored in the `data/` directo
 ```
 
 ## 29. Structured Content
+The Structured Content section defines the core content types your product relies on — such as “Blog Post,” “Tool,” “Task,” or “Product” — and outlines the fields, formats, and relationships that structure this content. This helps both humans and AI tools understand what gets stored, displayed, and edited in the system.
+
+Include:
+- Main content types (e.g. Tool, Event, Testimonial)
+- For each type: the fields it contains, their types (string, boolean, reference), and validations
+- Optional fields, repeatable fields, localized fields, etc.
+- Relationships (e.g. Tool has many Tags, Author has many Articles)
+- Whether any of the content is modular (e.g. page sections composed from blocks)
+- Format: Markdown, WYSIWYG, Rich Text, JSON, etc.
+
+This enables AI-assisted tools to generate appropriate CMS schemas, data bindings, and mock content.
+
+### Output Example 1: CMS-Driven Modular Content
+```
+We use Sanity.io and define the following content types:
+
+- **Tool**
+  - name (string, required)
+  - slug (auto-generated from name)
+  - description (rich text)
+  - websiteURL (string, validated as URL)
+  - tags (array of references to Tag)
+  - createdAt (datetime)
+
+- **Tag**
+  - title (string)
+  - color (enum)
+  - icon (string)
+
+- **HomepageBlock**
+  - type (hero | cta | testimonial)
+  - content (modular block field)
+  - order (number)
+
+All content is modular and can be previewed in real-time. Field-level validations ensure clean data entry.
+```
+### Output Example 2: Flat JSON Content for Tools
+```
+Content is manually maintained in flat JSON format. The main types are:
+
+- **Tool**
+  - id (string)
+  - title (string)
+  - description (string, 240 char max)
+  - category (string)
+  - link (string)
+  - tags (array of strings)
+
+- **Category**
+  - id (string)
+  - name (string)
+  - icon (optional string)
+
+These types are used to populate listings and detail pages. No rich text or dynamic relationships are used at this stage.
+```
+
 ## 30. SEO Strategy
+The SEO Strategy section outlines how your product is optimized for search engines. Even in AI-generated or hybrid systems, SEO is critical for discoverability, ranking, and structured content presentation across platforms like Google, Bing, and social media.
+
+Describe:
+- Metadata strategies (titles, descriptions, Open Graph, Twitter Cards)
+- URL structure and cleanliness (/tools/ai-writer, not /tool?id=123)
+- Sitemap generation and submission
+- Canonical URLs and duplicate content handling
+- Structured data (JSON-LD, Schema.org types like Product, Article, etc.)
+- How dynamic content is pre-rendered or hydrated (especially for SPAs)
+- Robots.txt and meta tags for indexing control
+
+This guides AI to scaffold metadata fields, layout slots for head tags, and logic for crawlers.
+
+### Output Example 1: Static SEO with Next.js + Schema.org
+```
+- Titles and meta descriptions are dynamically generated per page using `next/head`  
+- Open Graph and Twitter Card meta tags are included for all detail pages  
+- Canonical URLs are defined based on slug to avoid duplicate content  
+- JSON-LD structured data is added for each Tool using the `SoftwareApplication` schema  
+- Sitemap is automatically generated via `next-sitemap` and submitted to Google  
+- Dynamic pages (`/tools/[slug]`) are statically generated (ISR) for SEO compliance  
+- Robots.txt allows full indexing except for `/admin` routes
+```
+### Output Example 2: Minimal SEO for SPA
+```
+- Basic SEO is handled via `react-helmet`  
+- Static meta tags are set on homepage and key routes  
+- Slugs are clean (`/tool/ai-designer`) and reflect tool names  
+- No structured data or sitemap yet — planned for v2  
+- Crawling is allowed for all public pages; private routes are gated by auth  
+- Social sharing previews are set manually for homepage and landing pages
+```
+
 ## 31. Inspirations
+The Inspirations section highlights external references — apps, design systems, patterns, or even specific features — that influenced the product’s design, functionality, or tone. These references help guide creative direction and provide alignment between designers, developers, and AI systems.
+
+Include:
+- Products or tools you admire and why (UX flow, color scheme, animations, etc.)
+- Screenshots or links to specific pages, if possible
+- Design systems (e.g. Polaris, Material 3, Apple HIG)
+- Motion or microinteraction examples
+- Copywriting or tone references
+- Anything that helps paint the creative “north star”
+
+This section allows AI systems to interpret stylistic or behavioral preferences and generate UI elements accordingly.
+
+### Output Example 1: UX + Visual Reference Stack
+```
+- **Linear** – for its minimal interface, clean typography, and fluid transitions  
+- **Notion** – for the modular content blocks and calm color palette  
+- **Raycast** – for tight keyboard navigation and native-feeling UX  
+- **Shadcn/UI** – component structure and API design  
+- **Stripe Docs** – layout clarity and left-aligned navigation patterns  
+- Dribbble shot: https://dribbble.com/shots/21524350-Tool-Dashboard  
+- Motion reference: https://lottieflow.com/animations/dashboard-interactions
+
+These serve as creative benchmarks for tone, spacing, motion, and UI density.
+```
+
+### Output Example 2: Playful Visual Identity
+```
+- **Duolingo** – for friendly illustrations and microcopy  
+- **Headspace** – for soft colors and calming motion  
+- **Framer** – for smart onboarding flows  
+- **Lucide Icons** – line icon style reference  
+- Color palette inspired by: https://coolors.co/palette/fefae0-fae588-d4a373-6c584c
+
+This helps guide our brand tone toward playful but functional — aiming for clarity and engagement without visual clutter.
+```
+
 ## 32. Acceptance Criteria
+Explanation
+
+The Acceptance Criteria section defines specific conditions that must be met for a product feature, flow, or interface to be considered “done.” These criteria serve as validation gates for AI-generated output or human implementation — ensuring that functionality aligns with the intent described in earlier sections.
+
+You can think of them as:
+- Clear success conditions for each feature or requirement
+- Behavioral expectations (e.g. error handling, responsiveness)
+- Edge cases that must be supported
+- UX quality or accessibility thresholds
+- Performance or compatibility benchmarks
+
+Good acceptance criteria help both humans and AI tools know when to stop iterating. They can be reused as test specs, automated checks, or QA validation guides.
+
+### Output Example 1: Task Creation Flow
+```
+- Users can add a new task from the dashboard in under 2 clicks  
+- Title is required; form cannot be submitted if empty  
+- Tasks are instantly visible in the list after creation  
+- If offline, task is stored locally and synced when online  
+- Form fields are accessible via keyboard and screen reader  
+- Error state shown when API fails with retry option  
+```
+### Output Example 2: Tool Detail Page
+```
+- Tool page loads within 2 seconds on mobile (3G simulated)  
+- URL follows pattern: `/tools/{slug}` and is crawlable  
+- Metadata (title, description, og:image) is set correctly  
+- “Visit Website” button opens in new tab and is tracked  
+- Image gallery is swipeable on mobile  
+- Content is readable at 200% zoom and color contrast passes WCAG AA  
+```
+
 ## 33. Additional Notes
+The Additional Notes section is a flexible space for capturing any information that doesn’t neatly fit into the other sections — but is still important for design, development, or AI interpretation.
+
+Use this section for:
+- Edge cases or known constraints
+- Stakeholder preferences or political realities
+- Pending decisions, to-dos, or unresolved assumptions
+- Tooling quirks, legacy concerns, or dev handoff notes
+- Any helpful reminders or clarifications
+
+This section is especially valuable for aligning context between different team members (or AI tools), even when the data is informal.
+
+### Output Example 1: Design Edge Cases
+```
+- On very narrow screens (<320px), the sidebar will be hidden by default  
+- There’s an internal debate on whether to allow guest task creation — not implemented yet  
+- Tool cards may include video previews in future; keep layout flexible  
+- Sanity slug generation currently has a bug with Turkish characters — flagged to devs  
+- We may consider light/dark toggle in a future sprint (v1 is light-only)
+```
+### Output Example 2: Unresolved Questions
+```
+- Should we support third-party login via GitHub or just email for v1?  
+- We're not yet sure if ratings/reviews will be included on tool pages  
+- There's a dependency on the marketing team for final brand assets  
+- Waiting on legal approval for Terms of Use before launch  
+- No translation planned for MVP, but flag strings for i18n just in case
+```
+
