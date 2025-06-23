@@ -1,6 +1,6 @@
 # PLAIN: Product Language for AI Notation
 
-**PLAIN** is a structured documentation framework designed to help you define digital products in a format that's both human-friendly and machine-readable. It bridges the gap between product managers, designers, and AI-powered tools such as [v0](https://v0.dev), [Figma AI](https://www.figma.com/blog/design-ai), [Make](https://www.make.com), and [Lovable](https://www.lovable.so/).
+**PLAIN** is a structured documentation framework designed to help you define digital products in a format that's both human-friendly and machine-readable. It bridges the gap between product managers, designers, and AI-powered tools such as [v0](https://v0.dev/), [Figma Make](https://www.figma.com/), [Bolt](https://bolt.new/), [Stitch](https://stitch.withgoogle.com/), [Uizard](https://uizard.io/), and [Lovable](https://lovable.dev/).
 
 With PLAIN, product ideas become structured assets — ready to be translated into user interfaces, code, and documentation by generative AI.
 
