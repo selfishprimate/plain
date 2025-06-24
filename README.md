@@ -76,10 +76,10 @@ While AI tools can technically process a variety of formats — such as PDF, DOC
 
 By using .md files for your PLAIN documents, you get the best of both worlds — effortless human collaboration and seamless AI integration.
 
-## 📄 License
+## License 📄
 
 This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
 
-## 🙌 Contributing
+## Contributing 🙌
 
-Want to improve PLAIN? Read the [contribution guide](./docs/contribution-guide.md) and submit a PR!
+Want to improve PLAIN? Read the [Contribution Guidelines](./CONTRIBUTING.md) and submit a PR!
