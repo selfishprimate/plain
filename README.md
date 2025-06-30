@@ -40,11 +40,11 @@ Write a short but meaningful description of your product idea. This becomes your
 _Example Idea Statement_
 > Taskly is a lightweight task manager for freelancers, enabling fast capture of daily tasks, deadline reminders, and seamless syncing across devices. It helps independent workers stay organized without the clutter of enterprise tools.
 
-### Step 2: Feed the Idea Statement to AI using plain-explained.md
-Ask an AI to generate the full PLAIN document based on your **Idea Statement**. Provide the model with your statement and point it to plain-explained.md as a reference guide for structure, tone, and output expectations.
+### Step 2: Feed the Idea Statement to AI using plain.md
+Ask an AI to generate the full PLAIN document based on your **Idea Statement**. Provide the model with your statement and point it to plain.md as a reference guide for structure, tone, and output expectations.
 
 _Prompt Example_
-> “You are an expert product designer and developer. Based on the following product idea, generate a complete product specification using the PLAIN format. Refer to plain-explained.md for section structure and sample outputs.”
+> “You are an expert product designer and developer. Based on the following product idea, generate a complete product specification using the PLAIN format. Refer to plain.md for section structure and sample outputs.”
 >
 > Idea Statement:
 “Taskly is a lightweight task manager for freelancers, enabling fast capture of daily tasks, deadline reminders, and seamless syncing across devices. It helps independent workers stay organized without the clutter of enterprise tools.”
