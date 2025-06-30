@@ -8,12 +8,13 @@ Your feedback, ideas, and improvements are more than welcome.
 
 ## Where Can You Contribute? 📌
 
-There are several meaningful ways to contribute to the PLAIN project — whether you’re improving the core documentation, adding real-world examples, or experimenting with AI tools. Here’s how you can get started:
-- **Documentation:** _You can improve core markdown files._ You can edit and enhance the main project files like plain.md, plain-explained.md, or supporting documents such as how-to-use.md, why-markdown.md, and naming.md. Your improvements might include fixing typos, clarifying confusing language, or expanding short explanations to make them more helpful for new users and AI models alike.
-- **Examples:** _Add real or fictional PLAIN documents._ Help expand the /examples/ folder by submitting complete PLAIN files using the naming format plain-{project-name}.md. Each example should follow the structure and tone described in plain-explained.md, offering helpful reference points for others using the format. 
-- **Structure Suggestions:** _Improve the framework itself._ If you think a section is missing, redundant, or unclear, you can open a discussion to suggest changes to the structure. We’re open to merging, renaming, removing, or adding fields — as long as it improves clarity and usability for both humans and AI.
-- **Prompts:** _Share prompt ideas and phrasing patterns._ You can contribute to the /prompts/ folder by adding useful natural language commands for different sections. Well-written prompts help others get better results from AI tools and can be linked directly to example documents or use cases.
-- **AI Tool Feedback:** _Share how you use PLAIN with tools._ If you’ve used PLAIN with prompt-to-code or design-generation tools (like v0, Lovely, etc.), feel free to document your results, workflows, or tips. These contributions can be extremely helpful for teams just starting to experiment with AI-powered prototyping.
+There are several meaningful ways to contribute to the PLAIN project — whether you’re improving the core documentation, writing prompts, or offering few-shot examples for AI tools. Here’s how you can get involved:
+
+- **Documentation:** You can help refine documents like plain.md, plain-explained.md, README.md, how-to-use.md, and others. Focus on clarity, accuracy, and usefulness — especially for contributors who are using AI tools.
+- **Demos:** Contribute to the /demos/ folder with complete product specifications using the PLAIN format. These files should follow the naming convention **plain-{project-name}.md** and adhere to the structure described in plain-explained.md. These serve as working examples for how to use the format in real-world scenarios.
+- **Examples:** In the /examples/ folder, you can submit high-quality, section-level output examples that help AI understand what a good response looks like. These are helpful for training and referencing, and should map closely to the structure and tone described in the main documentation.
+- **Prompts:** Contribute clear, varied, and effective prompt examples under the /prompts/ folder. These help guide users in generating PLAIN-compliant content using AI tools.
+- **Structure Suggestions:** If you think a section should be added, renamed, merged, or removed, open an issue to start a discussion. We’re actively improving the format and welcome your ideas.
 
 ## How to Contribute 🧭
 
