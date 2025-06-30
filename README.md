@@ -49,13 +49,26 @@ _Prompt Example_
 > Idea Statement:
 “Taskly is a lightweight task manager for freelancers, enabling fast capture of daily tasks, deadline reminders, and seamless syncing across devices. It helps independent workers stay organized without the clutter of enterprise tools.”
 
-### Step 3: Review and Refine the Output
-Evaluate the AI-generated content. Edit and improve sections that feel generic or unclear. Validate assumptions, correct terminology, and ensure coherence across the document. **Collaboration with product, design, and engineering stakeholders is recommended here**.
-**Focus Areas:**
+### Step 3: Review and Refine the Filled-Out PLAIN Document
+Once you’ve submitted your **Idea Statement** and the base **plain.md** structure to the AI, you’ll receive a **filled-out PLAIN document** — a fully populated version where each section has been generated based on your initial input.
+
+**This filled-out document represents your product’s first structured draft.** It includes everything from design language and core components to user flows and technical architecture — written in natural language but formatted for both humans and machines.
+
+**Your job now is to review and refine this draft:**
+
+Improve any vague, generic, or misaligned content. Validate assumptions and correct terminology where necessary. Ensure consistency in tone, structure, and product vision. **Collaboration with your product, design, and engineering teams is highly recommended to finalize the document.**
+
+During the review, pay special attention to sections such as:
 - Core Components
 - Page Map
 - Technical Stack
-- Accessibility and Visual Tone
+- Accessibility
+- Visual Tone
+- User Flows
+
+These areas tend to influence many downstream design and development decisions.
+
+**Note:** Once refined, this filled-out PLAIN document (plain-{project-name}.md) becomes your AI-readable blueprint — ready for use in design generation, prototyping, or code scaffolding.
 
 ### Step 4: Feed the Final Document to Prompt-to-Code Tools
 Use your filled plain.md as input to tools like **v0**, **Bolt**, **Figma Make**, **Lovely**, or **Cursor**. These tools can parse the structured content and generate design systems, page layouts, or component code based on what you’ve described.
