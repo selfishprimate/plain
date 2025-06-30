@@ -4,4 +4,4 @@ This file is intended to become a lightweight version of the full plain.md speci
 
 It is not finalized yet and currently serves as a placeholder.
 
-If you’re interested in shaping what this simplified version of PLAIN should look like, this is a great place to start contributing. Make sure to read the Contribution Guidelines before opening a pull request.
+If you’re interested in shaping what this simplified version of PLAIN should look like, this is a great place to start contributing. Make sure to read the [Contribution Guidelines](./CONTRIBUTING.md) before opening a pull request.
