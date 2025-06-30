@@ -1,18 +1,23 @@
 # PLAIN: Product Language for AI Notation
 
-**PLAIN** is a structured documentation framework designed to help you define digital products in a format that's both human-friendly and machine-readable. It bridges the gap between product managers, designers, and AI-powered tools such as [v0](https://v0.dev/), [Figma Make](https://www.figma.com/), [Bolt](https://bolt.new/), [Stitch](https://stitch.withgoogle.com/), [Uizard](https://uizard.io/), and [Lovable](https://lovable.dev/).
+**PLAIN** is a structured documentation framework designed to help you define digital products in a format that’s both human-friendly and machine-readable. It helps you turn rough product ideas into clean, markdown-based specs that AI tools and product teams can immediately act on — generating UI, code, or documentation.
+
+It bridges the gap between product managers, designers, and AI-powered tools such as [v0](https://v0.dev/), [Figma Make](https://www.figma.com/), [Bolt](https://bolt.new/), [Stitch](https://stitch.withgoogle.com/), [Uizard](https://uizard.io/), and [Lovable](https://lovable.dev/).
 
 With PLAIN, product ideas become structured assets — ready to be translated into user interfaces, code, and documentation by generative AI.
 
 ## What is PLAIN? 🤔
+**PLAIN (Product Language for AI Notation)** is more than just a documentation format — it is a shared interface between product teams and intelligent systems. It transforms raw ideas into structured, readable, and generative blueprints for digital product development. Unlike traditional specs scattered across tools and documents, a PLAIN file consolidates your product’s design vision, technical foundation, and user experience into a single, AI-friendly markdown document.
 
-PLAIN is more than just a static spec — it’s a bridge between creative thinking and technical execution, formatted in a way that AI systems can parse, and product teams can understand.
+- **Defines product vision clearly:** Every PLAIN document starts with an “Idea Statement” — a short, focused summary of what the product is, who it’s for, and what problem it solves. This concise declaration becomes the compass for the entire product definition, guiding both human collaborators and AI tools with a shared understanding of purpose.
 
-- Clearly defines product vision and value in the “Idea Statement,” giving a concise foundation for all subsequent work.
-- Breaks down visual and UX direction through dedicated sections on Design Language, Typography, Color, and more, enabling design consistency and AI interpretability.
-- Details functional and non-functional requirements in structured, human-readable sections that guide both implementation and testing.
-- Specifies technical implementation patterns such as state management, API design, and rendering methods, helping align developers and tools from day one.
-- Creates a single source of truth that can be used to guide AI-generated UI code, component libraries, and workflows.
+- **Describes visual and UX direction:** Through well-scoped sections like Design Language, Color, Typography, Layout, and Icons, PLAIN enables teams to codify a product’s look and feel. These visual and interaction principles are laid out in natural language but structured enough for design automation tools to interpret and act on.
+
+- **Documents requirements systematically:** PLAIN splits requirements into two dedicated sections: Functional and Non-Functional. This separation ensures that product features, edge cases, performance expectations, accessibility needs, and localization goals are all defined clearly, avoiding ambiguity or duplication in downstream development.
+
+- **Aligns on technical decisions from day one:** The format goes beyond UI and feature scope. With areas like State Management, Architecture Pattern, Route Design, and API Specification, developers gain clarity early — reducing back-and-forth and improving alignment between product, design, and engineering teams.
+
+- **Serves as a single source of truth:** A PLAIN document evolves with your product — it’s not a static spec, but a living artifact. It can be updated as your product grows, forked for new features, or integrated into AI workflows for generating UI, component libraries, or even production code.
 
 ## Who is it for? 👩🏿‍💻
 
