@@ -1,808 +1,474 @@
 ---
-INSTRUCTIONS FOR AI CODING ASSISTANTS:
-
-You are an expert full-stack developer and UI/UX designer. This document contains a complete PLAIN (Product Language for AI Notation) specification for a digital product.
-
-Your task: Generate production-ready code that accurately implements this specification.
-
-KEY GUIDELINES:
-- Follow the specification exactly - use the specified technologies, colors (hex codes), fonts, and design patterns
-- Implement all sections in order: Project Overview, Design Language, Color Palette, Typography, Icons, Layout, User Stories, Functional Requirements, Page Map, Structured Content, Content Management, Frontend Technology, UI Kit, Core Components
-- Write clean, accessible, well-commented code with proper TypeScript types
-- Include loading states, empty states, and error handling
-- Ensure responsive design matching the specified strategy
-- Implement dark mode if specified in Color Palette
-- Build all "Must Have Features" from Functional Requirements
-- Create all pages listed in Page Map section
-- Use the exact UI Kit and Core Components specified
-- Follow design references for visual patterns and UX inspiration
-
-QUALITY REQUIREMENTS:
-✅ Semantic HTML and ARIA labels for accessibility
-✅ Proper form validation and error messages
-✅ Responsive at all specified breakpoints
-✅ WCAG AA color contrast ratios
-✅ Keyboard navigation support
-✅ Optimized images and code splitting
-✅ Comprehensive error handling
-
-When specifications use "Let AI Decide", choose modern, popular, well-supported options that fit the overall tech stack.
-
-Study the Design References and Inspirations sections to understand visual patterns and UX flows - capture their essence in your implementation without copying directly.
-
+title: Write your project name.
+description: A brief description about your project.
+author: Write your full name.
+date: YYYY-MM-DD
+version: 1.0
+format: PLAIN
+plain: https://github.com/selfishprimate/plain
 ---
 
-# Project Name
+# Instructions for AI Coding Assistants
 
-[Enter your project name]
+This is a **PLAIN (Product Language for AI Notation)** specification. You are an expert full-stack developer and UI/UX designer. **Your task is to generate production-ready code that implements every section accurately.**
 
----
+**Core Principles**: Use exact technologies, colors (hex codes), fonts, and patterns specified. Implement all Must Have features, all pages, all components. Write accessible (WCAG AA), responsive, performant, well-typed code.
 
-## 1. Idea Statement
+**Implementation Approach**: Read sections in order—start with foundation (overview, design, tech stack), then build features and pages. Use specified technologies exactly. When you see "Let AI Decide", choose modern, well-documented options that fit the stack. If you detect conflicts (e.g., "React + Vue"), pick the most compatible option and document your decision in code. Match design specifications precisely: exact hex codes, specified fonts, responsive strategy. Study Design References and Inspirations to learn patterns (don't copy directly).
 
-[Write 2-4 sentences that clearly describe your product:
-- What are you building?
-- Who is it for?
-- What problem does it solve?
-- How is it different from existing solutions?]
+**Code Standards**: Write clean, accessible TypeScript code with semantic HTML, ARIA labels, and keyboard navigation support. Maintain WCAG AA contrast ratios (4.5:1 text, 3:1 UI). Include proper form validation with helpful errors. Add loading, empty, and error states for every feature. Optimize images, implement code splitting, and handle errors comprehensively.
+
+**Quality Checklist**: Before completion, verify all Must Have features are built, all pages from Page Map are created, and the app is responsive at all breakpoints with 44×44px minimum touch targets on mobile. Ensure brand colors are exact, fonts are loaded, dark mode is implemented if specified, and there are no crashes with helpful error messages throughout.
+
+# 1. Project Overview
+
+What you’re building, who it’s for, and the value it delivers.
+
+## Project Name
+
+A clear, memorable name that reflects your product's identity and purpose.
 
 **Example:**
-> Taskly is a minimalist task management app designed for freelancers and remote workers who need to stay organized without complexity. It addresses the common problem of task management tools being either too simple (lacking necessary features) or too complex (overwhelming users with options). Taskly strikes the perfect balance with an intuitive interface that includes smart task categorization, deadline tracking, and priority management—nothing more, nothing less.
-
----
-
-## 2. Design Language
-
-### Design Style
-[Choose your visual design approach: Minimalist, Material Design, Glassmorphism, Brutalism, Neumorphism, Flat Design, etc.]
-
-[Explain why this style fits your product and audience]
-
-### Design Tone
-[Select 3-4 adjectives that describe how your product should feel]
-
-**Examples:**
-- Clean
-- Professional
-- Calm
-- Modern
-- Friendly
-- Bold
-- Trustworthy
-- Playful
-
-### Design References
-[Provide 2-3 URLs to websites or products that inspire your design direction]
-
-1. [URL 1] - [What you like about it]
-2. [URL 2] - [What you like about it]
-3. [URL 3] - [What you like about it]
-
-### Additional Notes
-[Any specific design principles, constraints, or considerations]
-
----
-
-## 3. Color Palette
-
-### Primary Color
-[Hex code and purpose]
-- **Color:** #______
-- **Usage:** [Where this color will be used - buttons, links, highlights, etc.]
-
-### Secondary Color
-[Hex code and purpose]
-- **Color:** #______
-- **Usage:** [Where this color will be used]
-
-### Accent Color (Optional)
-[Hex code and purpose]
-- **Color:** #______
-- **Usage:** [Where this color will be used]
-
-### Neutral Colors
-- **Background:** #______
-- **Surface:** #______
-- **Text Primary:** #______
-- **Text Secondary:** #______
-- **Border:** #______
-
-### Semantic Colors
-- **Success:** #______
-- **Warning:** #______
-- **Error:** #______
-- **Info:** #______
-
-### Notes
-[Any color usage guidelines, contrast requirements, or accessibility considerations]
-
----
-
-## 4. Typography
-
-### Font Families
-
-#### Primary Font
-[For headings and display text]
-- **Font Name:** [e.g., "Inter", "Roboto", "Poppins"]
-- **Weights:** [e.g., 400, 500, 600, 700]
-- **Source:** [Google Fonts, Adobe Fonts, Custom, etc.]
-
-#### Secondary Font
-[For body text and UI elements]
-- **Font Name:** [e.g., "Inter", "Roboto", "Open Sans"]
-- **Weights:** [e.g., 400, 600]
-- **Source:** [Google Fonts, Adobe Fonts, Custom, etc.]
-
-#### Monospace Font (Optional)
-[For code snippets]
-- **Font Name:** [e.g., "Fira Code", "JetBrains Mono"]
-- **Source:** [Google Fonts, Adobe Fonts, Custom, etc.]
-
-### Type Scale
-[Define your font sizes for different text elements]
-
-- **H1:** [size]px / [line-height] / [weight]
-- **H2:** [size]px / [line-height] / [weight]
-- **H3:** [size]px / [line-height] / [weight]
-- **H4:** [size]px / [line-height] / [weight]
-- **Body Large:** [size]px / [line-height] / [weight]
-- **Body:** [size]px / [line-height] / [weight]
-- **Body Small:** [size]px / [line-height] / [weight]
-- **Caption:** [size]px / [line-height] / [weight]
-
-### Notes
-[Any typography guidelines, readability considerations, or responsive adjustments]
-
----
-
-## 5. Icons
-
-### Icon System
-[Choose your icon approach]
-- **Style:** [Outline, Filled, Duotone, Custom]
-- **Library:** [Lucide, Heroicons, Font Awesome, Feather, Phosphor, Custom, etc.]
-- **Size:** [Default icon size, e.g., 20px, 24px]
-
-### Icon Usage
-[Describe how icons should be used]
-- **Navigation:** [Icon style for navigation items]
-- **Buttons:** [Icon style for buttons]
-- **Indicators:** [Icon style for status indicators]
-- **Empty States:** [Icon/illustration style for empty states]
-
-### Custom Icons
-[List any custom icons needed that aren't in standard libraries]
-- [Icon name] - [Purpose]
-- [Icon name] - [Purpose]
-
-### Notes
-[Any icon guidelines or accessibility considerations]
-
----
-
-## 6. Layout
-
-### Layout System
-[Describe your grid system and spacing]
-
-#### Grid
-- **Type:** [Fixed, Fluid, Hybrid]
-- **Columns:** [e.g., 12-column grid]
-- **Max Width:** [e.g., 1280px]
-- **Gutter:** [e.g., 24px]
-
-#### Spacing Scale
-[Define your spacing system]
-- **xs:** [value]px
-- **sm:** [value]px
-- **md:** [value]px
-- **lg:** [value]px
-- **xl:** [value]px
-- **2xl:** [value]px
-
-### Breakpoints
-[Define responsive breakpoints]
-- **Mobile:** [value]px
-- **Tablet:** [value]px
-- **Desktop:** [value]px
-- **Large Desktop:** [value]px
-
-### Layout Patterns
-
-#### Header
-[Describe header structure]
-- **Position:** [Fixed, Sticky, Static]
-- **Height:** [value]px
-- **Contents:** [Logo, Navigation, User menu, etc.]
-
-#### Navigation
-[Describe navigation structure]
-- **Type:** [Sidebar, Top bar, Mobile drawer, etc.]
-- **Width:** [For sidebar, e.g., 240px]
-- **Behavior:** [Collapsible, Fixed, etc.]
-
-#### Content Area
-[Describe main content structure]
-- **Max Width:** [value]px
-- **Padding:** [value]px
-- **Layout:** [Single column, Multi-column, etc.]
-
-#### Footer
-[Describe footer structure]
-- **Position:** [Static, Sticky]
-- **Contents:** [Links, Copyright, Social media, etc.]
-
-### Notes
-[Any layout guidelines or responsive behavior notes]
-
----
-
-## 7. Inspiration
-
-[List 3-5 products, websites, or apps that inspire different aspects of your product. For each, explain what specifically inspires you and what you want to learn from it.]
-
-### 1. [Product/Website Name]
-- **URL:** [URL]
-- **What inspires you:** [Specific features, design patterns, UX flows, visual style, etc.]
-- **What to learn:** [What aspects you want to incorporate or learn from]
-
-### 2. [Product/Website Name]
-- **URL:** [URL]
-- **What inspires you:** [Specific features, design patterns, UX flows, visual style, etc.]
-- **What to learn:** [What aspects you want to incorporate or learn from]
-
-### 3. [Product/Website Name]
-- **URL:** [URL]
-- **What inspires you:** [Specific features, design patterns, UX flows, visual style, etc.]
-- **What to learn:** [What aspects you want to incorporate or learn from]
-
----
-
-## 8. User Stories
-
-[Define who will use your product and what they need to accomplish. Write in the format: "As a [user type], I want to [action] so that [benefit]"]
-
-### Primary User Personas
-
-#### [Persona 1 Name]
-**Role:** [e.g., Freelance Designer]
-**Goals:** [What they want to achieve]
-**Pain Points:** [Current problems they face]
-
-**User Stories:**
-1. As a [persona], I want to [action] so that [benefit]
-2. As a [persona], I want to [action] so that [benefit]
-3. As a [persona], I want to [action] so that [benefit]
-
-#### [Persona 2 Name]
-**Role:** [e.g., Small Business Owner]
-**Goals:** [What they want to achieve]
-**Pain Points:** [Current problems they face]
-
-**User Stories:**
-1. As a [persona], I want to [action] so that [benefit]
-2. As a [persona], I want to [action] so that [benefit]
-3. As a [persona], I want to [action] so that [benefit]
-
-### Example
-> **User Story:** As a freelance designer, I want to quickly capture task ideas on my phone so that I don't forget important to-dos when I'm away from my desk.
-
----
-
-## 9. Functional Requirements
-
-[Define what your product must do. Be specific about features, behaviors, and edge cases.]
-
-### Core Features
-
-#### Feature 1: [Feature Name]
-**Description:** [What this feature does]
-
-**Requirements:**
-- [Specific requirement 1]
-- [Specific requirement 2]
-- [Specific requirement 3]
-
-**Edge Cases:**
-- [What happens if...]
-- [What happens when...]
-
-#### Feature 2: [Feature Name]
-**Description:** [What this feature does]
-
-**Requirements:**
-- [Specific requirement 1]
-- [Specific requirement 2]
-- [Specific requirement 3]
-
-**Edge Cases:**
-- [What happens if...]
-- [What happens when...]
-
-### User Flows
-
-#### [Flow Name - e.g., "User Registration"]
-1. [Step 1]
-2. [Step 2]
-3. [Step 3]
-4. [Result/Outcome]
-
-**Error Handling:**
-- [What happens if step fails]
-- [Validation requirements]
-
-### Business Rules
-- [Rule 1]
-- [Rule 2]
-- [Rule 3]
-
-### Non-Functional Requirements
-
-#### Performance
-- [Page load time requirements]
-- [Response time requirements]
-- [Concurrent users to support]
-
-#### Security
-- [Authentication requirements]
-- [Authorization requirements]
-- [Data protection requirements]
-
-#### Accessibility
-- [WCAG level to meet]
-- [Screen reader support]
-- [Keyboard navigation]
-
-#### Localization
-- [Languages to support]
-- [Date/time formats]
-- [Currency formats]
-
----
-
-## 10. Page Map
-
-[Map out all pages and their relationships]
-
-### Public Pages
-[Pages anyone can access]
 
 ```
-/ (Landing page)
-/about
-/pricing
-/contact
-/login
-/register
-/forgot-password
+Taskly
 ```
 
-### Authenticated Pages
-[Pages requiring login]
+## Idea Statement
+
+Describe your product's essence: what it is, who it serves, and what makes it unique in the market. Write 2-4 sentences covering: What are you building? Who is it for? What problem does it solve? How is it different from existing solutions?
+
+**Example:**
 
 ```
-/dashboard
-  /dashboard/overview
-/[feature-area]
-  /[feature-area]/[sub-page]
-/settings
-  /settings/profile
-  /settings/account
-  /settings/notifications
+Taskly is a minimalist task management app designed for freelancers and remote workers who need to stay organized without complexity. It addresses the common problem of task management tools being either too simple or too complex. Taskly strikes the perfect balance with an intuitive interface that includes smart task categorization, deadline tracking, and priority management.
 ```
 
-### Admin Pages (if applicable)
-[Pages for administrators]
+## Core Purpose
+
+The fundamental problem your product solves, distilled into one clear sentence. 
+
+**Example:**
 
 ```
-/admin
-  /admin/users
-  /admin/analytics
-  /admin/settings
+Help users stay organized with minimal friction.
 ```
 
-### Dynamic Routes
-[Pages with parameters]
+# 2. Design Language
+
+Establish the visual and emotional foundation that shapes how users perceive and experience your product.
+
+## Design Style
+
+The overarching visual approach that guides all design decisions and creates consistency across your product. 
+
+**Example:** 
 
 ```
-/[resource]/:id
-/[resource]/:id/edit
-/blog/:slug
+Minimalist, Material Design, Glassmorphism, Brutalism, Flat Design, Neumorphism
 ```
 
-### Special Pages
+## Design Tone
+
+The emotional qualities users should feel when interacting with your product. Choose up to 4 adjectives. 
+
+**Example:**
+
 ```
-/404 (Not found)
-/500 (Error)
-/maintenance
+Clean, Professional, Modern, Trustworthy, Friendly, Bold, Calm
 ```
 
-### Navigation Hierarchy
+## Design References
 
-**Primary Navigation:**
-- [Nav item 1]
-- [Nav item 2]
-- [Nav item 3]
+Real-world examples that embody aspects of your desired design direction. For each reference, specify what specific elements inspire you.
 
-**Secondary Navigation:**
-- [Sub-item 1]
-- [Sub-item 2]
+```
+1. (https://linear.app): Clean, minimal interface with excellent use of typography and subtle animations. Great example of purposeful whitespace and clear visual hierarchy.
 
-**Utility Navigation:**
-- [Help/Docs]
-- [User menu]
-- [Notifications]
+2. (https://stripe.com): Professional color palette with strong contrast. Documentation-style layouts that balance technical content with visual appeal.
+```
 
----
+## Additional Notes
 
-## 11. Structured Content
+Any additional context about your design principles, brand constraints, or accessibility considerations.
 
-[Define your data models and content types]
+# 3. Color Palette
 
-### Data Models
+Your core color palette including primary, secondary, and optional tertiary colors. Specify hex codes for each or provide a complete shade system. Use https://uicolors.app/ to generate comprehensive color palettes.
 
-#### [Model Name - e.g., "User"]
-```typescript
-interface User {
-  id: string
-  email: string
-  name: string
-  avatar?: string
-  role: 'user' | 'admin'
-  createdAt: Date
-  updatedAt: Date
+**Example:**
+
+```
+Simple format:
+
+- Primary: #3B82F6
+- Secondary: #8B5CF6
+- Tertiary: #EC4899
+
+or JSON format with tints and shades:
+
+{
+  "primary": {
+    "50": "#f4f7f7",
+    "100": "#e2ebeb",
+    "200": "#c8d9d9",
+    "300": "#a1bdbf",
+    "400": "#739b9d",
+    "500": "#588082",
+    "600": "#4c6b6e",
+    "700": "#42595c",
+    "800": "#3b4c4f",
+    "900": "#354144",
+    "950": "#1a2224"
+  }
 }
 ```
 
-**Relationships:**
-- [Relationship to other models]
+## Dark Mode Support
 
-**Validation:**
-- [Field validation rules]
+Choose your theming strategy based on user needs and brand requirements. **Options:** Both Light and Dark Mode, Dark Mode Only, or Light Mode Only.
 
-#### [Model Name - e.g., "Project"]
-```typescript
-interface Project {
-  id: string
-  title: string
-  description: string
-  status: 'active' | 'completed' | 'archived'
-  ownerId: string
-  createdAt: Date
-  updatedAt: Date
-}
+**Example:**
+
+```
+Dark mode only.
 ```
 
-**Relationships:**
-- [Relationship to other models]
+# 4. Typography
 
-**Validation:**
-- [Field validation rules]
+Define your typography system. Typography affects readability, hierarchy, and the overall personality of your product.
 
-### Content Types
-[Define different content types if you have a CMS]
+## Display Font
 
-#### [Content Type Name]
-**Fields:**
-- [Field name]: [Type] - [Description]
-- [Field name]: [Type] - [Description]
+Typography for headings, titles, and high-impact text. Choose a font that captures your brand's voice. 
 
-**Usage:** [Where this content type is used]
+**Example:**
 
----
-
-## 12. Frontend Technology
-
-### Framework
-**Choice:** [React, Vue, Svelte, Next.js, etc.]
-**Version:** [Specific version]
-**Reasoning:** [Why this framework]
-
-### Build Tool
-**Choice:** [Vite, Webpack, Parcel, etc.]
-**Reasoning:** [Why this tool]
-
-### Styling
-**Approach:** [CSS-in-JS, CSS Modules, Tailwind, Sass, etc.]
-**Libraries:** [Styled-components, Emotion, Tailwind CSS, etc.]
-**Reasoning:** [Why this approach]
-
-### State Management
-**Solution:** [Redux, Zustand, Jotai, Context API, TanStack Query, etc.]
-**Reasoning:** [Why this solution]
-
-### Routing
-**Solution:** [React Router, Next.js routing, TanStack Router, etc.]
-**Reasoning:** [Why this solution]
-
-### Data Fetching
-**Solution:** [TanStack Query, SWR, Apollo Client, tRPC, etc.]
-**Reasoning:** [Why this solution]
-
-### Form Handling
-**Solution:** [React Hook Form, Formik, TanStack Form, etc.]
-**Reasoning:** [Why this solution]
-
-### Testing
-**Unit Tests:** [Vitest, Jest, etc.]
-**E2E Tests:** [Playwright, Cypress, etc.]
-**Reasoning:** [Why these tools]
-
-### Additional Libraries
-- [Library name] - [Purpose]
-- [Library name] - [Purpose]
-
-### Browser Support
-- **Minimum versions:** [List minimum browser versions]
-- **Progressive enhancement:** [Yes/No]
-
----
-
-## 13. UI Kit
-
-[Define the base UI components that will be used throughout your product]
-
-### Component Library
-**Choice:** [shadcn/ui, Radix UI, Chakra UI, Material-UI, Custom, etc.]
-**Reasoning:** [Why this library]
-
-### Core Components
-
-#### Buttons
-**Variants:**
-- Primary
-- Secondary
-- Ghost
-- Destructive
-- Outline
-
-**Sizes:**
-- Small
-- Medium
-- Large
-
-**States:**
-- Default
-- Hover
-- Active
-- Disabled
-- Loading
-
-#### Inputs
-**Types:**
-- Text
-- Email
-- Password
-- Number
-- Search
-- Textarea
-
-**States:**
-- Default
-- Focus
-- Error
-- Disabled
-- Read-only
-
-#### Form Components
-- Checkbox
-- Radio button
-- Select dropdown
-- Date picker
-- File upload
-- Toggle/Switch
-
-#### Feedback
-- Alert
-- Toast/Notification
-- Modal/Dialog
-- Tooltip
-- Loading spinner
-- Progress bar
-
-#### Navigation
-- Tabs
-- Breadcrumbs
-- Pagination
-- Menu/Dropdown
-
-#### Data Display
-- Table
-- Card
-- Badge
-- Avatar
-- Accordion
-- List
-
-### Accessibility Requirements
-- [ARIA labels for all interactive elements]
-- [Keyboard navigation support]
-- [Focus indicators]
-- [Color contrast ratios]
-
----
-
-## 14. Core Components
-
-[Define product-specific components that are unique to your application]
-
-### [Component Name 1]
-
-**Purpose:** [What this component does and why it exists]
-
-**API/Props:**
-```typescript
-interface ComponentProps {
-  // Props definition
-}
+```
+Work Sans
 ```
 
-**States:**
-- Loading
-- Error
-- Empty
-- Success
-- Disabled
+## Body Font
 
-**Example Usage:**
-```tsx
-<ComponentName
-  prop1="value"
-  prop2="value"
-  onAction={handler}
-/>
+The primary typeface for all readable content. Prioritize clarity and legibility across screen sizes.
+
+**Example:** 
+
+```
+Inter
 ```
 
-**Features:**
-- [Feature 1]
-- [Feature 2]
-- [Feature 3]
+## Monospace Font
 
-**Dependencies:**
-- [UI Kit components used]
-- [External libraries needed]
+Fixed-width font for code snippets, technical data, or numeric displays. Optional unless your product involves code or structured data.
 
-### [Component Name 2]
+**Example:**
 
-**Purpose:** [What this component does and why it exists]
-
-**API/Props:**
-```typescript
-interface ComponentProps {
-  // Props definition
-}
+```
+Fira Code
 ```
 
-**States:**
-- Loading
-- Error
-- Empty
-- Success
+## Typescale
 
-**Example Usage:**
-```tsx
-<ComponentName
-  prop1="value"
-  prop2="value"
-/>
+Define your typescale ratio. A typescale is a mathematical system that creates harmonious font sizes by multiplying a base size by a consistent ratio. Use https://typescale.com/ to preview different ratios and generate your scale.
+
+**Example:**
+
+```
+Major Third (1.25)
 ```
 
-**Features:**
-- [Feature 1]
-- [Feature 2]
+# 5. Icons
 
----
+Establish a consistent icon system that improves navigation, clarifies actions, and reinforces your visual language.
 
-## 15. Content Management
+## Icon Library
 
-[Define how content will be created, managed, and updated]
+Choose a comprehensive icon library that matches your design aesthetic and offers the symbols you need.
 
-### CMS Approach
-**Solution:** [Headless CMS, Traditional CMS, Custom, None]
-**Platform:** [Contentful, Sanity, Strapi, WordPress, Custom, etc.]
-**Reasoning:** [Why this approach]
+**Example:**
 
-### Content Types
-[List the types of content that need to be managed]
+```
+Lucide Icons
+```
 
-#### [Content Type 1 - e.g., "Blog Posts"]
-**Fields:**
-- Title (required)
-- Slug (required, unique)
-- Author (reference to User)
-- Published date
-- Content (rich text)
-- Featured image
-- Tags
-- Status (draft/published)
+## Icon Style
 
-**Access Control:**
-- Who can create: [Roles]
-- Who can edit: [Roles]
-- Who can publish: [Roles]
+The visual treatment applied to all icons. Consistency here creates a cohesive, professional appearance.
 
-#### [Content Type 2]
-**Fields:**
-- [Field specifications]
+**Example:**
 
-**Access Control:**
-- [Permissions]
+```
+Outlined
+```
 
-### Editorial Workflow
-1. [Draft creation]
-2. [Review process]
-3. [Approval]
-4. [Publishing]
+# 6. Layout
 
-### Media Management
-**Storage:** [Where images/files are stored]
-**Optimization:** [How images are processed]
-**CDN:** [Yes/No, which service]
+Define your layout structure and responsive behavior. Layout determines how content is organized and how your product adapts to different screen sizes.
 
-### Localization
-**Languages supported:** [List of languages]
-**Translation workflow:** [How content is translated]
+## Responsive Strategy
 
----
+Your foundational approach to building layouts that work seamlessly from mobile to desktop.
 
-## 16. Additional Notes
+**Example:** 
 
-[Any other important information, constraints, or considerations that don't fit in other sections]
+```
+Desktop-First: Start large, simplify downward.
+```
 
-### Technical Constraints
-- [Constraint 1]
-- [Constraint 2]
+## Additional Notes
 
-### Business Constraints
-- [Budget limitations]
-- [Timeline requirements]
-- [Team size/composition]
+Document specific layout patterns, accessibility requirements, or technical constraints that shape your structure.
 
-### Integration Requirements
-- [Third-party services to integrate]
-- [API requirements]
-- [Authentication providers]
+# 7. Inspirations
 
-### Deployment
-**Hosting:** [Platform - Vercel, Netlify, AWS, etc.]
-**CI/CD:** [GitHub Actions, GitLab CI, etc.]
-**Environments:** [Development, Staging, Production]
+Curate 3-5 examples that demonstrate specific aspects of great design, functionality, or user experience. For each, describe what specific elements inspire you.
 
-### Analytics & Monitoring
-**Analytics:** [Google Analytics, Plausible, etc.]
-**Error Tracking:** [Sentry, LogRocket, etc.]
-**Performance Monitoring:** [Vercel Analytics, etc.]
+**Example:**
 
-### SEO Requirements
-- [Meta tags]
-- [Structured data]
-- [Sitemap]
-- [Robots.txt]
+```markdown
+1. (https://notion.so): Flexible workspace with intuitive drag-and-drop interactions. Great example of progressive disclosure and nested content organization.
 
-### Future Considerations
-[Features or improvements planned for later phases]
-- [Future feature 1]
-- [Future feature 2]
+2. (https://airbnb.com): Beautiful imagery with strong visual hierarchy. Excellent search experience and responsive grid layouts that adapt seamlessly.
 
-### Open Questions
-[Questions that still need to be answered]
-- [Question 1]
-- [Question 2]
+3. (https://github.com): Clean code-focused interface with excellent dark mode implementation. Smart use of tabs and clear information architecture.
+```
 
----
+## Additional Notes
 
-## Document Metadata
+Capture the overall mood, feeling, or design philosophy these inspirations represent. Example: "Aim for the simplicity of Apple, the playfulness of Duolingo, and the clarity of Linear.”
 
-**Version:** 1.0
-**Last Updated:** [Date]
-**Author:** [Your name]
-**Status:** [Draft, In Progress, Review, Final]
+# 8. User Stories
 
----
+Write 5-10 stories using the format: "As a **[user type]**, I want to **[action]**, so that **[benefit]**".
 
-**Next Steps:**
-1. Fill out each section systematically
-2. Review with your team
-3. Use this document to generate UI with AI tools
-4. Keep this document updated as your product evolves
+**Example:**
+
+```
+- As a freelance designer, I want to quickly capture task ideas on my phone when inspiration strikes, so that I don't forget important to-dos when I'm away from my desk.
+
+- As a remote worker, I want to see my tasks organized by priority at a glance, so that I can focus on what matters most without feeling overwhelmed.
+
+- As a busy freelancer, I want to set deadline reminders for my tasks, so that I never miss a client deliverable and maintain my professional reputation.
+```
+
+# 9. Functional Requirements
+
+Define your product's capabilities using MoSCoW prioritization to ensure focus on what truly matters for launch.
+
+## Must Have Features
+
+Core functionality required for your product to deliver value. Without these, the product doesn't work.
+
+**Example:** 
+
+```
+- User registration with email/password
+- Create and edit tasks
+- Real-time notifications
+```
+
+## Should Have Features
+
+Important features that significantly enhance the experience but aren't launch-blockers.
+
+**Example:**
+
+```
+- Task filtering by status
+- Email reminders
+- Profile customization
+```
+
+## Could Have Features
+
+Nice-to-have features that add polish or convenience. Consider for post-MVP iterations.
+
+**Example:**
+
+```
+- Dark mode toggle
+- Keyboard shortcuts
+- Export to CSV
+```
+
+## Won't Have Features
+
+Features explicitly excluded from this version to maintain focus and manage scope.
+
+**Example:**
+
+```
+- Advanced analytics dashboard
+- Team collaboration
+- Mobile app
+```
+
+# 10. Page Map
+
+Document every page and route in your product to establish the complete information architecture and user navigation paths. List all pages including public pages, authenticated areas, settings, admin sections, and utility pages (404, 500, loading).
+
+**Example:**
+
+```
+- Home (/): Landing page with hero section and key features
+- Dashboard (/dashboard): Main dashboard view for authenticated users
+- Profile Settings (/settings/profile): User profile editing page
+- Not Found (/404): Error page for invalid routes
+```
+
+# 11. Content Structure
+
+Define the data models and content types that power your product, establishing how information is organized and related.
+
+## Common Content Types
+
+Select standard content types that apply to your product. These come with predefined fields and relationships. **Options:** Blog Post, Product, Task, User, Event, Comment, Category, Tag, Media, Page, Notification, Message, Project, Team, Document, Invoice, Review, Order.
+
+**Example:**
+
+```
+- Product
+- Task
+- Event
+- Category
+```
+
+## Add Custom Content Types
+
+Define custom content types unique to your product's domain, listing all necessary fields and their types.
+
+**Example:**
+
+```
+Recipe
+- recipeName (text, required)
+- description (rich text)
+- ingredients (array)
+- prepTime (number, minutes)
+- difficulty (select: easy/medium/hard)
+- author (reference: User)
+- images (array: Media)
+```
+
+# 12. Tech Stack
+
+Define your complete technical stack: frontend framework, UI library, backend infrastructure, database, authentication, and hosting.
+
+## Framework
+
+Your core frontend framework shapes the entire development experience. Choose based on team expertise, project requirements, and ecosystem.
+
+**Example:**
+
+```
+Vite + React
+```
+
+## UI Library
+
+Pre-built components that accelerate development and ensure consistency. Consider design flexibility vs speed of implementation.
+
+**Example:**
+
+```
+Shadcn UI
+```
+
+## State Management
+
+How application data flows and updates across components. Simple apps may not need dedicated state management.
+
+**Example:**
+
+```
+Zustand
+```
+
+## Database
+
+Choose your data persistence layer. Match the database type (SQL vs NoSQL) to your data structure and query patterns.
+
+**Example:**
+
+```
+Supabase
+```
+
+## Authentication
+
+Select your user authentication and identity management strategy based on security needs and user experience goals.
+
+**Example:**
+
+```
+Firebase Auth
+```
+
+## Content Management System
+
+Choose how content will be created, edited, and published. Consider team size, technical expertise, and content update frequency.
+
+**Example:**
+
+```
+Markdown Files
+```
+
+## Hosting
+
+Determine where your application will be deployed and served to users. Consider performance, cost, and deployment workflow.
+
+**Example:**
+
+```
+Netlify
+```
+
+## Additional Notes
+
+Document other tech stack choices like styling methodology, build tools, or specific libraries.
+
+**Example:**
+
+```
+- Using CSS Modules for component styles
+- Vite for fast development
+- React Query for server state
+- Framer Motion for animations
+```
+
+# 13. Core Components
+
+Identify the UI building blocks your product requires. This inventory guides implementation and ensures nothing is overlooked.
+
+**Example:**
+
+```
+Accordion, Alert, Avatar, Badge, Breadcrumb, Button, Button Group, Calendar, Card, Carousel, Chart, Pagination, Scroll Area, Textarea, Toast Message, Toggle, Tooltip
+```
+
+## Additional Components
+
+Specialized or custom components not covered by standard libraries. These may require custom development.
+
+**Example:**
+
+```
+- Rich Text Editor (TipTap)
+- Interactive Map (Mapbox)
+- Video Player (VideoJS), 
+- Kanban Board, 
+- Color Picker
+```
+
+# 14. Additional Notes
+
+Document important context that doesn't fit other sections: constraints, standards, goals, or questions that need resolution. Capture technical constraints, success metrics, accessibility standards, future considerations, or anything else relevant to development.
+
+**Example:**
+
+```
+- Must achieve WCAG AA compliance
+- Target < 2s page load time
+```
