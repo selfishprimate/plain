@@ -22,6 +22,8 @@ This is a **PLAIN (Product Language for AI Notation)** specification. You are an
 
 # 1. Project Overview
 
+The foundation of a calmer, more focused digital life starts here. This is our response to the mental health crisis caused by constant connectivity.
+
 ## Project Name
 
 MindFlow
@@ -35,6 +37,8 @@ MindFlow is a minimalist meditation and focus app designed for remote workers an
 Help users reclaim their focus and mental clarity through simple, science-based mindfulness techniques.
 
 # 2. Design Language
+
+Every design choice is intentional - removing visual noise to create a sanctuary from the chaotic digital world. Less truly is more when it comes to mental wellness.
 
 ## Design Style
 
@@ -59,6 +63,8 @@ Calm, Serene, Focused, Trustworthy
 - Ensure all interactions feel smooth and meditative
 
 # 3. Color Palette
+
+Colors inspired by natural environments - ocean blues for tranquility, soft purples for spirituality, and gentle greens for growth. Each shade was carefully selected to reduce eye strain during extended sessions.
 
 {
   "primary": {
@@ -108,6 +114,8 @@ Both Light and Dark Mode with automatic system detection
 
 # 4. Typography
 
+Typography that breathes - generous spacing, optimal line heights, and weights that create visual hierarchy without shouting. Perfect for reading meditation instructions or timer displays.
+
 ## Display Font
 
 DM Serif Display
@@ -126,6 +134,8 @@ Major Third (1.25)
 
 # 5. Icons
 
+Minimal, purposeful icons that communicate without adding visual clutter. Each icon was tested to ensure instant recognition even in low-light meditation environments.
+
 ## Icon Library
 
 Lucide Icons
@@ -135,6 +145,8 @@ Lucide Icons
 Outlined with rounded corners
 
 # 6. Layout
+
+Mobile-first because meditation happens everywhere - on morning commutes, lunch breaks, or bedtime routines. Every tap target is thumb-friendly.
 
 ## Responsive Strategy
 
@@ -147,6 +159,8 @@ Mobile-First: Start small, enhance upward
 - Center-aligned content with generous padding for focus
 
 # 7. Inspirations
+
+Learning from apps that got mindfulness right, while avoiding the pitfalls of over-gamification and feature bloat that plague most wellness apps.
 
 1. (https://headspace.com): Playful yet calming animations that guide users through meditation. Great onboarding flow and progress tracking.
 
@@ -161,6 +175,8 @@ Mobile-First: Start small, enhance upward
 Aim for the serenity of Oak, the scientific approach of Brain.fm, and the simplicity of Noisli.
 
 # 8. User Stories
+
+Real needs from real people struggling with modern life - these stories came from interviews with remote workers experiencing burnout and students facing exam stress.
 
 - As a remote worker, I want to start a quick 5-minute breathing exercise between meetings, so that I can reset my mental state and reduce stress.
 
@@ -177,6 +193,8 @@ Aim for the serenity of Oak, the scientific approach of Brain.fm, and the simpli
 - As a data-driven person, I want to see my focus and meditation statistics, so that I can understand my progress over time.
 
 # 9. Functional Requirements
+
+Features prioritized through user research - avoiding the feature creep that makes other meditation apps overwhelming. Every feature earns its place.
 
 ## Must Have Features
 
@@ -219,6 +237,8 @@ Aim for the serenity of Oak, the scientific approach of Brain.fm, and the simpli
 
 # 10. Page Map
 
+Information architecture designed for minimal cognitive load - users should find their calm in three taps or less.
+
 - Landing (/)
 - Sign Up (/signup)
 - Sign In (/signin)
@@ -238,6 +258,8 @@ Aim for the serenity of Oak, the scientific approach of Brain.fm, and the simpli
 - Offline (/offline)
 
 # 11. Content Structure
+
+Data models that respect user privacy while capturing just enough to provide meaningful insights. No unnecessary tracking or analytics.
 
 ## Common Content Types
 
@@ -289,6 +311,8 @@ UserProgress
 
 # 12. Tech Stack
 
+Modern, performant technologies that prioritize user experience over developer convenience. Every choice supports our core purpose of reducing digital friction.
+
 ## Framework
 
 Next.js 14 with App Router
@@ -328,6 +352,8 @@ Vercel with Edge Functions
 
 # 13. Core Components
 
+Components built for tranquility - no jarring transitions, no aggressive animations, just smooth, purposeful interactions.
+
 Alert, Avatar, Badge, Button, Card, Dialog, Dropdown Menu, Form, Input, Label, Navigation Menu, Progress, Radio Group, Select, Separator, Skeleton, Slider, Switch, Tabs, Textarea, Toast, Tooltip
 
 ## Additional Components
@@ -343,6 +369,8 @@ Alert, Avatar, Badge, Button, Card, Dialog, Dropdown Menu, Form, Input, Label, N
 - Focus Mode Overlay
 
 # 14. Additional Notes
+
+Critical technical requirements to ensure the app works flawlessly during those moments when users need calm the most.
 
 - Must support offline mode for downloaded meditation content
 - Implement background audio playback for mobile

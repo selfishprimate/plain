@@ -22,6 +22,8 @@ This is a **PLAIN (Product Language for AI Notation)** specification. You are an
 
 # 1. Project Overview
 
+This section defines the foundation of what we're building and why it matters.
+
 ## Project Name
 
 PetPal
@@ -35,6 +37,8 @@ PetPal is a comprehensive pet care management app designed for devoted pet paren
 Simplify pet care management while ensuring no important health task or appointment is ever missed.
 
 # 2. Design Language
+
+The visual and emotional framework that will shape every pixel of our app. These choices will create the personality users connect with.
 
 ## Design Style
 
@@ -60,6 +64,8 @@ Playful, Caring, Reliable, Friendly
 - Make emergency features instantly accessible
 
 # 3. Color Palette
+
+Our color system needs to be warm and inviting while maintaining professionalism for health-related features. These colors will create emotional connections with pet parents.
 
 {
   "primary": {
@@ -109,6 +115,8 @@ Both Light and Dark Mode
 
 # 4. Typography
 
+Font choices that balance playfulness with readability, especially important for medication dosages and medical records where clarity is critical.
+
 ## Display Font
 
 Fredoka One
@@ -127,6 +135,8 @@ Major Second (1.125)
 
 # 5. Icons
 
+Icons need to be instantly recognizable at small sizes, especially for quick actions like marking medications as given or logging activities.
+
 ## Icon Library
 
 Phosphor Icons
@@ -136,6 +146,8 @@ Phosphor Icons
 Duotone with playful colors
 
 # 6. Layout
+
+Mobile-first is essential since pet parents often need to access the app while at the vet, during walks, or with hands full managing their pets.
 
 ## Responsive Strategy
 
@@ -150,6 +162,8 @@ Mobile-First: Start small, enhance upward
 
 # 7. Inspirations
 
+Learning from the best in pet care and health tracking to create something even better for our users.
+
 1. (https://www.11pets.com): Comprehensive pet care tracking with excellent calendar integration. Great reminder system.
 
 2. (https://www.buddyapp.com): Beautiful pet profiles with timeline-based activity tracking. Excellent photo management.
@@ -163,6 +177,8 @@ Mobile-First: Start small, enhance upward
 Aim for the comprehensiveness of 11pets, the visual appeal of Buddy, and the data clarity of Fitbark.
 
 # 8. User Stories
+
+Real scenarios from pet parents that drive every feature decision. These aren't just features - they're solutions to real daily challenges.
 
 - As a multi-pet owner, I want to manage all my pets' profiles in one place, so that I can track each pet's unique needs efficiently.
 
@@ -181,6 +197,8 @@ Aim for the comprehensiveness of 11pets, the visual appeal of Buddy, and the dat
 - As a responsible owner, I want expense tracking for pet care, so that I can budget effectively for my pet's needs.
 
 # 9. Functional Requirements
+
+Prioritized features based on extensive user research and feedback from pet parents. Must-haves address immediate pain points, while future features enhance the experience.
 
 ## Must Have Features
 
@@ -232,6 +250,8 @@ Aim for the comprehensiveness of 11pets, the visual appeal of Buddy, and the dat
 
 # 10. Page Map
 
+Every screen carefully planned to ensure smooth navigation and quick access to critical features, especially emergency information.
+
 - Landing (/)
 - Sign Up (/signup)
 - Sign In (/signin)
@@ -257,6 +277,8 @@ Aim for the comprehensiveness of 11pets, the visual appeal of Buddy, and the dat
 - 404 (/404)
 
 # 11. Content Structure
+
+Data models designed to capture everything important about your pet's health and care, with flexibility for different types of pets and care routines.
 
 ## Common Content Types
 
@@ -351,6 +373,8 @@ Expense
 
 # 12. Tech Stack
 
+Technology choices optimized for mobile performance and offline reliability, because pet care doesn't stop when you lose signal.
+
 ## Framework
 
 React Native with Expo
@@ -393,6 +417,8 @@ Expo Application Services (EAS)
 
 # 13. Core Components
 
+Building blocks designed for quick interactions and clear information display, crucial when you're juggling a pet at the vet's office.
+
 Action Sheet, Alert, Avatar, Badge, Button, Card, Checkbox, Date Picker, Drawer, FAB (Floating Action Button), Form, Icon Button, Image Gallery, Input, List, Loading, Modal, Navigation Bar, Progress, Radio, Search Bar, Select, Slider, Spinner, Switch, Tabs, Tag, Text Area, Time Picker, Toast
 
 ## Additional Components
@@ -412,6 +438,8 @@ Action Sheet, Alert, Avatar, Badge, Button, Card, Checkbox, Date Picker, Drawer,
 - Breed Information Panel
 
 # 14. Additional Notes
+
+Critical implementation details to ensure the app works reliably in real-world pet care situations, from vet visits to park adventures.
 
 - Implement biometric authentication for quick access
 - Support offline mode with data sync when connected

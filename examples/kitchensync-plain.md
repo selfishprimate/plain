@@ -22,6 +22,8 @@ This is a **PLAIN (Product Language for AI Notation)** specification. You are an
 
 # 1. Project Overview
 
+Born from the frustration of juggling cookbooks, screenshots, and handwritten notes while trying to cook dinner. This is the command center for home cooking.
+
 ## Project Name
 
 KitchenSync
@@ -35,6 +37,8 @@ KitchenSync is a smart recipe management and meal planning app designed for home
 Transform chaotic recipe collection into organized, actionable meal plans with automated shopping lists.
 
 # 2. Design Language
+
+The kitchen is the heart of the home - our design reflects warmth, organization, and the joy of cooking. Clean enough for efficiency, warm enough for comfort.
 
 ## Design Style
 
@@ -59,6 +63,8 @@ Warm, Inviting, Organized, Fresh
 - Make cooking mode distraction-free and splash-proof friendly
 
 # 3. Color Palette
+
+A palette inspired by fresh ingredients and warm kitchens - tomato reds, herb greens, and golden yellows that make you hungry just looking at them.
 
 {
   "primary": {
@@ -108,6 +114,8 @@ Light Mode Only (optimized for kitchen use with bright lighting)
 
 # 4. Typography
 
+Typography that's readable even with flour-covered fingers and steam-fogged glasses. Clear hierarchy helps cooks follow recipes without losing their place.
+
 ## Display Font
 
 Playfair Display
@@ -126,6 +134,8 @@ Perfect Fourth (1.333)
 
 # 5. Icons
 
+Icons that are instantly recognizable even when you're multitasking between stirring, chopping, and checking the timer.
+
 ## Icon Library
 
 Tabler Icons
@@ -135,6 +145,8 @@ Tabler Icons
 Filled with rounded corners
 
 # 6. Layout
+
+Desktop-first because serious meal planning happens on bigger screens, but fully responsive for checking recipes while shopping or cooking.
 
 ## Responsive Strategy
 
@@ -147,6 +159,8 @@ Desktop-First: Start large, simplify downward
 - Implement swipe gestures for recipe steps on mobile
 
 # 7. Inspirations
+
+We studied how professional chefs organize their recipes and how home cooks actually use recipe apps in real kitchens.
 
 1. (https://www.epicurious.com): Excellent recipe discovery with powerful filtering. Great combination of editorial content and functionality.
 
@@ -161,6 +175,8 @@ Desktop-First: Start large, simplify downward
 Aim for the organization of Paprika, the beauty of Bon Appétit, and the functionality of Yummly.
 
 # 8. User Stories
+
+Real stories from home cooks tired of the recipe chaos - from busy parents planning weekly meals to ambitious cooks building their repertoire.
 
 - As a home cook, I want to import recipes from any website with one click, so that I can quickly build my recipe collection.
 
@@ -179,6 +195,8 @@ Aim for the organization of Paprika, the beauty of Bon Appétit, and the functio
 - As a social cook, I want to share recipe collections with friends, so that we can exchange favorite meals.
 
 # 9. Functional Requirements
+
+Features built from observing real cooking workflows - from discovering recipes to cleaning up after dinner. Every feature solves a real kitchen problem.
 
 ## Must Have Features
 
@@ -227,6 +245,8 @@ Aim for the organization of Paprika, the beauty of Bon Appétit, and the functio
 
 # 10. Page Map
 
+Navigation designed around the cooking workflow - from inspiration to preparation to cooking to sharing.
+
 - Home (/)
 - Sign Up (/signup)
 - Sign In (/signin)
@@ -249,6 +269,8 @@ Aim for the organization of Paprika, the beauty of Bon Appétit, and the functio
 - 404 (/404)
 
 # 11. Content Structure
+
+Data models that capture recipes in all their complexity while keeping things simple for the user. Flexible enough for grandma's vague instructions and precise enough for baking.
 
 ## Common Content Types
 
@@ -329,6 +351,8 @@ Collection
 
 # 12. Tech Stack
 
+Reliable, modern technologies that won't let you down when you're halfway through cooking dinner for eight.
+
 ## Framework
 
 Next.js 14 with TypeScript
@@ -369,6 +393,8 @@ Vercel with Vercel Postgres
 
 # 13. Core Components
 
+Components designed for the kitchen environment - large touch targets for messy fingers, clear visual hierarchy for quick scanning, and smooth interactions even on older devices.
+
 Accordion, Alert, Autocomplete, Avatar, Badge, Button, Card, Carousel, Checkbox, Date Picker, Dialog, Drawer, Dropdown, File Upload, Grid, Input, List, Loading Spinner, Modal, Navigation, Pagination, Progress Bar, Radio Group, Rating, Search Bar, Select, Skeleton, Slider, Switch, Tabs, Tag, Textarea, Timeline, Toast, Tooltip
 
 ## Additional Components
@@ -387,6 +413,8 @@ Accordion, Alert, Autocomplete, Avatar, Badge, Button, Card, Carousel, Checkbox,
 - Recipe Quick View
 
 # 14. Additional Notes
+
+Essential features based on real kitchen testing - these details make the difference between an app that gets used and one that gets deleted.
 
 - Implement recipe web scraping with schema.org/Recipe support
 - Support imperial and metric unit systems with conversion

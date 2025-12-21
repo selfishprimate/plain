@@ -22,6 +22,8 @@ This is a **PLAIN (Product Language for AI Notation)** specification. You are an
 
 # 1. Project Overview
 
+Every plant parent's journey starts with love and ends with dead plants. We're here to change that story, one thriving plant at a time.
+
 ## Project Name
 
 GreenThumb
@@ -35,6 +37,8 @@ GreenThumb is an intelligent plant care assistant designed for urban dwellers an
 Help plant parents nurture thriving indoor gardens through intelligent care guidance and community support.
 
 # 2. Design Language
+
+Nature doesn't need embellishment - our design embraces organic beauty, natural textures, and the calming presence of greenery in digital form.
 
 ## Design Style
 
@@ -60,6 +64,8 @@ Natural, Fresh, Nurturing, Peaceful
 - Make care actions prominent with large touch targets
 
 # 3. Color Palette
+
+A palette drawn from nature's own canvas - the deep greens of healthy foliage, sunny yellows of growth, and soft purples of blooming flowers.
 
 {
   "primary": {
@@ -109,6 +115,8 @@ Light Mode Only (optimized for plant photography)
 
 # 4. Typography
 
+Typography that feels as organic as the plants themselves - elegant serifs for headers like botanical labels, clean sans for care instructions.
+
 ## Display Font
 
 Playfair Display
@@ -127,6 +135,8 @@ Perfect Fourth (1.333)
 
 # 5. Icons
 
+Icons inspired by botanical illustrations - delicate, detailed, and instantly recognizable even to novice plant parents.
+
 ## Icon Library
 
 Remix Icons
@@ -136,6 +146,8 @@ Remix Icons
 Line style with organic curves
 
 # 6. Layout
+
+Mobile-first because plant care happens on the go - checking your plants while at the nursery, getting care tips while repotting, or identifying that mystery plant at a friend's house.
 
 ## Responsive Strategy
 
@@ -149,6 +161,8 @@ Mobile-First: Start small, enhance upward
 - Horizontal scrolling for plant collections
 
 # 7. Inspirations
+
+We studied how botanists catalog plants, how gardeners track growth, and how plant lovers share their passion - then made it accessible to everyone.
 
 1. (https://www.picturethisai.com): AI-powered plant identification with disease diagnosis. Excellent camera interface and results presentation.
 
@@ -165,6 +179,8 @@ Mobile-First: Start small, enhance upward
 Aim for the AI capabilities of PictureThis, the care features of Planta, and the community aspects of iNaturalist.
 
 # 8. User Stories
+
+Real struggles from real plant parents - from serial plant killers trying to keep just one plant alive to collectors managing hundreds of rare species.
 
 - As a plant beginner, I want to identify plants by taking a photo, so that I know exactly what care they need.
 
@@ -183,6 +199,8 @@ Aim for the AI capabilities of PictureThis, the care features of Planta, and the
 - As a forgetful person, I want location-based reminders, so that I water plants when I'm actually near them.
 
 # 9. Functional Requirements
+
+Features born from watching plant parents struggle - and succeed. Every feature addresses a real problem that leads to plant death or disappointment.
 
 ## Must Have Features
 
@@ -234,6 +252,8 @@ Aim for the AI capabilities of PictureThis, the care features of Planta, and the
 
 # 10. Page Map
 
+Navigation that mirrors the plant care journey - from bringing a new plant home to celebrating years of growth together.
+
 - Landing (/)
 - Sign Up (/signup)
 - Sign In (/signin)
@@ -259,6 +279,8 @@ Aim for the AI capabilities of PictureThis, the care features of Planta, and the
 - 404 (/404)
 
 # 11. Content Structure
+
+Data models that capture the full lifecycle of plant parenthood - from adoption to propagation, with all the struggles and successes in between.
 
 ## Common Content Types
 
@@ -351,6 +373,8 @@ JournalEntry
 
 # 12. Tech Stack
 
+Technology choices optimized for handling millions of plant photos, real-time care reminders, and a community of passionate plant parents.
+
 ## Framework
 
 React Native with Expo
@@ -396,6 +420,8 @@ Expo Application Services
 
 # 13. Core Components
 
+Components that feel as natural as tending to your plants - smooth interactions, delightful animations, and clear visual feedback for every action.
+
 Action Button, Alert, Avatar, Badge, Bottom Sheet, Button, Calendar, Camera View, Card, Carousel, Chart, Checkbox, Date Picker, Divider, FAB, Filter Pills, Form, Gallery Grid, Header, Icon, Image, Input, List Item, Loading, Map View, Modal, Navigation Tab Bar, Overlay, Progress Circle, Radio, Rating, Search Bar, Segment Control, Select, Slider, Snackbar, Stat Card, Switch, Tag, Text Area, Time Picker, Tooltip
 
 ## Additional Components
@@ -416,6 +442,8 @@ Action Button, Alert, Avatar, Badge, Bottom Sheet, Button, Calendar, Camera View
 - Plant Collection Stats
 
 # 14. Additional Notes
+
+Critical details that make the difference between a plant thriving and dying - these features were tested with real plant parents in real homes.
 
 - Implement offline mode for core features
 - Cache plant database for offline identification
