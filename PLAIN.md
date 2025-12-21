@@ -226,7 +226,7 @@ Curate 3-5 examples that demonstrate specific aspects of great design, functiona
 
 **Example:**
 
-```markdown
+```
 1. (https://notion.so): Flexible workspace with intuitive drag-and-drop interactions. Great example of progressive disclosure and nested content organization.
 
 2. (https://airbnb.com): Beautiful imagery with strong visual hierarchy. Excellent search experience and responsive grid layouts that adapt seamlessly.
