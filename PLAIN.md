@@ -4,6 +4,7 @@ description: A brief description about your project.
 author: Write your full name.
 date: YYYY-MM-DD
 version: 1.0
+projectLink: Link to your AI-generated project or design.
 format: PLAIN
 plain: https://github.com/selfishprimate/plain
 ---
