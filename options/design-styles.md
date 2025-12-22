@@ -1,8 +1,8 @@
-# Design Style Options
+# Design Styles
 
 A collection of design styles to help you define the visual personality of your product. Each style creates a different emotional connection with users and serves specific purposes.
 
-## Style Options
+Choose from the following styles or combine elements to create your unique approach:
 
 ### Minimalist
 Embraces simplicity and white space, removing everything except what's absolutely necessary.
