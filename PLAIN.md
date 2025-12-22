@@ -75,7 +75,7 @@ Brutalism
 
 ## Design Tone
 
-The emotional qualities users should feel when interacting with your product. Choose up to 4 adjectives. 
+The emotional qualities users should feel when interacting with your product. Choose up to 4 adjectives. See [design tone options](options/design-tones.md) for common tones and their characteristics. 
 
 **Example:**
 
@@ -85,7 +85,7 @@ Clean, Professional, Modern, Trustworthy, Friendly, Bold, Calm
 
 ## Design References
 
-Real-world examples that embody aspects of your desired design direction. For each reference, specify what specific elements inspire you.
+Real-world examples that embody aspects of your desired design direction. For each reference, specify what specific elements inspire you. See [design references](options/design-references.md) for curated examples to study.
 
 ```
 1. (https://linear.app): Clean, minimal interface with excellent use of typography and subtle animations. Great example of purposeful whitespace and clear visual hierarchy.
@@ -227,7 +227,7 @@ Document specific layout patterns, accessibility requirements, or technical cons
 
 # 7. Inspirations
 
-Curate 3-5 examples that demonstrate specific aspects of great design, functionality, or user experience. For each, describe what specific elements inspire you.
+Curate 3-5 examples that demonstrate specific aspects of great design, functionality, or user experience. For each, describe what specific elements inspire you. See [design references](options/design-references.md) for inspiration.
 
 **Example:**
 
