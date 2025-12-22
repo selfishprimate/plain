@@ -29,7 +29,7 @@ Download the [PLAIN.md](PLAIN.md) and add it to the root level of your project f
 
 ### Step 2: Fill Out Your PLAIN File
 
-Start with the **front matter** (title, description, author, date). Then review the **"Instructions for AI Coding Assistants"** section and customize it if needed.
+Start with the **project metadata** in the HTML comment at the top (title, description, author, date, etc.). Then review the **"Instructions for AI Coding Assistants"** section and customize it if needed.
 
 Work through each section from Project Overview to Additional Notes. The template includes examples and explanations for guidance. **Once you've filled in your content, delete the examples and explanations to keep your spec clean.**
 
@@ -41,8 +41,7 @@ Your spec is ready. Feed it to your favorite AI tool with the following command 
 
 **Example Prompt:**
 
-> Read the {project-name}-plain.md file in my project. Start with the "Instructions for AI Coding Assistants" section to understand the core principles, then work through each section from Project Overview to Additional Notes. Generate a complete application that follows every specification precisely.
-> 
+> Read the `{project-name}-plain.md` file in my project. Start with the "Instructions for AI Coding Assistants" section to understand the core principles, then work through each section from Project Overview to Additional Notes. Generate a complete application that follows every specification precisely.
 
 **Bonus Tip:** Keep your PLAIN document in version control alongside your code. It serves as living documentation that evolves with your product.
 
