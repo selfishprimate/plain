@@ -1,6 +1,6 @@
 # PLAIN: Product Language for AI Notation 📃
 
-**PLAIN** is a structured markdown format that turns product ideas into machine-readable specs. It bridges the gap between product teams and AI tools like [Claude]({{https://claude.ai}}), [Gemini]({{https://gemini.google.com}}), [Cursor]({{https://cursor.sh}}), [v0]({{https://v0.dev/}}), [Figma Make]({{https://www.figma.com/}}), [Bolt]({{https://bolt.new/}}), and [Lovable]({{https://lovable.dev/}}), enabling them to generate UI, code, and documentation directly from your vision.
+**PLAIN** is a structured markdown format that turns product ideas into machine-readable specs. It bridges the gap between product teams and AI tools like [Claude](https://claude.ai), [Gemini](https://gemini.google.com), [Cursor](https://cursor.sh), [v0](https://v0.dev/), [Figma Make](https://www.figma.com/), [Bolt](https://bolt.new/), and [Lovable](https://lovable.dev/), enabling them to generate UI, code, and documentation directly from your vision.
 
 Unlike traditional specs scattered across tools and documents, a PLAIN file consolidates your product's design vision, technical foundation, and user experience into a single, AI-friendly document.
 
@@ -25,7 +25,7 @@ Follow these three steps to turn your product idea into a working application.
 
 ### Step 1: Get the PLAIN Template
 
-Download the [PLAIN.md](https://www.notion.so/PLAIN-md-2cfd7819ab738047945ace7d44670841?pvs=21) and add it to the root level of your project folder. Rename it to `{project-name}-plain.md` to avoid confusion as your project grows.
+Download the [PLAIN.md](PLAIN.md) and add it to the root level of your project folder. Rename it to `{project-name}-plain.md` to avoid confusion as your project grows.
 
 ### Step 2: Fill Out Your PLAIN File
 
@@ -54,7 +54,7 @@ Your spec is ready. Feed it to your favorite AI tool with the following command 
 
 1. **Guided Section-by-Section Interface**: Work through each PLAIN section with curated options and examples, eliminating the blank page problem
 2. **Context-Aware Options**: See relevant choices for Design Style, Color Palettes, Tech Stack, UI Libraries, and more
-3. **AI-Enhanced Generation**: When you click Generate, Claude LLM processes your selections and creates a `{project-name}-[plain.md](http://plain.md)` file
+3. **AI-Enhanced Generation**: When you click Generate, Claude LLM processes your selections and creates a `{project-name}-plain.md` file
 4. **Intelligent Context Layer**: The LLM interprets your choices and adds contextual details that help AI code assistants better understand your requirements
 5. **Ready-to-Use Output**: Receive a complete, well-formed PLAIN markdown file ready to be added to your project repository
 
@@ -70,10 +70,10 @@ More importantly, Markdown files fit naturally into your **development workflow*
 
 Found a way to make PLAIN even plainer? We'd love to hear it! Every great tool starts as a simple idea. PLAIN started as one, and with your help, it'll grow into something even better.
 
-Whether it's a typo fix, a new section idea, or a complete overhaul, we welcome it all. You can also **share your filled-out PLAIN files** with the community! If you've created a `{project-name}-[plain.md](http://plain.md)` for your project, submit it with a live demo or design link in it to inspire others.
+Whether it's a typo fix, a new section idea, or a complete overhaul, we welcome it all. You can also **share your filled-out PLAIN files** with the community! If you've created a `{project-name}-plain.md` for your project, submit it with a live demo or design link in it to inspire others.
 
-Read the [Contribution Guidelines](https://www.notion.so/selfishprimate/CONTRIBUTING.md) and join the crew!
+Read the [Contribution Guidelines](CONTRIBUTING.md) and join the crew!
 
 ## License 📄
 
-This project is licensed under the MIT License. See the [LICENSE](https://www.notion.so/selfishprimate/LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
