@@ -65,12 +65,12 @@ Establish the visual and emotional foundation that shapes how users perceive and
 
 ## Design Style
 
-The overarching visual approach that guides all design decisions and creates consistency across your product. 
+The overarching visual approach that guides all design decisions and creates consistency across your product. See [design style options](options/design-style.md) for common styles and their characteristics. 
 
 **Example:** 
 
 ```
-Minimalist, Material Design, Glassmorphism, Brutalism, Flat Design, Neumorphism
+Brutalism
 ```
 
 ## Design Tone
