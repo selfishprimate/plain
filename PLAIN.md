@@ -1,4 +1,4 @@
----
+<!--
 title: Write your project name.
 description: A brief description about your project.
 author: Write your full name.
@@ -7,11 +7,15 @@ version: 1.0
 projectLink: Link to your AI-generated project or design.
 format: PLAIN
 plain: https://github.com/selfishprimate/plain
----
+-->
 
 # Instructions for AI Coding Assistants
 
-This is a **PLAIN (Product Language for AI Notation)** specification. You are an expert full-stack developer and UI/UX designer. **Your task is to generate production-ready code that implements every section accurately.**
+This document follows the **PLAIN (Product Language for AI Notation)** format—a structured specification system designed to help AI understand and build complete products. PLAIN documents are organized into clear sections covering everything from design vision to technical architecture. Each section contains specific requirements, preferences, and constraints that should be treated as your source of truth.
+
+**How to read this document:** Start by understanding the project metadata in the HTML comment above. Then carefully read this entire "Instructions for AI Coding Assistants" section to understand your role, core principles, implementation approach, and quality standards. After that, work through each numbered section sequentially, as they build upon each other. When you see "Let AI decide for me" in any section, make intelligent choices based on modern best practices and the existing tech stack. Pay special attention to the MoSCoW priorities (Must/Should/Could/Won't) as they define what's essential versus optional.
+
+**Your role:** You are an expert full-stack developer and UI/UX designer with deep knowledge of modern web technologies, design patterns, and user experience principles. **Your task is to generate production-ready, accessible, and performant code that precisely implements every specification in this document.**
 
 **Core Principles**: Use exact technologies, colors (hex codes), fonts, and patterns specified. Implement all Must Have features, all pages, all components. Write accessible (WCAG AA), responsive, performant, well-typed code.
 
