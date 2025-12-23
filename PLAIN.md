@@ -13,28 +13,21 @@ plain: https://github.com/selfishprimate/plain
 
 Navigate quickly to any section of this PLAIN specification. Each section builds upon the previous ones to create a complete product definition.
 
-## Foundation
-- [Instructions for AI Coding Assistants](#instructions-for-ai-coding-assistants) - Core principles and implementation approach
-- [1. Project Overview](#1-project-overview) - What you're building and why
-- [2. Design Language](#2-design-language) - Visual identity and emotional tone
-- [3. Color Palette](#3-color-palette) - Color system and usage
-
-## Typography & Visual Elements
-- [4. Typography](#4-typography) - Font system and type scale
-- [5. Icons](#5-icons) - Icon library and style
-- [6. Layout](#6-layout) - Responsive structure and patterns
-- [7. Inspirations](#7-inspirations) - Design references and examples
-
-## Technical Architecture
-- [8. Tech Stack](#8-tech-stack) - Technologies and frameworks
-- [9. Features](#9-features) - Functionality and requirements
-- [10. Page Map](#10-page-map) - Routes and navigation structure
-- [11. Content Structure](#11-content-structure) - Data models and relationships
-
-## User Experience
-- [12. User Stories](#12-user-stories) - User needs and workflows
-- [13. Accessibility](#13-accessibility) - Inclusive design requirements
-- [14. Additional Notes](#14-additional-notes) - Special considerations
+- [Instructions for AI Coding Assistants](#instructions-for-ai-coding-assistants)
+- [1. Project Overview](#1-project-overview)
+- [2. Design Language](#2-design-language)
+- [3. Colors](#3-colors)
+- [4. Typography](#4-typography)
+- [5. Icons](#5-icons)
+- [6. Layout](#6-layout)
+- [7. Inspirations](#7-inspirations)
+- [8. User Stories](#8-user-stories)
+- [9. Functional Requirements](#9-functional-requirements)
+- [10. Page Map](#10-page-map)
+- [11. Content Structure](#11-content-structure)
+- [12. Tech Stack](#12-tech-stack)
+- [13. Core Components](#13-core-components)
+- [14. Additional Notes](#14-additional-notes)
 
 ---
 
@@ -119,16 +112,16 @@ Real-world examples that embody aspects of your desired design direction. For ea
 ```
 1. (https://linear.app): Clean, minimal interface with excellent use of typography and subtle animations. Great example of purposeful whitespace and clear visual hierarchy.
 
-2. (https://stripe.com): Professional color palette with strong contrast. Documentation-style layouts that balance technical content with visual appeal.
+2. (https://stripe.com): Professional colors with strong contrast. Documentation-style layouts that balance technical content with visual appeal.
 ```
 
 ## Additional Notes
 
 Any additional context about your design principles, brand constraints, or accessibility considerations.
 
-# 3. Color Palette
+# 3. Colors
 
-Your core color palette including primary, secondary, and optional tertiary colors. Specify hex codes for each or provide a complete shade system. Use https://uicolors.app/ to generate comprehensive color palettes.
+Define your color system including primary, secondary, and optional tertiary colors. Specify hex codes for each or provide a complete shade system. Use https://uicolors.app/ to generate comprehensive color palettes.
 
 **Example:**
 
