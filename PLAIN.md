@@ -9,6 +9,35 @@ format: PLAIN
 plain: https://github.com/selfishprimate/plain
 -->
 
+# Table of Contents
+
+Navigate quickly to any section of this PLAIN specification. Each section builds upon the previous ones to create a complete product definition.
+
+## Foundation
+- [Instructions for AI Coding Assistants](#instructions-for-ai-coding-assistants) - Core principles and implementation approach
+- [1. Project Overview](#1-project-overview) - What you're building and why
+- [2. Design Language](#2-design-language) - Visual identity and emotional tone
+- [3. Color Palette](#3-color-palette) - Color system and usage
+
+## Typography & Visual Elements
+- [4. Typography](#4-typography) - Font system and type scale
+- [5. Icons](#5-icons) - Icon library and style
+- [6. Layout](#6-layout) - Responsive structure and patterns
+- [7. Inspirations](#7-inspirations) - Design references and examples
+
+## Technical Architecture
+- [8. Tech Stack](#8-tech-stack) - Technologies and frameworks
+- [9. Features](#9-features) - Functionality and requirements
+- [10. Page Map](#10-page-map) - Routes and navigation structure
+- [11. Content Structure](#11-content-structure) - Data models and relationships
+
+## User Experience
+- [12. User Stories](#12-user-stories) - User needs and workflows
+- [13. Accessibility](#13-accessibility) - Inclusive design requirements
+- [14. Additional Notes](#14-additional-notes) - Special considerations
+
+---
+
 # Instructions for AI Coding Assistants
 
 This document follows the **PLAIN (Product Language for AI Notation)** format—a structured specification system designed to help AI understand and build complete products. PLAIN documents are organized into clear sections covering everything from design vision to technical architecture. Each section contains specific requirements, preferences, and constraints that should be treated as your source of truth.
@@ -328,7 +357,7 @@ Define the data models and content types that power your product, establishing h
 
 ## Common Content Types
 
-Select standard content types that apply to your product. These come with predefined fields and relationships. See [content types](options/content-types.md) for detailed structures and field definitions. **Options:** Blog Post, Product, Task, User, Event, Comment, Category, Tag, Media, Page, Notification, Message, Project, Team, Document, Invoice, Review, Order.
+Select standard content types that apply to your product. These come with predefined fields and relationships. See [content types](options/content-types.md) for detailed structures and field definitions.
 
 **Example:**
 
