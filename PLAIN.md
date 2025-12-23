@@ -9,7 +9,11 @@ format: PLAIN
 plain: https://github.com/selfishprimate/plain
 -->
 
-# Table of Contents
+# PLAIN: Product Language for AI Notation
+
+A structured specification format designed to help AI assistants understand and build complete products. PLAIN transforms your ideas into clear, actionable requirements that AI can interpret and implement with precision. From design vision to technical architecture, every aspect of your product is documented in a format optimized for AI comprehension.
+
+## Table of Contents
 
 Navigate quickly to any section of this PLAIN specification. Each section builds upon the previous ones to create a complete product definition.
 
@@ -31,7 +35,7 @@ Navigate quickly to any section of this PLAIN specification. Each section builds
 
 ---
 
-# Instructions for AI Coding Assistants
+## Instructions for AI Coding Assistants
 
 This document follows the **PLAIN (Product Language for AI Notation)** format—a structured specification system designed to help AI understand and build complete products. PLAIN documents are organized into clear sections covering everything from design vision to technical architecture. Each section contains specific requirements, preferences, and constraints that should be treated as your source of truth.
 
@@ -47,11 +51,11 @@ This document follows the **PLAIN (Product Language for AI Notation)** format—
 
 **Quality Checklist**: Before completion, verify all Must Have features are built, all pages from Page Map are created, and the app is responsive at all breakpoints with 44×44px minimum touch targets on mobile. Ensure brand colors are exact, fonts are loaded, dark mode is implemented if specified, and there are no crashes with helpful error messages throughout.
 
-# 1. Project Overview
+## 1. Project Overview
 
-What you’re building, who it’s for, and the value it delivers.
+What you're building, who it's for, and the value it delivers.
 
-## Project Name
+### Project Name
 
 A clear, memorable name that reflects your product's identity and purpose.
 
@@ -61,7 +65,7 @@ A clear, memorable name that reflects your product's identity and purpose.
 Taskly
 ```
 
-## Idea Statement
+### Idea Statement
 
 Describe your product's essence: what it is, who it serves, and what makes it unique in the market. Write 2-4 sentences covering: What are you building? Who is it for? What problem does it solve? How is it different from existing solutions?
 
@@ -71,7 +75,7 @@ Describe your product's essence: what it is, who it serves, and what makes it un
 Taskly is a minimalist task management app designed for freelancers and remote workers who need to stay organized without complexity. It addresses the common problem of task management tools being either too simple or too complex. Taskly strikes the perfect balance with an intuitive interface that includes smart task categorization, deadline tracking, and priority management.
 ```
 
-## Core Purpose
+### Core Purpose
 
 The fundamental problem your product solves, distilled into one clear sentence. 
 
@@ -81,23 +85,23 @@ The fundamental problem your product solves, distilled into one clear sentence.
 Help users stay organized with minimal friction.
 ```
 
-# 2. Design Language
+## 2. Design Language
 
 Establish the visual and emotional foundation that shapes how users perceive and experience your product.
 
-## Design Style
+### Design Style
 
-The overarching visual approach that guides all design decisions and creates consistency across your product. See [design style options](options/design-styles.md) for common styles and their characteristics. 
+The overarching visual approach that guides all design decisions and creates consistency across your product. See [design style options](options/design-styles.md) for common styles and their characteristics.
 
-**Example:** 
+**Example:**
 
 ```
 Brutalism
 ```
 
-## Design Tone
+### Design Tone
 
-The emotional qualities users should feel when interacting with your product. Choose up to 4 adjectives. See [design tone options](options/design-tones.md) for common tones and their characteristics. 
+The emotional qualities users should feel when interacting with your product. Choose up to 4 adjectives. See [design tone options](options/design-tones.md) for common tones and their characteristics.
 
 **Example:**
 
@@ -105,7 +109,7 @@ The emotional qualities users should feel when interacting with your product. Ch
 Clean, Professional, Modern, Trustworthy, Friendly, Bold, Calm
 ```
 
-## Design References
+### Design References
 
 Real-world examples that embody aspects of your desired design direction. For each reference, specify what specific elements inspire you. See [design references](options/design-references.md) for curated examples to study.
 
@@ -115,11 +119,11 @@ Real-world examples that embody aspects of your desired design direction. For ea
 2. (https://stripe.com): Professional colors with strong contrast. Documentation-style layouts that balance technical content with visual appeal.
 ```
 
-## Additional Notes
+### Additional Notes
 
 Any additional context about your design principles, brand constraints, or accessibility considerations.
 
-# 3. Colors
+## 3. Colors
 
 Define your color system including primary, secondary, and optional tertiary colors. Specify hex codes for each or provide a complete shade system. Use https://uicolors.app/ to generate comprehensive color palettes.
 
@@ -151,7 +155,7 @@ or JSON format with tints and shades:
 }
 ```
 
-## Dark Mode Support
+### Dark Mode Support
 
 Choose your theming strategy based on user needs and brand requirements. **Options:** Both Light and Dark Mode, Dark Mode Only, or Light Mode Only.
 
@@ -161,13 +165,13 @@ Choose your theming strategy based on user needs and brand requirements. **Optio
 Dark mode only.
 ```
 
-# 4. Typography
+## 4. Typography
 
 Define your typography system. Typography affects readability, hierarchy, and the overall personality of your product. See [typography options](options/typography.md) for font combinations and systems.
 
-## Display Font
+### Display Font
 
-Typography for headings, titles, and high-impact text. Choose a font that captures your brand's voice. 
+Typography for headings, titles, and high-impact text. Choose a font that captures your brand's voice.
 
 **Example:**
 
@@ -175,17 +179,17 @@ Typography for headings, titles, and high-impact text. Choose a font that captur
 Work Sans
 ```
 
-## Body Font
+### Body Font
 
 The primary typeface for all readable content. Prioritize clarity and legibility across screen sizes.
 
-**Example:** 
+**Example:**
 
 ```
 Inter
 ```
 
-## Monospace Font
+### Monospace Font
 
 Fixed-width font for code snippets, technical data, or numeric displays. Optional unless your product involves code or structured data.
 
@@ -195,7 +199,7 @@ Fixed-width font for code snippets, technical data, or numeric displays. Optiona
 Fira Code
 ```
 
-## Typescale
+### Typescale
 
 Define your typescale ratio. A typescale is a mathematical system that creates harmonious font sizes by multiplying a base size by a consistent ratio. Use https://typescale.com/ to preview different ratios and generate your scale. See [type scale options](options/type-scale.md) for common ratios and implementation guidelines.
 
@@ -205,11 +209,11 @@ Define your typescale ratio. A typescale is a mathematical system that creates h
 Major Third (1.25)
 ```
 
-# 5. Icons
+## 5. Icons
 
 Establish a consistent icon system that improves navigation, clarifies actions, and reinforces your visual language. See [icon options](options/icons.md) for popular libraries and their characteristics.
 
-## Icon Library
+### Icon Library
 
 Choose a comprehensive icon library that matches your design aesthetic and offers the symbols you need.
 
@@ -219,7 +223,7 @@ Choose a comprehensive icon library that matches your design aesthetic and offer
 Lucide Icons
 ```
 
-## Icon Style
+### Icon Style
 
 The visual treatment applied to all icons. Consistency here creates a cohesive, professional appearance.
 
@@ -229,25 +233,25 @@ The visual treatment applied to all icons. Consistency here creates a cohesive, 
 Outlined
 ```
 
-# 6. Layout
+## 6. Layout
 
 Define your layout structure and responsive behavior. Layout determines how content is organized and how your product adapts to different screen sizes. See [layout options](options/layout.md) for patterns and responsive strategies.
 
-## Responsive Strategy
+### Responsive Strategy
 
 Your foundational approach to building layouts that work seamlessly from mobile to desktop.
 
-**Example:** 
+**Example:**
 
 ```
 Desktop-First: Start large, simplify downward.
 ```
 
-## Additional Notes
+### Additional Notes
 
 Document specific layout patterns, accessibility requirements, or technical constraints that shape your structure.
 
-# 7. Inspirations
+## 7. Inspirations
 
 Curate 3-5 examples that demonstrate specific aspects of great design, functionality, or user experience. For each, describe what specific elements inspire you. See [design references](options/design-references.md) for inspiration.
 
@@ -261,11 +265,11 @@ Curate 3-5 examples that demonstrate specific aspects of great design, functiona
 3. (https://github.com): Clean code-focused interface with excellent dark mode implementation. Smart use of tabs and clear information architecture.
 ```
 
-## Additional Notes
+### Additional Notes
 
-Capture the overall mood, feeling, or design philosophy these inspirations represent. Example: "Aim for the simplicity of Apple, the playfulness of Duolingo, and the clarity of Linear.”
+Capture the overall mood, feeling, or design philosophy these inspirations represent. Example: "Aim for the simplicity of Apple, the playfulness of Duolingo, and the clarity of Linear."
 
-# 8. User Stories
+## 8. User Stories
 
 Write 5-10 stories using the format: "As a **[user type]**, I want to **[action]**, so that **[benefit]**".
 
@@ -279,15 +283,15 @@ Write 5-10 stories using the format: "As a **[user type]**, I want to **[action]
 - As a busy freelancer, I want to set deadline reminders for my tasks, so that I never miss a client deliverable and maintain my professional reputation.
 ```
 
-# 9. Functional Requirements
+## 9. Functional Requirements
 
 Define your product's capabilities using MoSCoW prioritization to ensure focus on what truly matters for launch.
 
-## Must Have Features
+### Must Have Features
 
 Core functionality required for your product to deliver value. Without these, the product doesn't work.
 
-**Example:** 
+**Example:**
 
 ```
 - User registration with email/password
@@ -295,7 +299,7 @@ Core functionality required for your product to deliver value. Without these, th
 - Real-time notifications
 ```
 
-## Should Have Features
+### Should Have Features
 
 Important features that significantly enhance the experience but aren't launch-blockers.
 
@@ -307,7 +311,7 @@ Important features that significantly enhance the experience but aren't launch-b
 - Profile customization
 ```
 
-## Could Have Features
+### Could Have Features
 
 Nice-to-have features that add polish or convenience. Consider for post-MVP iterations.
 
@@ -319,7 +323,7 @@ Nice-to-have features that add polish or convenience. Consider for post-MVP iter
 - Export to CSV
 ```
 
-## Won't Have Features
+### Won't Have Features
 
 Features explicitly excluded from this version to maintain focus and manage scope.
 
@@ -331,7 +335,7 @@ Features explicitly excluded from this version to maintain focus and manage scop
 - Mobile app
 ```
 
-# 10. Page Map
+## 10. Page Map
 
 Document every page and route in your product to establish the complete information architecture and user navigation paths. List all pages including public pages, authenticated areas, settings, admin sections, and utility pages (404, 500, loading). See [page map options](options/page-map.md) for common structures and navigation patterns.
 
@@ -344,11 +348,11 @@ Document every page and route in your product to establish the complete informat
 - Not Found (/404): Error page for invalid routes
 ```
 
-# 11. Content Structure
+## 11. Content Structure
 
 Define the data models and content types that power your product, establishing how information is organized and related.
 
-## Common Content Types
+### Common Content Types
 
 Select standard content types that apply to your product. These come with predefined fields and relationships. See [content types](options/content-types.md) for detailed structures and field definitions.
 
@@ -361,7 +365,7 @@ Select standard content types that apply to your product. These come with predef
 - Category
 ```
 
-## Add Custom Content Types
+### Add Custom Content Types
 
 Define custom content types unique to your product's domain, listing all necessary fields and their types.
 
@@ -378,11 +382,11 @@ Recipe
 - images (array: Media)
 ```
 
-# 12. Tech Stack
+## 12. Tech Stack
 
 Define your complete technical stack: frontend framework, UI library, backend infrastructure, database, authentication, and hosting.
 
-## Framework
+### Framework
 
 Your core frontend framework shapes the entire development experience. Choose based on team expertise, project requirements, and ecosystem.
 
@@ -392,7 +396,7 @@ Your core frontend framework shapes the entire development experience. Choose ba
 Vite + React
 ```
 
-## UI Library
+### UI Library
 
 Pre-built components that accelerate development and ensure consistency. Consider design flexibility vs speed of implementation.
 
@@ -402,7 +406,7 @@ Pre-built components that accelerate development and ensure consistency. Conside
 Shadcn UI
 ```
 
-## State Management
+### State Management
 
 How application data flows and updates across components. Simple apps may not need dedicated state management.
 
@@ -412,7 +416,7 @@ How application data flows and updates across components. Simple apps may not ne
 Zustand
 ```
 
-## Database
+### Database
 
 Choose your data persistence layer. Match the database type (SQL vs NoSQL) to your data structure and query patterns.
 
@@ -422,7 +426,7 @@ Choose your data persistence layer. Match the database type (SQL vs NoSQL) to yo
 Supabase
 ```
 
-## Authentication
+### Authentication
 
 Select your user authentication and identity management strategy based on security needs and user experience goals.
 
@@ -432,7 +436,7 @@ Select your user authentication and identity management strategy based on securi
 Firebase Auth
 ```
 
-## Content Management System
+### Content Management System
 
 Choose how content will be created, edited, and published. Consider team size, technical expertise, and content update frequency.
 
@@ -442,7 +446,7 @@ Choose how content will be created, edited, and published. Consider team size, t
 Markdown Files
 ```
 
-## Hosting
+### Hosting
 
 Determine where your application will be deployed and served to users. Consider performance, cost, and deployment workflow.
 
@@ -452,7 +456,7 @@ Determine where your application will be deployed and served to users. Consider 
 Netlify
 ```
 
-## Additional Notes
+### Additional Notes
 
 Document other tech stack choices like styling methodology, build tools, or specific libraries.
 
@@ -465,7 +469,7 @@ Document other tech stack choices like styling methodology, build tools, or spec
 - Framer Motion for animations
 ```
 
-# 13. Core Components
+## 13. Core Components
 
 Identify the UI building blocks your product requires. This inventory guides implementation and ensures nothing is overlooked.
 
@@ -475,7 +479,7 @@ Identify the UI building blocks your product requires. This inventory guides imp
 Accordion, Alert, Avatar, Badge, Breadcrumb, Button, Button Group, Calendar, Card, Carousel, Chart, Pagination, Scroll Area, Textarea, Toast Message, Toggle, Tooltip
 ```
 
-## Additional Components
+### Additional Components
 
 Specialized or custom components not covered by standard libraries. These may require custom development.
 
@@ -489,7 +493,7 @@ Specialized or custom components not covered by standard libraries. These may re
 - Color Picker
 ```
 
-# 14. Additional Notes
+## 14. Additional Notes
 
 Document important context that doesn't fit other sections: constraints, standards, goals, or questions that need resolution. Capture technical constraints, success metrics, accessibility standards, future considerations, or anything else relevant to development.
 
