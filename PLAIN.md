@@ -17,21 +17,7 @@ A structured specification format designed to help AI assistants understand and 
 
 Navigate quickly to any section of this PLAIN specification. Each section builds upon the previous ones to create a complete product definition.
 
-- [Instructions for AI Coding Assistants](#instructions-for-ai-coding-assistants)
-- [1. Project Overview](#1-project-overview)
-- [2. Design Language](#2-design-language)
-- [3. Colors](#3-colors)
-- [4. Typography](#4-typography)
-- [5. Icons](#5-icons)
-- [6. Layout](#6-layout)
-- [7. Inspirations](#7-inspirations)
-- [8. User Stories](#8-user-stories)
-- [9. Functional Requirements](#9-functional-requirements)
-- [10. Page Map](#10-page-map)
-- [11. Content Structure](#11-content-structure)
-- [12. Tech Stack](#12-tech-stack)
-- [13. Core Components](#13-core-components)
-- [14. Additional Notes](#14-additional-notes)
+[**Instructions for AI**](#instructions-for-ai-coding-assistants) • [**1. Project Overview**](#1-project-overview) • [**2. Design Language**](#2-design-language) • [**3. Colors**](#3-colors) • [**4. Typography**](#4-typography) • [**5. Icons**](#5-icons) • [**6. Layout**](#6-layout) • [**7. Inspirations**](#7-inspirations) • [**8. User Stories**](#8-user-stories) • [**9. Functional Requirements**](#9-functional-requirements) • [**10. Page Map**](#10-page-map) • [**11. Content Structure**](#11-content-structure) • [**12. Tech Stack**](#12-tech-stack) • [**13. Core Components**](#13-core-components) • [**14. Additional Notes**](#14-additional-notes)
 
 ---
 
