@@ -17,7 +17,7 @@ A structured specification format designed to help AI assistants understand and 
 
 Navigate quickly to any section of this PLAIN specification. Each section builds upon the previous ones to create a complete product definition.
 
-[Instructions for AI Coding Assistants](#instructions-for-ai-coding-assistants) • [Project Overview](#1-project-overview) • [Design Language](#2-design-language) • [Colors](#3-colors) • [Typography](#4-typography) • [Icons](#5-icons) • [Layout](#6-layout) • [Inspirations](#7-inspirations) • [User Stories](#8-user-stories) • [Functional Requirements](#9-functional-requirements) • [Page Map](#10-page-map) • [Content Structure](#11-content-structure) • [Tech Stack](#12-tech-stack) • [Core Components](#13-core-components) • [Additional Notes](#14-additional-notes)
+[Instructions for AI Coding Assistants](#instructions-for-ai-coding-assistants-) • [Project Overview](#1-project-overview-) • [Design Language](#2-design-language-) • [Colors](#3-colors-) • [Typography](#4-typography-) • [Icons](#5-icons-) • [Layout](#6-layout-) • [Inspirations](#7-inspirations-) • [User Stories](#8-user-stories-) • [Functional Requirements](#9-functional-requirements-) • [Page Map](#10-page-map-) • [Content Structure](#11-content-structure-) • [Tech Stack](#12-tech-stack-) • [Core Components](#13-core-components-) • [Additional Notes](#14-additional-notes-)
 
 ---
 
