@@ -195,7 +195,7 @@ Define your typescale ratio. A typescale is a mathematical system that creates h
 Major Third (1.25)
 ```
 
-## 5. Icons 🔲
+## 5. Icons 🎭
 
 Establish a consistent icon system that improves navigation, clarifies actions, and reinforces your visual language. See [icon options](options/icons.md) for popular libraries and their characteristics.
 
@@ -404,7 +404,7 @@ Zustand
 
 ### Database
 
-Choose your data persistence layer. Match the database type (SQL vs NoSQL) to your data structure and query patterns.
+Choose your data persistence layer. Match the database type (SQL vs NoSQL) to your data structure and query patterns. See [database options](options/database.md) for comprehensive database choices.
 
 **Example:**
 
@@ -414,7 +414,7 @@ Supabase
 
 ### Authentication
 
-Select your user authentication and identity management strategy based on security needs and user experience goals.
+Select your user authentication and identity management strategy based on security needs and user experience goals. See [authentication options](options/authentication.md) for detailed authentication solutions.
 
 **Example:**
 
@@ -424,7 +424,7 @@ Firebase Auth
 
 ### Content Management System
 
-Choose how content will be created, edited, and published. Consider team size, technical expertise, and content update frequency.
+Choose how content will be created, edited, and published. Consider team size, technical expertise, and content update frequency. See [CMS options](options/cms.md) for various content management systems.
 
 **Example:**
 
@@ -434,7 +434,7 @@ Markdown Files
 
 ### Hosting
 
-Determine where your application will be deployed and served to users. Consider performance, cost, and deployment workflow.
+Determine where your application will be deployed and served to users. Consider performance, cost, and deployment workflow. See [hosting options](options/hosting.md) for platform comparisons.
 
 **Example:**
 
