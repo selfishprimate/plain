@@ -328,7 +328,7 @@ Define the data models and content types that power your product, establishing h
 
 ## Common Content Types
 
-Select standard content types that apply to your product. These come with predefined fields and relationships. **Options:** Blog Post, Product, Task, User, Event, Comment, Category, Tag, Media, Page, Notification, Message, Project, Team, Document, Invoice, Review, Order.
+Select standard content types that apply to your product. These come with predefined fields and relationships. See [content types](options/content-types.md) for detailed structures and field definitions. **Options:** Blog Post, Product, Task, User, Event, Comment, Category, Tag, Media, Page, Notification, Message, Project, Team, Document, Invoice, Review, Order.
 
 **Example:**
 
