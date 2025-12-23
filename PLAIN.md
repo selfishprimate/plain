@@ -141,7 +141,7 @@ Dark mode only.
 
 # 4. Typography
 
-Define your typography system. Typography affects readability, hierarchy, and the overall personality of your product.
+Define your typography system. Typography affects readability, hierarchy, and the overall personality of your product. See [typography options](options/typography.md) for font combinations and systems.
 
 ## Display Font
 
@@ -175,7 +175,7 @@ Fira Code
 
 ## Typescale
 
-Define your typescale ratio. A typescale is a mathematical system that creates harmonious font sizes by multiplying a base size by a consistent ratio. Use https://typescale.com/ to preview different ratios and generate your scale.
+Define your typescale ratio. A typescale is a mathematical system that creates harmonious font sizes by multiplying a base size by a consistent ratio. Use https://typescale.com/ to preview different ratios and generate your scale. See [type scale options](options/type-scale.md) for common ratios and implementation guidelines.
 
 **Example:**
 
@@ -185,7 +185,7 @@ Major Third (1.25)
 
 # 5. Icons
 
-Establish a consistent icon system that improves navigation, clarifies actions, and reinforces your visual language.
+Establish a consistent icon system that improves navigation, clarifies actions, and reinforces your visual language. See [icon options](options/icons.md) for popular libraries and their characteristics.
 
 ## Icon Library
 
@@ -209,7 +209,7 @@ Outlined
 
 # 6. Layout
 
-Define your layout structure and responsive behavior. Layout determines how content is organized and how your product adapts to different screen sizes.
+Define your layout structure and responsive behavior. Layout determines how content is organized and how your product adapts to different screen sizes. See [layout options](options/layout.md) for patterns and responsive strategies.
 
 ## Responsive Strategy
 
@@ -311,7 +311,7 @@ Features explicitly excluded from this version to maintain focus and manage scop
 
 # 10. Page Map
 
-Document every page and route in your product to establish the complete information architecture and user navigation paths. List all pages including public pages, authenticated areas, settings, admin sections, and utility pages (404, 500, loading).
+Document every page and route in your product to establish the complete information architecture and user navigation paths. List all pages including public pages, authenticated areas, settings, admin sections, and utility pages (404, 500, loading). See [page map options](options/page-map.md) for common structures and navigation patterns.
 
 **Example:**
 
