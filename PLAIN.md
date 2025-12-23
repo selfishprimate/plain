@@ -9,19 +9,19 @@ format: PLAIN
 plain: https://github.com/selfishprimate/plain
 -->
 
-# PLAIN: Product Language for AI Notation
+# PLAIN: Product Language for AI Notation 📃
 
 A structured specification format designed to help AI assistants understand and build complete products. PLAIN transforms your ideas into clear, actionable requirements that AI can interpret and implement with precision. From design vision to technical architecture, every aspect of your product is documented in a format optimized for AI comprehension.
 
-## Table of Contents
+## Table of Contents 📚
 
 Navigate quickly to any section of this PLAIN specification. Each section builds upon the previous ones to create a complete product definition.
 
-[🤖 Instructions for AI Coding Assistants](#instructions-for-ai-coding-assistants) • [📋 Project Overview](#1-project-overview) • [🎨 Design Language](#2-design-language) • [🎯 Colors](#3-colors) • [✏️ Typography](#4-typography) • [🔲 Icons](#5-icons) • [📐 Layout](#6-layout) • [✨ Inspirations](#7-inspirations) • [👤 User Stories](#8-user-stories) • [⚙️ Functional Requirements](#9-functional-requirements) • [🗺️ Page Map](#10-page-map) • [📊 Content Structure](#11-content-structure) • [🛠️ Tech Stack](#12-tech-stack) • [🧩 Core Components](#13-core-components) • [📝 Additional Notes](#14-additional-notes)
+[Instructions for AI Coding Assistants](#instructions-for-ai-coding-assistants) • [Project Overview](#1-project-overview) • [Design Language](#2-design-language) • [Colors](#3-colors) • [Typography](#4-typography) • [Icons](#5-icons) • [Layout](#6-layout) • [Inspirations](#7-inspirations) • [User Stories](#8-user-stories) • [Functional Requirements](#9-functional-requirements) • [Page Map](#10-page-map) • [Content Structure](#11-content-structure) • [Tech Stack](#12-tech-stack) • [Core Components](#13-core-components) • [Additional Notes](#14-additional-notes)
 
 ---
 
-## Instructions for AI Coding Assistants
+## Instructions for AI Coding Assistants 🤖
 
 This document follows the **PLAIN (Product Language for AI Notation)** format—a structured specification system designed to help AI understand and build complete products. PLAIN documents are organized into clear sections covering everything from design vision to technical architecture. Each section contains specific requirements, preferences, and constraints that should be treated as your source of truth.
 
@@ -37,7 +37,7 @@ This document follows the **PLAIN (Product Language for AI Notation)** format—
 
 **Quality Checklist**: Before completion, verify all Must Have features are built, all pages from Page Map are created, and the app is responsive at all breakpoints with 44×44px minimum touch targets on mobile. Ensure brand colors are exact, fonts are loaded, dark mode is implemented if specified, and there are no crashes with helpful error messages throughout.
 
-## 1. Project Overview
+## 1. Project Overview 📋
 
 What you're building, who it's for, and the value it delivers.
 
@@ -71,7 +71,7 @@ The fundamental problem your product solves, distilled into one clear sentence.
 Help users stay organized with minimal friction.
 ```
 
-## 2. Design Language
+## 2. Design Language 💎
 
 Establish the visual and emotional foundation that shapes how users perceive and experience your product.
 
@@ -109,7 +109,7 @@ Real-world examples that embody aspects of your desired design direction. For ea
 
 Any additional context about your design principles, brand constraints, or accessibility considerations.
 
-## 3. Colors
+## 3. Colors 🎨
 
 Define your color system including primary, secondary, and optional tertiary colors. Specify hex codes for each or provide a complete shade system. Use https://uicolors.app/ to generate comprehensive color palettes.
 
@@ -151,7 +151,7 @@ Choose your theming strategy based on user needs and brand requirements. **Optio
 Dark mode only.
 ```
 
-## 4. Typography
+## 4. Typography 🔤
 
 Define your typography system. Typography affects readability, hierarchy, and the overall personality of your product. See [typography options](options/typography.md) for font combinations and systems.
 
@@ -195,7 +195,7 @@ Define your typescale ratio. A typescale is a mathematical system that creates h
 Major Third (1.25)
 ```
 
-## 5. Icons
+## 5. Icons 🔲
 
 Establish a consistent icon system that improves navigation, clarifies actions, and reinforces your visual language. See [icon options](options/icons.md) for popular libraries and their characteristics.
 
@@ -219,7 +219,7 @@ The visual treatment applied to all icons. Consistency here creates a cohesive, 
 Outlined
 ```
 
-## 6. Layout
+## 6. Layout 📐
 
 Define your layout structure and responsive behavior. Layout determines how content is organized and how your product adapts to different screen sizes. See [layout options](options/layout.md) for patterns and responsive strategies.
 
@@ -237,7 +237,7 @@ Desktop-First: Start large, simplify downward.
 
 Document specific layout patterns, accessibility requirements, or technical constraints that shape your structure.
 
-## 7. Inspirations
+## 7. Inspirations ✨
 
 Curate 3-5 examples that demonstrate specific aspects of great design, functionality, or user experience. For each, describe what specific elements inspire you. See [design references](options/design-references.md) for inspiration.
 
@@ -255,7 +255,7 @@ Curate 3-5 examples that demonstrate specific aspects of great design, functiona
 
 Capture the overall mood, feeling, or design philosophy these inspirations represent. Example: "Aim for the simplicity of Apple, the playfulness of Duolingo, and the clarity of Linear."
 
-## 8. User Stories
+## 8. User Stories 👤
 
 Write 5-10 stories using the format: "As a **[user type]**, I want to **[action]**, so that **[benefit]**".
 
@@ -269,7 +269,7 @@ Write 5-10 stories using the format: "As a **[user type]**, I want to **[action]
 - As a busy freelancer, I want to set deadline reminders for my tasks, so that I never miss a client deliverable and maintain my professional reputation.
 ```
 
-## 9. Functional Requirements
+## 9. Functional Requirements ⚙️
 
 Define your product's capabilities using MoSCoW prioritization to ensure focus on what truly matters for launch.
 
@@ -321,7 +321,7 @@ Features explicitly excluded from this version to maintain focus and manage scop
 - Mobile app
 ```
 
-## 10. Page Map
+## 10. Page Map 🗺️
 
 Document every page and route in your product to establish the complete information architecture and user navigation paths. List all pages including public pages, authenticated areas, settings, admin sections, and utility pages (404, 500, loading). See [page map options](options/page-map.md) for common structures and navigation patterns.
 
@@ -334,7 +334,7 @@ Document every page and route in your product to establish the complete informat
 - Not Found (/404): Error page for invalid routes
 ```
 
-## 11. Content Structure
+## 11. Content Structure 📊
 
 Define the data models and content types that power your product, establishing how information is organized and related.
 
@@ -368,7 +368,7 @@ Recipe
 - images (array: Media)
 ```
 
-## 12. Tech Stack
+## 12. Tech Stack 🛠️
 
 Define your complete technical stack: frontend framework, UI library, backend infrastructure, database, authentication, and hosting.
 
@@ -455,7 +455,7 @@ Document other tech stack choices like styling methodology, build tools, or spec
 - Framer Motion for animations
 ```
 
-## 13. Core Components
+## 13. Core Components 🧩
 
 Identify the UI building blocks your product requires. This inventory guides implementation and ensures nothing is overlooked.
 
@@ -479,7 +479,7 @@ Specialized or custom components not covered by standard libraries. These may re
 - Color Picker
 ```
 
-## 14. Additional Notes
+## 14. Additional Notes 📝
 
 Document important context that doesn't fit other sections: constraints, standards, goals, or questions that need resolution. Capture technical constraints, success metrics, accessibility standards, future considerations, or anything else relevant to development.
 
