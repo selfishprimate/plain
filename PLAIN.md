@@ -374,7 +374,7 @@ Define your complete technical stack: frontend framework, UI library, backend in
 
 ### Framework
 
-Your core frontend framework shapes the entire development experience. Choose based on team expertise, project requirements, and ecosystem.
+Your core frontend framework shapes the entire development experience. Choose based on team expertise, project requirements, and ecosystem. See [framework options](options/frameworks.md) for detailed comparisons and recommendations.
 
 **Example:**
 
@@ -384,7 +384,7 @@ Vite + React
 
 ### UI Library
 
-Pre-built components that accelerate development and ensure consistency. Consider design flexibility vs speed of implementation.
+Pre-built components that accelerate development and ensure consistency. Consider design flexibility vs speed of implementation. See [UI library options](options/ui-libraries.md) for comprehensive comparisons.
 
 **Example:**
 
@@ -394,7 +394,7 @@ Shadcn UI
 
 ### State Management
 
-How application data flows and updates across components. Simple apps may not need dedicated state management.
+How application data flows and updates across components. Simple apps may not need dedicated state management. See [state management options](options/state-management.md) for detailed solutions.
 
 **Example:**
 
@@ -457,7 +457,7 @@ Document other tech stack choices like styling methodology, build tools, or spec
 
 ## 13. Core Components 🧩
 
-Identify the UI building blocks your product requires. This inventory guides implementation and ensures nothing is overlooked.
+Identify the UI building blocks your product requires. This inventory guides implementation and ensures nothing is overlooked. See [core components catalog](options/core-components.md) for detailed descriptions and use cases.
 
 **Example:**
 
