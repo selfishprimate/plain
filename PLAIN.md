@@ -71,7 +71,7 @@ Establish the visual and emotional foundation that shapes how users perceive and
 
 ### Design Style
 
-The overarching visual approach that guides all design decisions and creates consistency across your product. See [design style options](options/design-styles.md) for common styles and their characteristics.
+The overarching visual approach that guides all design decisions and creates consistency across your product. See [design style options](glossary/design-styles.md) for common styles and their characteristics.
 
 ```
 Brutalism
@@ -79,7 +79,7 @@ Brutalism
 
 ### Design Tone
 
-The emotional qualities users should feel when interacting with your product. Choose up to 4 adjectives. See [design tone options](options/design-tones.md) for common tones and their characteristics.
+The emotional qualities users should feel when interacting with your product. Choose up to 4 adjectives. See [design tone options](glossary/design-tones.md) for common tones and their characteristics.
 
 ```
 Clean, Professional, Modern, Trustworthy, Friendly, Bold, Calm
@@ -87,7 +87,7 @@ Clean, Professional, Modern, Trustworthy, Friendly, Bold, Calm
 
 ### Design References
 
-Real-world examples that embody aspects of your desired design direction. For each reference, specify what specific elements inspire you. See [design references](options/design-references.md) for curated examples to study.
+Real-world examples that embody aspects of your desired design direction. For each reference, specify what specific elements inspire you. See [design references](glossary/design-references.md) for curated examples to study.
 
 ```
 1. (https://linear.app): Clean, minimal interface with excellent use of typography and subtle animations. Great example of purposeful whitespace and clear visual hierarchy.
@@ -139,7 +139,7 @@ Dark mode only.
 
 ## 4. Typography 🔤
 
-Define your typography system. Typography affects readability, hierarchy, and the overall personality of your product. See [typography options](options/typography.md) for font combinations and systems.
+Define your typography system. Typography affects readability, hierarchy, and the overall personality of your product. See [typography options](glossary/typography.md) for font combinations and systems.
 
 ### Display Font
 
@@ -167,7 +167,7 @@ Fira Code
 
 ### Typescale
 
-Define your typescale ratio. A typescale is a mathematical system that creates harmonious font sizes by multiplying a base size by a consistent ratio. Use https://typescale.com/ to preview different ratios and generate your scale. See [type scale options](options/type-scale.md) for common ratios and implementation guidelines.
+Define your typescale ratio. A typescale is a mathematical system that creates harmonious font sizes by multiplying a base size by a consistent ratio. Use https://typescale.com/ to preview different ratios and generate your scale. See [type scale options](glossary/type-scale.md) for common ratios and implementation guidelines.
 
 ```
 Major Third (1.25)
@@ -175,7 +175,7 @@ Major Third (1.25)
 
 ## 5. Icons 🎭
 
-Establish a consistent icon system that improves navigation, clarifies actions, and reinforces your visual language. See [icon options](options/icons.md) for popular libraries and their characteristics.
+Establish a consistent icon system that improves navigation, clarifies actions, and reinforces your visual language. See [icon options](glossary/icons.md) for popular libraries and their characteristics.
 
 ### Icon Library
 
@@ -195,7 +195,7 @@ Outlined
 
 ## 6. Layout 📐
 
-Define your layout structure and responsive behavior. Layout determines how content is organized and how your product adapts to different screen sizes. See [layout options](options/layout.md) for patterns and responsive strategies.
+Define your layout structure and responsive behavior. Layout determines how content is organized and how your product adapts to different screen sizes. See [layout options](glossary/layout.md) for patterns and responsive strategies.
 
 ### Responsive Strategy
 
@@ -211,7 +211,7 @@ Document specific layout patterns, accessibility requirements, or technical cons
 
 ## 7. Inspirations ✨
 
-Curate 3-5 examples that demonstrate specific aspects of great design, functionality, or user experience. For each, describe what specific elements inspire you. See [design references](options/design-references.md) for inspiration.
+Curate 3-5 examples that demonstrate specific aspects of great design, functionality, or user experience. For each, describe what specific elements inspire you. See [design references](glossary/design-references.md) for inspiration.
 
 ```
 1. (https://notion.so): Flexible workspace with intuitive drag-and-drop interactions. Great example of progressive disclosure and nested content organization.
@@ -283,7 +283,7 @@ Features explicitly excluded from this version to maintain focus and manage scop
 
 ## 10. Page Map 🗺️
 
-Document every page and route in your product to establish the complete information architecture and user navigation paths. List all pages including public pages, authenticated areas, settings, admin sections, and utility pages (404, 500, loading). See [page map options](options/page-map.md) for common structures and navigation patterns.
+Document every page and route in your product to establish the complete information architecture and user navigation paths. List all pages including public pages, authenticated areas, settings, admin sections, and utility pages (404, 500, loading). See [page map options](glossary/page-map.md) for common structures and navigation patterns.
 
 ```
 - Home (/): Landing page with hero section and key features
@@ -298,7 +298,7 @@ Define the data models and content types that power your product, establishing h
 
 ### Common Content Types
 
-Select standard content types that apply to your product. These come with predefined fields and relationships. See [content types](options/content-types.md) for detailed structures and field definitions.
+Select standard content types that apply to your product. These come with predefined fields and relationships. See [content types](glossary/content-types.md) for detailed structures and field definitions.
 
 ```
 - Product
@@ -328,7 +328,7 @@ Define your complete technical stack: frontend framework, UI library, backend in
 
 ### Framework
 
-Your core frontend framework shapes the entire development experience. Choose based on team expertise, project requirements, and ecosystem. See [framework options](options/frameworks.md) for detailed comparisons and recommendations.
+Your core frontend framework shapes the entire development experience. Choose based on team expertise, project requirements, and ecosystem. See [framework options](glossary/frameworks.md) for detailed comparisons and recommendations.
 
 ```
 Vite + React
@@ -336,7 +336,7 @@ Vite + React
 
 ### UI Library
 
-Pre-built components that accelerate development and ensure consistency. Consider design flexibility vs speed of implementation. See [UI library options](options/ui-libraries.md) for comprehensive comparisons.
+Pre-built components that accelerate development and ensure consistency. Consider design flexibility vs speed of implementation. See [UI library options](glossary/ui-libraries.md) for comprehensive comparisons.
 
 ```
 Shadcn UI
@@ -344,7 +344,7 @@ Shadcn UI
 
 ### State Management
 
-How application data flows and updates across components. Simple apps may not need dedicated state management. See [state management options](options/state-management.md) for detailed solutions.
+How application data flows and updates across components. Simple apps may not need dedicated state management. See [state management options](glossary/state-management.md) for detailed solutions.
 
 ```
 Zustand
@@ -352,7 +352,7 @@ Zustand
 
 ### Database
 
-Choose your data persistence layer. Match the database type (SQL vs NoSQL) to your data structure and query patterns. See [database options](options/database.md) for comprehensive database choices.
+Choose your data persistence layer. Match the database type (SQL vs NoSQL) to your data structure and query patterns. See [database options](glossary/database.md) for comprehensive database choices.
 
 ```
 Supabase
@@ -360,7 +360,7 @@ Supabase
 
 ### Authentication
 
-Select your user authentication and identity management strategy based on security needs and user experience goals. See [authentication options](options/authentication.md) for detailed authentication solutions.
+Select your user authentication and identity management strategy based on security needs and user experience goals. See [authentication options](glossary/authentication.md) for detailed authentication solutions.
 
 ```
 Firebase Auth
@@ -368,7 +368,7 @@ Firebase Auth
 
 ### Content Management System
 
-Choose how content will be created, edited, and published. Consider team size, technical expertise, and content update frequency. See [CMS options](options/cms.md) for various content management systems.
+Choose how content will be created, edited, and published. Consider team size, technical expertise, and content update frequency. See [CMS options](glossary/cms.md) for various content management systems.
 
 ```
 Markdown Files
@@ -376,7 +376,7 @@ Markdown Files
 
 ### Hosting
 
-Determine where your application will be deployed and served to users. Consider performance, cost, and deployment workflow. See [hosting options](options/hosting.md) for platform comparisons.
+Determine where your application will be deployed and served to users. Consider performance, cost, and deployment workflow. See [hosting options](glossary/hosting.md) for platform comparisons.
 
 ```
 Netlify
@@ -395,7 +395,7 @@ Document other tech stack choices like styling methodology, build tools, or spec
 
 ## 13. Core Components 🧩
 
-Identify the UI building blocks your product requires. This inventory guides implementation and ensures nothing is overlooked. See [core components catalog](options/core-components.md) for detailed descriptions and use cases.
+Identify the UI building blocks your product requires. This inventory guides implementation and ensures nothing is overlooked. See [core components catalog](glossary/core-components.md) for detailed descriptions and use cases.
 
 ```
 Accordion, Alert, Avatar, Badge, Breadcrumb, Button, Button Group, Calendar, Card, Carousel, Chart, Pagination, Scroll Area, Textarea, Toast Message, Toggle, Tooltip

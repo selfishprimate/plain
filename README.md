@@ -33,7 +33,9 @@ Start with the **project metadata** in the HTML comment at the top (title, descr
 
 Work through each section from Project Overview to Additional Notes. The template includes examples and explanations for guidance. **Once you've filled in your content, delete the examples and explanations to keep your spec clean.**
 
-**Tip:** For any section where you're unsure, simply write `Let AI decide for me`.
+📚 **Feeling stuck?** If you're experiencing blank page syndrome, finding the technical choices overwhelming, or simply want to explore your options, visit the [glossary](glossary) folder. It contains comprehensive guides for every technical decision—from frameworks to databases—with real-world examples and clear recommendations to help you make informed choices.
+
+**Still unsure?** For any section where you're uncertain, simply write `Let AI decide for me`.
 
 ### Step 3: Feed Your PLAIN File to AI
 
