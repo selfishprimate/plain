@@ -45,8 +45,6 @@ What you're building, who it's for, and the value it delivers.
 
 A clear, memorable name that reflects your product's identity and purpose.
 
-**Example:**
-
 ```
 Taskly
 ```
@@ -55,8 +53,6 @@ Taskly
 
 Describe your product's essence: what it is, who it serves, and what makes it unique in the market. Write 2-4 sentences covering: What are you building? Who is it for? What problem does it solve? How is it different from existing solutions?
 
-**Example:**
-
 ```
 Taskly is a minimalist task management app designed for freelancers and remote workers who need to stay organized without complexity. It addresses the common problem of task management tools being either too simple or too complex. Taskly strikes the perfect balance with an intuitive interface that includes smart task categorization, deadline tracking, and priority management.
 ```
@@ -64,8 +60,6 @@ Taskly is a minimalist task management app designed for freelancers and remote w
 ### Core Purpose
 
 The fundamental problem your product solves, distilled into one clear sentence. 
-
-**Example:**
 
 ```
 Help users stay organized with minimal friction.
@@ -79,8 +73,6 @@ Establish the visual and emotional foundation that shapes how users perceive and
 
 The overarching visual approach that guides all design decisions and creates consistency across your product. See [design style options](options/design-styles.md) for common styles and their characteristics.
 
-**Example:**
-
 ```
 Brutalism
 ```
@@ -88,8 +80,6 @@ Brutalism
 ### Design Tone
 
 The emotional qualities users should feel when interacting with your product. Choose up to 4 adjectives. See [design tone options](options/design-tones.md) for common tones and their characteristics.
-
-**Example:**
 
 ```
 Clean, Professional, Modern, Trustworthy, Friendly, Bold, Calm
@@ -112,8 +102,6 @@ Any additional context about your design principles, brand constraints, or acces
 ## 3. Colors 🎨
 
 Define your color system including primary, secondary, and optional tertiary colors. Specify hex codes for each or provide a complete shade system. Use https://uicolors.app/ to generate comprehensive color palettes.
-
-**Example:**
 
 ```
 Simple format:
@@ -145,8 +133,6 @@ or JSON format with tints and shades:
 
 Choose your theming strategy based on user needs and brand requirements. **Options:** Both Light and Dark Mode, Dark Mode Only, or Light Mode Only.
 
-**Example:**
-
 ```
 Dark mode only.
 ```
@@ -159,8 +145,6 @@ Define your typography system. Typography affects readability, hierarchy, and th
 
 Typography for headings, titles, and high-impact text. Choose a font that captures your brand's voice.
 
-**Example:**
-
 ```
 Work Sans
 ```
@@ -168,8 +152,6 @@ Work Sans
 ### Body Font
 
 The primary typeface for all readable content. Prioritize clarity and legibility across screen sizes.
-
-**Example:**
 
 ```
 Inter
@@ -179,8 +161,6 @@ Inter
 
 Fixed-width font for code snippets, technical data, or numeric displays. Optional unless your product involves code or structured data.
 
-**Example:**
-
 ```
 Fira Code
 ```
@@ -188,8 +168,6 @@ Fira Code
 ### Typescale
 
 Define your typescale ratio. A typescale is a mathematical system that creates harmonious font sizes by multiplying a base size by a consistent ratio. Use https://typescale.com/ to preview different ratios and generate your scale. See [type scale options](options/type-scale.md) for common ratios and implementation guidelines.
-
-**Example:**
 
 ```
 Major Third (1.25)
@@ -203,8 +181,6 @@ Establish a consistent icon system that improves navigation, clarifies actions, 
 
 Choose a comprehensive icon library that matches your design aesthetic and offers the symbols you need.
 
-**Example:**
-
 ```
 Lucide Icons
 ```
@@ -212,8 +188,6 @@ Lucide Icons
 ### Icon Style
 
 The visual treatment applied to all icons. Consistency here creates a cohesive, professional appearance.
-
-**Example:**
 
 ```
 Outlined
@@ -227,8 +201,6 @@ Define your layout structure and responsive behavior. Layout determines how cont
 
 Your foundational approach to building layouts that work seamlessly from mobile to desktop.
 
-**Example:**
-
 ```
 Desktop-First: Start large, simplify downward.
 ```
@@ -240,8 +212,6 @@ Document specific layout patterns, accessibility requirements, or technical cons
 ## 7. Inspirations ✨
 
 Curate 3-5 examples that demonstrate specific aspects of great design, functionality, or user experience. For each, describe what specific elements inspire you. See [design references](options/design-references.md) for inspiration.
-
-**Example:**
 
 ```
 1. (https://notion.so): Flexible workspace with intuitive drag-and-drop interactions. Great example of progressive disclosure and nested content organization.
@@ -259,8 +229,6 @@ Capture the overall mood, feeling, or design philosophy these inspirations repre
 
 Write 5-10 stories using the format: "As a **[user type]**, I want to **[action]**, so that **[benefit]**".
 
-**Example:**
-
 ```
 - As a freelance designer, I want to quickly capture task ideas on my phone when inspiration strikes, so that I don't forget important to-dos when I'm away from my desk.
 
@@ -277,8 +245,6 @@ Define your product's capabilities using MoSCoW prioritization to ensure focus o
 
 Core functionality required for your product to deliver value. Without these, the product doesn't work.
 
-**Example:**
-
 ```
 - User registration with email/password
 - Create and edit tasks
@@ -288,8 +254,6 @@ Core functionality required for your product to deliver value. Without these, th
 ### Should Have Features
 
 Important features that significantly enhance the experience but aren't launch-blockers.
-
-**Example:**
 
 ```
 - Task filtering by status
@@ -301,8 +265,6 @@ Important features that significantly enhance the experience but aren't launch-b
 
 Nice-to-have features that add polish or convenience. Consider for post-MVP iterations.
 
-**Example:**
-
 ```
 - Dark mode toggle
 - Keyboard shortcuts
@@ -313,8 +275,6 @@ Nice-to-have features that add polish or convenience. Consider for post-MVP iter
 
 Features explicitly excluded from this version to maintain focus and manage scope.
 
-**Example:**
-
 ```
 - Advanced analytics dashboard
 - Team collaboration
@@ -324,8 +284,6 @@ Features explicitly excluded from this version to maintain focus and manage scop
 ## 10. Page Map 🗺️
 
 Document every page and route in your product to establish the complete information architecture and user navigation paths. List all pages including public pages, authenticated areas, settings, admin sections, and utility pages (404, 500, loading). See [page map options](options/page-map.md) for common structures and navigation patterns.
-
-**Example:**
 
 ```
 - Home (/): Landing page with hero section and key features
@@ -342,8 +300,6 @@ Define the data models and content types that power your product, establishing h
 
 Select standard content types that apply to your product. These come with predefined fields and relationships. See [content types](options/content-types.md) for detailed structures and field definitions.
 
-**Example:**
-
 ```
 - Product
 - Task
@@ -354,8 +310,6 @@ Select standard content types that apply to your product. These come with predef
 ### Add Custom Content Types
 
 Define custom content types unique to your product's domain, listing all necessary fields and their types.
-
-**Example:**
 
 ```
 Recipe
@@ -376,8 +330,6 @@ Define your complete technical stack: frontend framework, UI library, backend in
 
 Your core frontend framework shapes the entire development experience. Choose based on team expertise, project requirements, and ecosystem. See [framework options](options/frameworks.md) for detailed comparisons and recommendations.
 
-**Example:**
-
 ```
 Vite + React
 ```
@@ -385,8 +337,6 @@ Vite + React
 ### UI Library
 
 Pre-built components that accelerate development and ensure consistency. Consider design flexibility vs speed of implementation. See [UI library options](options/ui-libraries.md) for comprehensive comparisons.
-
-**Example:**
 
 ```
 Shadcn UI
@@ -396,8 +346,6 @@ Shadcn UI
 
 How application data flows and updates across components. Simple apps may not need dedicated state management. See [state management options](options/state-management.md) for detailed solutions.
 
-**Example:**
-
 ```
 Zustand
 ```
@@ -405,8 +353,6 @@ Zustand
 ### Database
 
 Choose your data persistence layer. Match the database type (SQL vs NoSQL) to your data structure and query patterns. See [database options](options/database.md) for comprehensive database choices.
-
-**Example:**
 
 ```
 Supabase
@@ -416,8 +362,6 @@ Supabase
 
 Select your user authentication and identity management strategy based on security needs and user experience goals. See [authentication options](options/authentication.md) for detailed authentication solutions.
 
-**Example:**
-
 ```
 Firebase Auth
 ```
@@ -425,8 +369,6 @@ Firebase Auth
 ### Content Management System
 
 Choose how content will be created, edited, and published. Consider team size, technical expertise, and content update frequency. See [CMS options](options/cms.md) for various content management systems.
-
-**Example:**
 
 ```
 Markdown Files
@@ -436,8 +378,6 @@ Markdown Files
 
 Determine where your application will be deployed and served to users. Consider performance, cost, and deployment workflow. See [hosting options](options/hosting.md) for platform comparisons.
 
-**Example:**
-
 ```
 Netlify
 ```
@@ -445,8 +385,6 @@ Netlify
 ### Additional Notes
 
 Document other tech stack choices like styling methodology, build tools, or specific libraries.
-
-**Example:**
 
 ```
 - Using CSS Modules for component styles
@@ -459,8 +397,6 @@ Document other tech stack choices like styling methodology, build tools, or spec
 
 Identify the UI building blocks your product requires. This inventory guides implementation and ensures nothing is overlooked. See [core components catalog](options/core-components.md) for detailed descriptions and use cases.
 
-**Example:**
-
 ```
 Accordion, Alert, Avatar, Badge, Breadcrumb, Button, Button Group, Calendar, Card, Carousel, Chart, Pagination, Scroll Area, Textarea, Toast Message, Toggle, Tooltip
 ```
@@ -468,8 +404,6 @@ Accordion, Alert, Avatar, Badge, Breadcrumb, Button, Button Group, Calendar, Car
 ### Additional Components
 
 Specialized or custom components not covered by standard libraries. These may require custom development.
-
-**Example:**
 
 ```
 - Rich Text Editor (TipTap)
@@ -482,8 +416,6 @@ Specialized or custom components not covered by standard libraries. These may re
 ## 14. Additional Notes 📝
 
 Document important context that doesn't fit other sections: constraints, standards, goals, or questions that need resolution. Capture technical constraints, success metrics, accessibility standards, future considerations, or anything else relevant to development.
-
-**Example:**
 
 ```
 - Must achieve WCAG AA compliance

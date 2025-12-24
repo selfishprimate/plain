@@ -16,13 +16,40 @@ State refers to any data that can change over time in your application - user in
 
 Simple applications with minimal component communication may not need dedicated state management - component state and props are sufficient. However, you need state management when:
 
-- Multiple components need to access the same data
-- Components need to communicate across different parts of the component tree
-- State needs to persist across route changes
-- You're experiencing "prop drilling" (passing props through many levels)
-- Application state is becoming difficult to track and debug
-- You need time-travel debugging or state history
-- Multiple data sources need to be synchronized
+- **Multiple components need to access the same data**
+  - *Example:* User profile information displayed in header, sidebar, and settings page simultaneously
+  - *Example:* Shopping cart count shown in navigation bar, cart icon, and checkout page
+  - *Example:* Real-time notification count appearing in multiple UI locations
+
+- **Components need to communicate across different parts of the component tree**
+  - *Example:* Filter sidebar updating product grid without being parent/child components
+  - *Example:* Search bar in header filtering results displayed in main content area
+  - *Example:* Theme toggle in settings affecting entire application appearance
+
+- **State needs to persist across route changes**
+  - *Example:* Multi-step form data retained when navigating back and forth between steps
+  - *Example:* Applied filters staying active when navigating between product pages
+  - *Example:* Music player continuing playback while browsing different pages
+
+- **You're experiencing "prop drilling" (passing props through many levels)**
+  - *Example:* User authentication status passed from App → Layout → Header → UserMenu → ProfileDropdown
+  - *Example:* Theme preferences traveling through 5+ component levels to reach a deeply nested toggle
+  - *Example:* API data being passed through intermediate components that don't use it
+
+- **Application state is becoming difficult to track and debug**
+  - *Example:* Unable to determine why a component isn't updating after user action
+  - *Example:* Race conditions between multiple API calls updating the same data
+  - *Example:* Inconsistent UI where same data shows different values in different places
+
+- **You need time-travel debugging or state history**
+  - *Example:* Undo/redo functionality in a design tool or document editor
+  - *Example:* Debugging complex user workflows to reproduce reported bugs
+  - *Example:* Analytics tracking of user actions and state changes over time
+
+- **Multiple data sources need to be synchronized**
+  - *Example:* Chat application syncing messages from WebSocket, REST API, and local cache
+  - *Example:* Calendar app merging events from Google, Outlook, and local reminders
+  - *Example:* Dashboard combining real-time metrics, historical data, and user preferences
 
 ## React State Management
 
