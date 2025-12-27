@@ -342,6 +342,14 @@ Pre-built components that accelerate development and ensure consistency. Conside
 Shadcn UI
 ```
 
+#### Animation Library
+
+Bring your interface to life with smooth transitions and engaging interactions. Choose based on complexity, performance needs, and framework compatibility. See [animation library options](glossary/animations.md) for detailed comparisons.
+
+```
+Framer Motion
+```
+
 ### State Management
 
 How application data flows and updates across components. Simple apps may not need dedicated state management. See [state management options](glossary/state-management.md) for detailed solutions.
