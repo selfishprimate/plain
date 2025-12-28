@@ -342,9 +342,9 @@ Pre-built components that accelerate development and ensure consistency. Conside
 Shadcn UI
 ```
 
-#### Animation Library
+### Animation Library
 
-Bring your interface to life with smooth transitions and engaging interactions. Choose based on complexity, performance needs, and framework compatibility. See [animation library options](glossary/animations.md) for detailed comparisons.
+Bring your interface to life with smooth transitions and engaging interactions. Choose based on complexity, performance needs, and framework compatibility. See [animation library options](glossary/animation-libraries.md) for detailed comparisons.
 
 ```
 Framer Motion
