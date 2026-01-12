@@ -1,13 +1,13 @@
 # These are supported funding model platforms
 
-github: [selfishprimate]  # GitHub Sponsors kullanıcı adınız
-# patreon: kullaniciadi
+github: [selfishprimate]  # GitHub Sponsors
+patreon: selfishprimate  # Patreon
 # open_collective: kullaniciadi
-ko_fi: selfishprimate  # Ko-fi kullanıcı adınız
+# ko_fi: kullaniciadi
 # tidelift: platform-name/package-name
 # community_bridge: project-name
 # liberapay: kullaniciadi
 # issuehunt: kullaniciadi
 # otechie: kullaniciadi
 # lfx_crowdfunding: project-name
-custom: ['https://buymeacoffee.com/selfishprimate']  # Özel bağış bağlantıları
+custom: ['https://buymeacoffee.com/selfishprimate']  # Buy Me a Coffee
