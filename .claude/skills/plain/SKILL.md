@@ -15,7 +15,7 @@ Read the user's product idea (a sentence or a paragraph is enough) and write a f
 
 Emit, in order:
 
-1. A leading HTML metadata comment with these keys: title, description, author, date, version, projectLink, format, plain. Fill each from the idea (use today's date for `date`, `PLAIN` for `format`, `https://github.com/selfishprimate/plain` for `plain`).
+1. A leading HTML metadata comment with these keys: title, description, author, date, version, projectLink, format, plain, plainify. Fill each from the idea (use today's date for `date`, `PLAIN` for `format`, `https://github.com/selfishprimate/plain` for `plain`, `https://plainify.app` for `plainify`).
 2. The title line: `# PLAIN: Product Language for AI Notation 📃`.
 3. The `## Instructions for AI Coding Assistants 🤖` block (reproduce it verbatim, it orients the downstream build agent).
 4. The 14 sections, each as `## N. Section Name EMOJI`, with named fields as `### Field Name` subheadings. Put the real value beneath each heading as prose or a bullet list. Do NOT use code fences for values (fences in the canonical template only delimit examples).

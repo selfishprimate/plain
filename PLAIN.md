@@ -7,6 +7,7 @@ version: 1.0
 projectLink: Link to your AI-generated project or design.
 format: PLAIN
 plain: https://github.com/selfishprimate/plain
+plainify: https://plainify.app
 -->
 
 # PLAIN: Product Language for AI Notation 📃
