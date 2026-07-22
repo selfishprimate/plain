@@ -7,6 +7,7 @@ version: 1.0
 projectLink: Link to your AI-generated project or design.
 format: PLAIN
 plain: https://github.com/selfishprimate/plain
+plainify: https://plainify.app
 -->
 
 # PLAIN: Product Language for AI Notation 📃
@@ -17,13 +18,13 @@ A structured specification format designed to help AI assistants understand and 
 
 Navigate quickly to any section of this PLAIN specification. Each section builds upon the previous ones to create a complete product definition.
 
-[Instructions for AI Coding Assistants](#instructions-for-ai-coding-assistants-) • [Project Overview](#1-project-overview-) • [Design Language](#2-design-language-) • [Colors](#3-colors-) • [Typography](#4-typography-) • [Icons](#5-icons-) • [Layout](#6-layout-) • [Inspirations](#7-inspirations-) • [User Stories](#8-user-stories-) • [Functional Requirements](#9-functional-requirements-️) • [Page Map](#10-page-map-️) • [Content Structure](#11-content-structure-) • [Tech Stack](#12-tech-stack-️) • [Core Components](#13-core-components-) • [Additional Notes](#14-additional-notes-)
+[Instructions for AI Coding Assistants](#instructions-for-ai-coding-assistants-) • [Project Overview](#1-project-overview-) • [Design Language](#2-design-language-) • [Colors](#3-colors-) • [Typography](#4-typography-) • [Icons](#5-icons-) • [Layout](#6-layout-) • [Inspirations](#7-inspirations-) • [User Stories](#8-user-stories-) • [Functional Requirements](#9-functional-requirements-) • [Page Map](#10-page-map-) • [Content Structure](#11-content-structure-) • [Tech Stack](#12-tech-stack-) • [Core Components](#13-core-components-) • [Additional Notes](#14-additional-notes-)
 
 ---
 
 ## Instructions for AI Coding Assistants 🤖
 
-This document follows the **PLAIN (Product Language for AI Notation)** format—a structured specification system designed to help AI understand and build complete products. PLAIN documents are organized into clear sections covering everything from design vision to technical architecture. Each section contains specific requirements, preferences, and constraints that should be treated as your source of truth.
+This document follows the **PLAIN (Product Language for AI Notation)** format, a structured specification system designed to help AI understand and build complete products. PLAIN documents are organized into clear sections covering everything from design vision to technical architecture. Each section contains specific requirements, preferences, and constraints that should be treated as your source of truth.
 
 **How to read this document:** Start by understanding the project metadata in the HTML comment above. Then carefully read this entire "Instructions for AI Coding Assistants" section to understand your role, core principles, implementation approach, and quality standards. After that, work through each numbered section sequentially, as they build upon each other. When you see "Let AI decide for me" in any section, make intelligent choices based on modern best practices and the existing tech stack. Pay special attention to the MoSCoW priorities (Must/Should/Could/Won't) as they define what's essential versus optional.
 
@@ -31,11 +32,11 @@ This document follows the **PLAIN (Product Language for AI Notation)** format—
 
 **Core Principles**: Use exact technologies, colors (hex codes), fonts, and patterns specified. Implement all Must Have features, all pages, all components. Write accessible (WCAG AA), responsive, performant, well-typed code.
 
-**Implementation Approach**: Read sections in order—start with foundation (overview, design, tech stack), then build features and pages. Use specified technologies exactly. When you see "Let AI Decide", choose modern, well-documented options that fit the stack. If you detect conflicts (e.g., "React + Vue"), pick the most compatible option and document your decision in code. Match design specifications precisely: exact hex codes, specified fonts, responsive strategy. Study Design References and Inspirations to learn patterns (don't copy directly).
+**Implementation Approach**: Read sections in order, start with foundation (overview, design, tech stack), then build features and pages. Use specified technologies exactly. When you see "Let AI Decide", choose modern, well-documented options that fit the stack. If you detect conflicts (e.g., "React + Vue"), pick the most compatible option and document your decision in code. Match design specifications precisely: exact hex codes, specified fonts, responsive strategy. Study Design References and Inspirations to learn patterns (don't copy directly).
 
 **Code Standards**: Write clean, accessible TypeScript code with semantic HTML, ARIA labels, and keyboard navigation support. Maintain WCAG AA contrast ratios (4.5:1 text, 3:1 UI). Include proper form validation with helpful errors. Add loading, empty, and error states for every feature. Optimize images, implement code splitting, and handle errors comprehensively.
 
-**Quality Checklist**: Before completion, verify all Must Have features are built, all pages from Page Map are created, and the app is responsive at all breakpoints with 44×44px minimum touch targets on mobile. Ensure brand colors are exact, fonts are loaded, dark mode is implemented if specified, and there are no crashes with helpful error messages throughout.
+**Quality Checklist**: Before completion, verify all Must Have features are built, all pages from Page Map are created, and the app is responsive at all breakpoints with 44x44px minimum touch targets on mobile. Ensure brand colors are exact, fonts are loaded, dark mode is implemented if specified, and there are no crashes with helpful error messages throughout.
 
 ## 1. Project Overview 📋
 
@@ -59,7 +60,7 @@ Taskly is a minimalist task management app designed for freelancers and remote w
 
 ### Core Purpose
 
-The fundamental problem your product solves, distilled into one clear sentence. 
+The fundamental problem your product solves, distilled into one clear sentence.
 
 ```
 Help users stay organized with minimal friction.
@@ -71,7 +72,7 @@ Establish the visual and emotional foundation that shapes how users perceive and
 
 ### Design Style
 
-The overarching visual approach that guides all design decisions and creates consistency across your product. See [design style options](glossary/design-styles.md) for common styles and their characteristics.
+The overarching visual approach that guides all design decisions and creates consistency across your product. See [design style options](glossary/design-styles.md).
 
 ```
 Brutalism
@@ -79,7 +80,7 @@ Brutalism
 
 ### Design Tone
 
-The emotional qualities users should feel when interacting with your product. Choose up to 4 adjectives. See [design tone options](glossary/design-tones.md) for common tones and their characteristics.
+The emotional qualities users should feel when interacting with your product. Choose up to 4 adjectives. See [design tone options](glossary/design-tones.md).
 
 ```
 Clean, Professional, Modern, Trustworthy, Friendly, Bold, Calm
@@ -87,7 +88,7 @@ Clean, Professional, Modern, Trustworthy, Friendly, Bold, Calm
 
 ### Design References
 
-Real-world examples that embody aspects of your desired design direction. For each reference, specify what specific elements inspire you. See [design references](glossary/design-references.md) for curated examples to study.
+Real-world examples that embody aspects of your desired design direction. For each reference, specify what specific elements inspire you. See [design references](glossary/design-references.md).
 
 ```
 1. (https://linear.app): Clean, minimal interface with excellent use of typography and subtle animations. Great example of purposeful whitespace and clear visual hierarchy.
@@ -139,7 +140,7 @@ Dark mode only.
 
 ## 4. Typography 🔤
 
-Define your typography system. Typography affects readability, hierarchy, and the overall personality of your product. See [typography options](glossary/typography.md) for font combinations and systems.
+Define your typography system. Typography affects readability, hierarchy, and the overall personality of your product. See [typography options](glossary/typography.md).
 
 ### Display Font
 
@@ -167,7 +168,7 @@ Fira Code
 
 ### Typescale
 
-Define your typescale ratio. A typescale is a mathematical system that creates harmonious font sizes by multiplying a base size by a consistent ratio. Use https://typescale.com/ to preview different ratios and generate your scale. See [type scale options](glossary/type-scale.md) for common ratios and implementation guidelines.
+Define your typescale ratio. A typescale is a mathematical system that creates harmonious font sizes by multiplying a base size by a consistent ratio. Use https://typescale.com/ to preview different ratios and generate your scale. See [type scale options](glossary/type-scale.md).
 
 ```
 Major Third (1.25)
@@ -175,7 +176,7 @@ Major Third (1.25)
 
 ## 5. Icons 🎭
 
-Establish a consistent icon system that improves navigation, clarifies actions, and reinforces your visual language. See [icon options](glossary/icons.md) for popular libraries and their characteristics.
+Establish a consistent icon system that improves navigation, clarifies actions, and reinforces your visual language. See [icon options](glossary/icons.md).
 
 ### Icon Library
 
@@ -195,7 +196,7 @@ Outlined
 
 ## 6. Layout 📐
 
-Define your layout structure and responsive behavior. Layout determines how content is organized and how your product adapts to different screen sizes. See [layout options](glossary/layout.md) for patterns and responsive strategies.
+Define your layout structure and responsive behavior. Layout determines how content is organized and how your product adapts to different screen sizes. See [layout options](glossary/layout.md).
 
 ### Responsive Strategy
 
@@ -211,7 +212,7 @@ Document specific layout patterns, accessibility requirements, or technical cons
 
 ## 7. Inspirations ✨
 
-Curate 3-5 examples that demonstrate specific aspects of great design, functionality, or user experience. For each, describe what specific elements inspire you. See [design references](glossary/design-references.md) for inspiration.
+Curate 3-5 examples that demonstrate specific aspects of great design, functionality, or user experience. For each, describe what specific elements inspire you. See [design references](glossary/design-references.md).
 
 ```
 1. (https://notion.so): Flexible workspace with intuitive drag-and-drop interactions. Great example of progressive disclosure and nested content organization.
@@ -283,7 +284,7 @@ Features explicitly excluded from this version to maintain focus and manage scop
 
 ## 10. Page Map 🗺️
 
-Document every page and route in your product to establish the complete information architecture and user navigation paths. List all pages including public pages, authenticated areas, settings, admin sections, and utility pages (404, 500, loading). See [page map options](glossary/page-map.md) for common structures and navigation patterns.
+Document every page and route in your product to establish the complete information architecture and user navigation paths. List all pages including public pages, authenticated areas, settings, admin sections, and utility pages (404, 500, loading). See [page map options](glossary/page-map.md).
 
 ```
 - Home (/): Landing page with hero section and key features
@@ -298,7 +299,7 @@ Define the data models and content types that power your product, establishing h
 
 ### Common Content Types
 
-Select standard content types that apply to your product. These come with predefined fields and relationships. See [content types](glossary/content-types.md) for detailed structures and field definitions.
+Select standard content types that apply to your product. These come with predefined fields and relationships. See [content types](glossary/content-types.md).
 
 ```
 - Product
@@ -328,7 +329,7 @@ Define your complete technical stack: frontend framework, UI library, backend in
 
 ### Framework
 
-Your core frontend framework shapes the entire development experience. Choose based on team expertise, project requirements, and ecosystem. See [framework options](glossary/frameworks.md) for detailed comparisons and recommendations.
+Your core frontend framework shapes the entire development experience. Choose based on team expertise, project requirements, and ecosystem. See [framework options](glossary/frameworks.md).
 
 ```
 Vite + React
@@ -336,7 +337,7 @@ Vite + React
 
 ### UI Library
 
-Pre-built components that accelerate development and ensure consistency. Consider design flexibility vs speed of implementation. See [UI library options](glossary/ui-libraries.md) for comprehensive comparisons.
+Pre-built components that accelerate development and ensure consistency. Consider design flexibility vs speed of implementation. See [UI library options](glossary/ui-libraries.md).
 
 ```
 Shadcn UI
@@ -344,7 +345,7 @@ Shadcn UI
 
 ### Animation Library
 
-Bring your interface to life with smooth transitions and engaging interactions. Choose based on complexity, performance needs, and framework compatibility. See [animation library options](glossary/animation-libraries.md) for detailed comparisons.
+Bring your interface to life with smooth transitions and engaging interactions. Choose based on complexity, performance needs, and framework compatibility. See [animation library options](glossary/animation-libraries.md).
 
 ```
 Framer Motion
@@ -352,7 +353,7 @@ Framer Motion
 
 ### State Management
 
-How application data flows and updates across components. Simple apps may not need dedicated state management. See [state management options](glossary/state-management.md) for detailed solutions.
+How application data flows and updates across components. Simple apps may not need dedicated state management. See [state management options](glossary/state-management.md).
 
 ```
 Zustand
@@ -360,7 +361,7 @@ Zustand
 
 ### Database
 
-Choose your data persistence layer. Match the database type (SQL vs NoSQL) to your data structure and query patterns. See [database options](glossary/database.md) for comprehensive database choices.
+Choose your data persistence layer. Match the database type (SQL vs NoSQL) to your data structure and query patterns. See [database options](glossary/database.md).
 
 ```
 Supabase
@@ -368,7 +369,7 @@ Supabase
 
 ### Authentication
 
-Select your user authentication and identity management strategy based on security needs and user experience goals. See [authentication options](glossary/authentication.md) for detailed authentication solutions.
+Select your user authentication and identity management strategy based on security needs and user experience goals. See [authentication options](glossary/authentication.md).
 
 ```
 Firebase Auth
@@ -376,7 +377,7 @@ Firebase Auth
 
 ### Content Management System
 
-Choose how content will be created, edited, and published. Consider team size, technical expertise, and content update frequency. See [CMS options](glossary/cms.md) for various content management systems.
+Choose how content will be created, edited, and published. Consider team size, technical expertise, and content update frequency. See [CMS options](glossary/cms.md).
 
 ```
 Markdown Files
@@ -384,7 +385,7 @@ Markdown Files
 
 ### Hosting
 
-Determine where your application will be deployed and served to users. Consider performance, cost, and deployment workflow. See [hosting options](glossary/hosting.md) for platform comparisons.
+Determine where your application will be deployed and served to users. Consider performance, cost, and deployment workflow. See [hosting options](glossary/hosting.md).
 
 ```
 Netlify
@@ -403,7 +404,7 @@ Document other tech stack choices like styling methodology, build tools, or spec
 
 ## 13. Core Components 🧩
 
-Identify the UI building blocks your product requires. This inventory guides implementation and ensures nothing is overlooked. See [core components catalog](glossary/core-components.md) for detailed descriptions and use cases.
+Identify the UI building blocks your product requires. This inventory guides implementation and ensures nothing is overlooked. See [core components catalog](glossary/core-components.md).
 
 ```
 Accordion, Alert, Avatar, Badge, Breadcrumb, Button, Button Group, Calendar, Card, Carousel, Chart, Pagination, Scroll Area, Textarea, Toast Message, Toggle, Tooltip
@@ -416,8 +417,8 @@ Specialized or custom components not covered by standard libraries. These may re
 ```
 - Rich Text Editor (TipTap)
 - Interactive Map (Mapbox)
-- Video Player (VideoJS), 
-- Kanban Board, 
+- Video Player (VideoJS)
+- Kanban Board
 - Color Picker
 ```
 

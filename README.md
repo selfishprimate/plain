@@ -47,6 +47,38 @@ Your spec is ready. Feed it to your favorite AI tool with the following command 
 
 **Bonus Tip:** Keep your PLAIN document in version control alongside your code. It serves as living documentation that evolves with your product.
 
+## Generate with an AI Agent 🤖
+
+Prefer to skip the template and just describe your idea? Install the PLAIN skill for your AI coding agent, then tell it what you want to build. The agent turns your idea into a complete `{project-name}-plain.md` that follows this format, filling every section with sensible, modern choices.
+
+Copy one command into your terminal to install the skill at the project level (the current folder):
+
+### Claude Code
+
+```bash
+mkdir -p .claude/skills/plain && curl -fsSL https://raw.githubusercontent.com/selfishprimate/plain/main/.claude/skills/plain/SKILL.md -o .claude/skills/plain/SKILL.md
+```
+
+Then either describe what you want to build (for example: "Create a PLAIN spec for a habit tracker app") and Claude Code loads the `plain` skill automatically, or invoke it explicitly with `/plain <your product idea>`. Both work.
+
+### Gemini CLI
+
+```bash
+mkdir -p .gemini/commands && curl -fsSL https://raw.githubusercontent.com/selfishprimate/plain/main/.gemini/commands/plain.toml -o .gemini/commands/plain.toml
+```
+
+Then run `/plain <your product idea>`.
+
+### Codex CLI
+
+```bash
+mkdir -p .agents/skills/plain && curl -fsSL https://raw.githubusercontent.com/selfishprimate/plain/main/.agents/skills/plain/SKILL.md -o .agents/skills/plain/SKILL.md
+```
+
+Then describe your product idea, or trigger it with `$plain`.
+
+> **Global install (available in every project):** swap the target directory for your home config: `~/.claude/skills/plain` for Claude Code, `~/.gemini/commands` for Gemini CLI, and `~/.agents/skills/plain` for Codex CLI.
+
 ## Plainify 🛠️
 
 [Plainify](https://plainify.app) is a guided web application designed to help you create PLAIN specifications without staring at a blank page. Instead of manually filling out the template from scratch, Plainify provides a structured, section-by-section workflow that shows you relevant options and examples for each part of your specification.

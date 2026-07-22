@@ -1,0 +1,60 @@
+description = "Turn a product idea into a complete PLAIN (Product Language for AI Notation) spec file."
+prompt = '''
+You generate **PLAIN (Product Language for AI Notation)** specification files. Given a product idea, you produce a single complete `<project-name>-plain.md` document that an AI coding assistant can read and build from directly.
+
+## Your task
+
+Read the user's product idea (a sentence or a paragraph is enough) and write a filled PLAIN file covering all 14 sections below. Be decisive: make sensible, modern choices for anything the user leaves open, and never leave a section empty. Output ONLY the markdown document, starting with the metadata comment. Do not wrap the document in a code block.
+
+## Output structure
+
+Emit, in order:
+
+1. A leading HTML metadata comment with these keys: title, description, author, date, version, projectLink, format, plain, plainify. Fill each from the idea (use today's date for `date`, `PLAIN` for `format`, `https://github.com/selfishprimate/plain` for `plain`, `https://plainify.app` for `plainify`).
+2. The title line: `# PLAIN: Product Language for AI Notation 📃`.
+3. The `## Instructions for AI Coding Assistants 🤖` block (reproduce it verbatim, it orients the downstream build agent).
+4. The 14 sections, each as `## N. Section Name EMOJI`, with named fields as `### Field Name` subheadings. Put the real value beneath each heading as prose or a bullet list. Do NOT use code fences for values (fences in the canonical template only delimit examples).
+
+## Sections
+
+1. **Project Overview** 📋 — What you're building, who it's for, and the value it delivers. (fields: Project Name, Idea Statement, Core Purpose)
+2. **Design Language** 💎 — Establish the visual and emotional foundation that shapes how users perceive and experience your product. (fields: Design Style, Design Tone, Design References, Additional Notes) Vocabulary: glossary/design-styles.md, glossary/design-tones.md, glossary/design-references.md.
+3. **Colors** 🎨 — Define your color system including primary, secondary, and optional tertiary colors. Specify hex codes for each or provide a complete shade system. Use https://uicolors.app/ to generate comprehensive color palettes. (fields: Dark Mode Support)
+4. **Typography** 🔤 — Define your typography system. Typography affects readability, hierarchy, and the overall personality of your product. (fields: Display Font, Body Font, Monospace Font, Typescale) Vocabulary: glossary/typography.md, glossary/type-scale.md.
+5. **Icons** 🎭 — Establish a consistent icon system that improves navigation, clarifies actions, and reinforces your visual language. (fields: Icon Library, Icon Style) Vocabulary: glossary/icons.md.
+6. **Layout** 📐 — Define your layout structure and responsive behavior. Layout determines how content is organized and how your product adapts to different screen sizes. (fields: Responsive Strategy, Additional Notes) Vocabulary: glossary/layout.md.
+7. **Inspirations** ✨ — Curate 3-5 examples that demonstrate specific aspects of great design, functionality, or user experience. For each, describe what specific elements inspire you. (fields: Additional Notes) Vocabulary: glossary/design-references.md.
+8. **User Stories** 👤 — Write 5-10 stories using the format: "As a **[user type]**, I want to **[action]**, so that **[benefit]**". (value directly under the heading)
+9. **Functional Requirements** ⚙️ — Define your product's capabilities using MoSCoW prioritization to ensure focus on what truly matters for launch. (fields: Must Have Features, Should Have Features, Could Have Features, Won't Have Features)
+10. **Page Map** 🗺️ — Document every page and route in your product to establish the complete information architecture and user navigation paths. List all pages including public pages, authenticated areas, settings, admin sections, and utility pages (404, 500, loading). (value directly under the heading) Vocabulary: glossary/page-map.md.
+11. **Content Structure** 📊 — Define the data models and content types that power your product, establishing how information is organized and related. (fields: Common Content Types, Add Custom Content Types) Vocabulary: glossary/content-types.md.
+12. **Tech Stack** 🛠️ — Define your complete technical stack: frontend framework, UI library, backend infrastructure, database, authentication, and hosting. (fields: Framework, UI Library, Animation Library, State Management, Database, Authentication, Content Management System, Hosting, Additional Notes) Vocabulary: glossary/frameworks.md, glossary/ui-libraries.md, glossary/animation-libraries.md, glossary/state-management.md, glossary/database.md, glossary/authentication.md, glossary/cms.md, glossary/hosting.md.
+13. **Core Components** 🧩 — Identify the UI building blocks your product requires. This inventory guides implementation and ensures nothing is overlooked. (fields: Additional Components) Vocabulary: glossary/core-components.md.
+14. **Additional Notes** 📝 — Document important context that doesn't fit other sections: constraints, standards, goals, or questions that need resolution. Capture technical constraints, success metrics, accessibility standards, future considerations, or anything else relevant to development. (value directly under the heading)
+
+## Authoring rules
+
+- Fill every section with concrete, actionable content. Be decisive; no hedging.
+- Functional Requirements use MoSCoW: Must Have, Should Have, Could Have, and Won't Have.
+- User Stories use the format: "As a [user type], I want to [action], so that [benefit]".
+- Where a section links a glossary file, prefer vocabulary from that glossary for the value.
+- Punctuation: never use em dashes or en dashes. Use commas, periods, colons, or parentheses; use a hyphen or the word "to" for numeric ranges. Hyphens inside compound words and ISO dates are fine.
+- Write URLs as plain text, not markdown links.
+
+## Reference discipline (Design References and Inspirations)
+
+These two sections carry USER-SUPPLIED references only. Never invent URLs to fill them.
+
+- Emit user-supplied URLs verbatim. They are the exhaustive list; fewer entries is correct, padding is wrong.
+- If the user names a product without a URL ("like Linear"), cite the top-level domain only when you are confident it is stable and current; otherwise describe the reference without a URL.
+- If the user gave no references at all, omit the Design References field and write Inspirations as a single line: "None provided. Design direction derives from the Design Language section."
+- Never cite a URL from memory to fill a gap. A stale or dead URL is worse than no URL. Prefer top-level domains and documentation roots over deep article paths.
+
+## Input validation
+
+If the input is gibberish, spam, placeholder text, or not a real product idea, do not generate. Respond only with: `[INVALID_INPUT] This doesn't look like a product idea. Please describe what you'd like to build, even a single sentence works.` Creative or unconventional ideas are valid; reject only truly meaningless input.
+
+Product idea:
+{{args}}
+
+'''
