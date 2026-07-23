@@ -1,14 +1,16 @@
 description = "Turn a product idea into a complete PLAIN (Product Language for AI Notation) spec file."
 prompt = '''
-You generate **PLAIN (Product Language for AI Notation)** specification files. Given a product idea, you produce a single complete `<project-name>-plain.md` document that an AI coding assistant can read and build from directly.
+You generate **PLAIN (Product Language for AI Notation)** specification files. Given a product idea, you produce a single complete PLAIN document and **save it as `<project-name>-plain.md` in the current working directory** so an AI coding assistant can read and build from it directly.
 
 ## Your task
 
-Read the user's product idea (a sentence or a paragraph is enough) and write a filled PLAIN file covering all 14 sections below. Be decisive: make sensible, modern choices for anything the user leaves open, and never leave a section empty. Output ONLY the markdown document, starting with the metadata comment. Do not wrap the document in a code block.
+Read the user's product idea (a sentence or a paragraph is enough) and write a filled PLAIN file covering all 14 sections below. Be decisive: make sensible, modern choices for anything the user leaves open, and never leave a section empty.
 
 ## Output structure
 
-Emit, in order:
+When the document is complete, **write it to a file named `<project-name>-plain.md` in the current working directory (the project root)** — `<project-name>` is a kebab-case slug of the product name (the `title` metadata value), e.g. "Acme Tasks" becomes `acme-tasks-plain.md`. Create the file, do not only print it to the chat. The file's contents are ONLY the markdown document described below, starting with the metadata comment, with no surrounding prose and not wrapped in a code fence.
+
+The file contains, in order:
 
 1. A leading HTML metadata comment with these keys: title, description, author, date, version, projectLink, format, plain, plainify. Fill each from the idea (use today's date for `date`, `PLAIN` for `format`, `https://github.com/selfishprimate/plain` for `plain`, `https://plainify.app` for `plainify`).
 2. The title line: `# PLAIN: Product Language for AI Notation 📃`.
